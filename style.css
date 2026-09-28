@@ -1,0 +1,599 @@
+/* ============================================================
+   ECHOES FROM THE ANCESTORS — Master Stylesheet
+   Shared by the index page and all Igbo story HTML files.
+   ============================================================ */
+
+/* ---------- GLOBAL RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- BODY (default = story pages) ---------- */
+
+body {
+    font-family: 'Calibri', 'Arial', 'Microsoft YaHei', 'Hei', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    background-color: #FFFFFF;
+    color: #374151;
+    line-height: 1.7;
+    padding: 2.5rem 1.5rem 4rem 1.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* Index page override — wider layout */
+body.index-page {
+    line-height: 1.6;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    font-size: 1rem;
+}
+
+/* ============================================================
+   HEADINGS
+   ============================================================ */
+
+h1 {
+    font-family: 'Calibri', 'Arial', 'Microsoft YaHei', 'Hei', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-top: 3rem;
+    margin-bottom: 0.6rem;
+    padding-left: 1.25rem;
+    border-left: 8px solid #b45309;
+}
+
+/* Index page h1 — larger and airier */
+body.index-page h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.25rem;
+    padding-left: 1.5rem;
+}
+
+/* First h1 on a story page — tighter top spacing */
+body > h1:first-of-type {
+    margin-top: 0.5rem;
+}
+
+h2 {
+    font-family: 'Calibri', 'Arial', 'Microsoft YaHei', 'Hei', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #4b3e35;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 1.75rem;
+    padding-left: 1.25rem;
+    border-bottom: 1px solid #e5d9cf;
+    padding-bottom: 0.75rem;
+}
+
+h3 {
+    font-family: 'Calibri', 'Arial', 'Microsoft YaHei', 'Hei', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h4 {
+    font-family: 'Calibri', 'Arial', 'Microsoft YaHei', 'Hei', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #b45309;
+    margin-top: 2rem;
+    margin-bottom: 0.65rem;
+}
+
+h5,
+h6 {
+    font-family: 'Calibri', 'Arial', 'Microsoft YaHei', 'Hei', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b3e35;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ============================================================
+   PARAGRAPHS & TEXT
+   ============================================================ */
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.75;
+}
+
+/* First letter of the very first paragraph on a story page */
+body > p:first-of-type::first-letter {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #b45309;
+}
+
+strong,
+b {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+a {
+    color: #1e3a5f;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+    color: #b45309;
+    border-bottom-color: #b45309;
+}
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+
+ul,
+ol {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 2rem;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 0.5em;
+    line-height: 1.7;
+}
+
+li::marker {
+    color: #b45309;
+}
+
+/* ============================================================
+   BLOCKQUOTE
+   ============================================================ */
+
+blockquote {
+    margin: 1.5em 0;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    border-left: 5px solid #b45309;
+    background-color: #faf8f6;
+    padding: 1rem 1.5rem;
+    color: #4b3e35;
+    font-style: italic;
+    border-radius: 0 12px 12px 0;
+}
+
+blockquote p {
+    margin: 0.5em 0;
+}
+
+/* ============================================================
+   CODE
+   ============================================================ */
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: rgba(241, 245, 249, 0.9);
+    color: #111827;
+    font-size: 0.92em;
+    padding: 0.14em 0.4em;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: #f8fafc;
+    color: #111827;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 1rem 1.25rem;
+    margin: 1.5em 0;
+    overflow: auto;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+/* ============================================================
+   HORIZONTAL RULE (story dividers)
+   ============================================================ */
+
+hr {
+    border: 0;
+    border-top: 2px solid #efe6dd;
+    margin: 3rem 0 2rem 0;
+    position: relative;
+}
+
+hr::after {
+    content: "✦";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 0 0.75rem;
+    color: #b45309;
+    font-size: 1rem;
+}
+
+/* Index page hr — simpler, no ornament */
+body.index-page hr {
+    border-top: 2px solid #efe6dd;
+    margin: 3rem 0 1.5rem;
+}
+
+body.index-page hr::after {
+    content: "";
+    display: none;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    page-break-inside: avoid;
+    font-size: 0.98em;
+}
+
+th,
+td {
+    border: 1px solid #e5d9cf;
+    padding: 0.65rem 0.9rem;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-word;
+}
+
+th {
+    background-color: #faf8f6;
+    color: #111827;
+    font-weight: 600;
+}
+
+tr:nth-child(even) td {
+    background-color: #fdfcfb;
+}
+
+/* ============================================================
+   IMAGES
+   ============================================================ */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================================
+   DELETED / STRIKETHROUGH
+   ============================================================ */
+
+del,
+s {
+    text-decoration: line-through;
+    color: #9a8b7f;
+}
+
+/* ============================================================
+   "THE LESSON" — special treatment for bold lead-ins
+   ============================================================ */
+
+p strong:first-child {
+    color: #b45309;
+}
+
+/* ============================================================
+   BACK-TO-INDEX LINK
+   ============================================================ */
+
+.back-to-index {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 0.65rem 1.25rem;
+    background: #faf8f6;
+    border: 1px solid #e5d9cf;
+    border-radius: 40px;
+    color: #4b3e35;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-bottom: 1px solid #e5d9cf;
+    transition: all 0.2s ease;
+}
+
+.back-to-index:hover {
+    background: #b45309;
+    color: #ffffff;
+    border-color: #b45309;
+}
+
+/* ============================================================
+   INDEX PAGE — SUBHEAD, GRID, CARDS, NOTES, FOOTER
+   ============================================================ */
+
+.subhead {
+    font-size: 1.25rem;
+    color: #6B5E57;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    padding-left: 2rem;
+    border-bottom: 1px solid #e5d9cf;
+    padding-bottom: 1rem;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.collection-card {
+    background: #faf8f6;
+    border-radius: 20px;
+    padding: 1.8rem 1.8rem 2rem 1.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #efe6dd;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-card:hover {
+    border-color: #d4b8a3;
+    box-shadow: 0 12px 24px -6px rgba(80, 60, 40, 0.12);
+    background: #ffffff;
+}
+
+.collection-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    font-style: normal;
+    margin-bottom: 1.25rem;
+    padding: 0 0 0.65rem 0;
+    border-bottom: 2px dashed #e0cfc0;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.collection-card h2 span {
+    font-size: 1.6rem;
+}
+
+.story-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.story-list li {
+    margin-bottom: 0.7rem;
+    font-size: 1.02rem;
+    line-height: 1.4;
+    padding-left: 0.2rem;
+}
+
+.story-list a {
+    color: #1e3a5f;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s, color 0.15s;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.story-list a:hover {
+    color: #b45309;
+    border-bottom-color: #b45309;
+}
+
+.file-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: #e7dfd7;
+    color: #4b3e35;
+    padding: 0.15rem 0.6rem;
+    border-radius: 30px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    border: 1px solid #d6c9bd;
+}
+
+.collection-card .story-list a .file-badge {
+    font-size: 0.65rem;
+    background: #eae2da;
+    color: #3f332a;
+    border-color: #cbb9ab;
+    margin-left: 0.4rem;
+}
+
+.note {
+    margin-top: 3.5rem;
+    padding: 1.5rem 2rem;
+    background: #f7f3ef;
+    border-left: 8px solid #b45309;
+    border-radius: 0 16px 16px 0;
+    color: #2d2a26;
+    font-size: 1.05rem;
+}
+
+.note strong {
+    color: #b45309;
+}
+
+.footer {
+    font-size: 0.9rem;
+    color: #9a8b7f;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* ============================================================
+   AUTHOR CREDIT
+   ============================================================ */
+
+.author-credit {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5d9cf;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #6B5E57;
+}
+
+.author-credit a {
+    color: #b45309;
+    font-weight: 600;
+    border-bottom: 1px solid #b45309;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.author-credit a:hover {
+    color: #92400e;
+    border-bottom-color: #92400e;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 600px) {
+    body {
+        padding: 1.5rem 1rem 3rem 1rem;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        padding-left: 0.85rem;
+        border-left-width: 6px;
+        margin-top: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        padding-left: 0.85rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    blockquote {
+        margin-left: 0.5rem;
+        padding: 0.85rem 1rem;
+    }
+
+    hr {
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    /* Index page mobile tweaks */
+    body.index-page h1 {
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+
+    .subhead {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .collection-card {
+        padding: 1.4rem;
+    }
+
+    .collection-card h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+
+@media print {
+    body {
+        padding: 0;
+        max-width: 100%;
+        font-size: 11pt;
+        color: #000;
+    }
+
+    h1 {
+        border-left: 6px solid #b45309;
+        page-break-after: avoid;
+    }
+
+    h2,
+    h3,
+    h4 {
+        page-break-after: avoid;
+    }
+
+    hr {
+        border-top: 1px solid #ccc;
+    }
+
+    hr::after {
+        content: "";
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
