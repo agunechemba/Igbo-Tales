@@ -597,3 +597,32 @@ p strong:first-child {
         text-decoration: none;
     }
 }
+
+
+
+
+/* Base: fixed bottom-left link */
+a.back-to-index {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+a.back-to-index:hover {
+  background: #f4a026;
+  color: #000;
+}
+
+/* Hide it on the index page */
+body.index-page a.back-to-index {
+  display: none;
+}
