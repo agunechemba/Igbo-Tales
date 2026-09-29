@@ -755,3 +755,25 @@ a.back-to-index:hover {
 body.index-page a.back-to-index {
     display: none;
 }
+
+
+
+.footer {
+  text-align: center;
+}
+
+.contribute-btn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 6px 14px;
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.contribute-btn:hover {
+  background-color: #1ebe5b;
+}
