@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     rel="noopener noreferrer"
     class="contribute-btn"
   >
-    Contribute
+    Community
   </a>
 </div>
     <p class="author-credit">
