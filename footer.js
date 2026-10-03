@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="footer">
   ✦ Traditional Igbo stories ✦
   <a
-    href="https://chat.whatsapp.com/DLnnusN3VB1Dgxnbsh7VnF"
+    href="https://whatsapp.com/channel/0029VbE01N4C1FuGZmP21Q11"
     target="_blank"
     rel="noopener noreferrer"
     class="contribute-btn"
