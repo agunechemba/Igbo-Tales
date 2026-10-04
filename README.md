@@ -1,13 +1,13 @@
-# Igbo Tales: Echoes from the Ancestors
+# Igbo Tales: Echoes from your Ancestors
 
 Traditional Igbo tales, history, oracles, and wisdom — retold for a new generation.  
 Curated by **[Agunechemba Ekene](https://agunechemba.name.ng)**
 
 ---
 
-## Volumes
+## Moons
 
-| # | Volume | Stories |
+| # | Moon | Stories |
 |---|--------|---------|
 | 1 | Tales by Moonlight | 28 |
 | 2 | Stories of Agu | 28 |
@@ -23,13 +23,13 @@ Curated by **[Agunechemba Ekene](https://agunechemba.name.ng)**
 | 12 | Women Who Ruled | 28 |
 | 13 | The Sky That Fed Us | 28 |
 
-**Total:** 364 stories across 13 volumes.
+**Total:** 364 stories across 13 Moons.
 
 ---
 
 ## What's Inside
 
-Each volume contains **28 stories** — the original 13 tales plus 15 newly researched and retold stories drawn from the traditional Igbo oral canon, ancient articles, books, and community forums.
+Each Moon contains **28 stories** — the original 13 tales plus 15 newly researched and retold stories drawn from the traditional Igbo oral canon, ancient articles, books, and community forums.
 
 The collections span:
 
@@ -47,6 +47,6 @@ The collections span:
 
 ## Read
 
-**[ECHOES FROM THE ANCESTORS](https://agunechemba.name.ng/Igbo-Tales/)**
+**[ECHOES FROM YOUR ANCESTORS](https://agunechemba.name.ng/Igbo-Tales/)**
 
 > *These stories are lessons, warnings, and the wisdom of our ancestors.*
