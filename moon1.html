@@ -1695,6 +1695,206 @@
 <p><strong>The Lesson:</strong> Some secrets are not for humans to know. Trust is a covenant, and breaking it destroys the bond.</p>
 
 <h1 id="story9">9. The Endless Tale</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Deep Night Sky -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="40%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Warm Fire Glow -->
+    <radialGradient id="fireGlow" cx="30%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#ff7b00" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#cc3300" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ethereal Smoke / Spirit Gradient -->
+    <radialGradient id="spiritGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#00ffff" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#8a2be2" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Fire Gradient -->
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff3300" />
+      <stop offset="40%" stop-color="#ff7b00" />
+      <stop offset="80%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#nightSky)" />
+
+  <!-- Distant Stars / Ancestral Eyes -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#glow)">
+    <circle cx="100" cy="80" r="1.5" />
+    <circle cx="250" cy="50" r="1" />
+    <circle cx="400" cy="100" r="2" />
+    <circle cx="600" cy="60" r="1.5" />
+    <circle cx="750" cy="120" r="1" />
+    <circle cx="680" cy="40" r="2" />
+  </g>
+
+  <!-- Distant Village Silhouettes (The world outside) -->
+  <g fill="#0a0505" opacity="0.8">
+    <path d="M 50 450 L 70 400 L 90 450 Z" />
+    <rect x="60" y="450" width="20" height="30" />
+    <path d="M 150 460 L 170 410 L 190 460 Z" />
+    <rect x="160" y="460" width="20" height="30" />
+    <path d="M 700 440 L 720 390 L 740 440 Z" />
+    <rect x="710" y="440" width="20" height="30" />
+  </g>
+
+  <!-- 2. The Central Fire & Ambient Light -->
+  <rect width="800" height="600" fill="url(#fireGlow)" />
+
+  <!-- The Fire -->
+  <g filter="url(#glow)">
+    <!-- Base logs -->
+    <path d="M 180 520 Q 220 500 260 520 Q 240 540 200 540 Z" fill="#1a0f0a" />
+    <path d="M 200 530 Q 240 510 280 530 Q 260 550 220 550 Z" fill="#2a1a0a" />
+    
+    <!-- Flames -->
+    <path d="M 190 520 Q 200 460 220 420 Q 210 470 230 520 Z" fill="url(#flameGrad)" />
+    <path d="M 220 520 Q 240 450 250 400 Q 260 460 260 520 Z" fill="url(#flameGrad)" />
+    <path d="M 240 520 Q 260 470 270 440 Q 280 480 280 520 Z" fill="url(#flameGrad)" opacity="0.8" />
+    
+    <!-- Core of the fire -->
+    <path d="M 220 520 Q 230 480 240 460 Q 250 490 250 520 Z" fill="#ffffff" opacity="0.9" />
+  </g>
+
+  <!-- Sparks flying up -->
+  <g fill="#ffb347" opacity="0.8" filter="url(#glow)">
+    <circle cx="210" cy="400" r="2" />
+    <circle cx="260" cy="380" r="3" />
+    <circle cx="230" cy="350" r="1.5" />
+    <circle cx="280" cy="420" r="2.5" />
+    <circle cx="190" cy="370" r="2" />
+  </g>
+
+  <!-- 3. The Storyteller & The Children (Silhouettes around the fire) -->
+  
+  <!-- Okonkwo (The Storyteller) - Left Side -->
+  <g fill="#0a0505">
+    <!-- Body seated -->
+    <path d="M 80 520 Q 70 460 100 420 Q 120 390 140 420 Q 160 460 150 520 Z" />
+    <!-- Head -->
+    <ellipse cx="120" cy="390" rx="18" ry="22" />
+    <!-- Arm gesturing towards the fire -->
+    <path d="M 130 440 Q 170 420 200 430" stroke="#0a0505" stroke-width="10" fill="none" stroke-linecap="round" />
+    <!-- Hand open, telling the story -->
+    <path d="M 200 430 L 210 420 M 200 430 L 215 430 M 200 430 L 210 440" stroke="#0a0505" stroke-width="3" fill="none" stroke-linecap="round" />
+    <!-- Walking stick / Staff -->
+    <path d="M 80 520 L 60 550" stroke="#0a0505" stroke-width="6" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- The Children - Right Side -->
+  <g fill="#0a0505">
+    <!-- Child 1 (Closest) -->
+    <path d="M 600 520 Q 590 480 610 460 Q 620 440 630 460 Q 650 480 640 520 Z" />
+    <circle cx="620" cy="440" r="14" />
+    
+    <!-- Child 2 (Slightly behind) -->
+    <path d="M 660 520 Q 650 490 670 470 Q 680 450 690 470 Q 710 490 700 520 Z" />
+    <circle cx="680" cy="450" r="12" />
+    
+    <!-- Child 3 (Smallest, nestled) -->
+    <path d="M 710 530 Q 700 510 720 495 Q 730 480 740 495 Q 760 510 750 530 Z" />
+    <circle cx="730" cy="480" r="10" />
+  </g>
+
+  <!-- 4. The Infinite Tale (The Ethereal Smoke / Story Spirits) -->
+  <g filter="url(#intenseGlow)">
+    <!-- Base of the smoke rising from the fire -->
+    <path d="M 220 400 Q 200 300 300 250 Q 450 200 500 300 Q 550 400 400 450 Q 250 500 350 350 Q 450 200 300 150" 
+          stroke="url(#spiritGrad)" stroke-width="15" fill="none" opacity="0.6" stroke-linecap="round" />
+
+    <!-- The Infinite Spiral / Story Loop -->
+    <path d="M 300 150 Q 200 100 150 200 Q 100 300 200 400 Q 300 500 450 450 Q 600 400 650 250 Q 700 100 550 50 Q 400 0 250 80 Q 150 150 200 250" 
+          stroke="url(#spiritGrad)" stroke-width="8" fill="none" opacity="0.4" stroke-linecap="round" />
+
+    <!-- Ethereal Ancestors / Storytellers within the smoke -->
+    <!-- Ancestor 1 (Top Left) -->
+    <g opacity="0.6">
+      <ellipse cx="250" cy="180" rx="15" ry="20" fill="#ffffff" opacity="0.4" />
+      <path d="M 240 200 Q 250 240 260 200 Z" fill="#ffffff" opacity="0.3" />
+    </g>
+    <!-- Ancestor 2 (Top Right) -->
+    <g opacity="0.5">
+      <ellipse cx="550" cy="120" rx="15" ry="20" fill="#ffffff" opacity="0.4" />
+      <path d="M 540 140 Q 550 180 560 140 Z" fill="#ffffff" opacity="0.3" />
+    </g>
+    <!-- Ancestor 3 (Middle Right) -->
+    <g opacity="0.7">
+      <ellipse cx="600" cy="300" rx="18" ry="24" fill="#ffffff" opacity="0.4" />
+      <path d="M 590 324 Q 600 360 610 324 Z" fill="#ffffff" opacity="0.3" />
+    </g>
+    <!-- Ancestor 4 (Middle Left) -->
+    <g opacity="0.5">
+      <ellipse cx="180" cy="350" rx="12" ry="18" fill="#ffffff" opacity="0.4" />
+      <path d="M 170 368 Q 180 390 190 368 Z" fill="#ffffff" opacity="0.3" />
+    </g>
+
+    <!-- The "Story Within a Story" (Nested glowing circles) -->
+    <circle cx="400" cy="250" r="80" fill="none" stroke="#00ffff" stroke-width="2" opacity="0.4" />
+    <circle cx="400" cy="250" r="50" fill="none" stroke="#00ffff" stroke-width="2" opacity="0.6" />
+    <circle cx="400" cy="250" r="20" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.8" />
+    
+    <!-- Tiny storytellers inside the nested circles -->
+    <g fill="#00ffff" opacity="0.8">
+      <circle cx="400" cy="230" r="4" />
+      <circle cx="400" cy="270" r="4" />
+      <circle cx="380" cy="250" r="3" />
+      <circle cx="420" cy="250" r="3" />
+    </g>
+  </g>
+
+  <!-- Glowing Fireflies / Story Magic floating everywhere -->
+  <g fill="#aaffaa" opacity="0.6" filter="url(#glow)">
+    <circle cx="350" cy="350" r="3" />
+    <circle cx="450" cy="200" r="4" />
+    <circle cx="300" cy="280" r="2" />
+    <circle cx="500" cy="350" r="3" />
+    <circle cx="200" cy="200" r="4" />
+    <circle cx="650" cy="200" r="2" />
+    <circle cx="150" cy="400" r="3" />
+    <circle cx="550" cy="450" r="2" />
+  </g>
+
+  <!-- 5. Foreground Framing (The ground) -->
+  <path d="M 0 600 L 0 550 Q 200 520 400 540 Q 600 560 800 520 L 800 600 Z" fill="#050302" />
+
+  <!-- 6. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE ENDLESS TALE
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Storytelling is eternal. The stories of the ancestors have no end, for they live in the hearts of those who tell them."
+  </text>
+
+</svg>
 <p>There was once a storyteller named Okonkwo who was famous throughout the land. He could tell any story. He could make the children laugh. He could make the elders weep. He could make the spirits listen.</p>
 <p>But Okonkwo had a problem. He had told all the stories he knew. He had told the story of the tortoise. He had told the story of the sky. He had told the story of the sun and the moon. He had told every story his grandmother had told him. And now he had nothing new to say.</p>
 <p>The children came to him. They said: "Tell us a story. Tell us a story that never ends."</p>
@@ -1706,6 +1906,243 @@
 <p><strong>The Lesson:</strong> Storytelling is eternal. The stories of the ancestors have no end, for they live in the hearts of those who tell them.</p>
 
 <h1 id="story10">10. Agu's Wives</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Deep Forest Night Background -->
+    <linearGradient id="forestNight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050a08" />
+      <stop offset="50%" stop-color="#0a1c14" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Moonlight Ray -->
+    <linearGradient id="moonlight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#d4e6ff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#d4e6ff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Agu's Golden Aura -->
+    <radialGradient id="aguGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#ff8c00" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Python's Wisdom Glow -->
+    <radialGradient id="pythonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#008b8b" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Leopard Body Gradient -->
+    <linearGradient id="leopardBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c040" />
+      <stop offset="50%" stop-color="#c88a20" />
+      <stop offset="100%" stop-color="#6b3a00" />
+    </linearGradient>
+
+    <!-- Python Body Gradient -->
+    <linearGradient id="pythonBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffcc" />
+      <stop offset="40%" stop-color="#006b5a" />
+      <stop offset="100%" stop-color="#001a14" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Forest -->
+  <rect width="800" height="600" fill="url(#forestNight)" />
+
+  <!-- Giant Ancient Trees (Framing the throne room) -->
+  <g fill="#020504">
+    <path d="M -20 600 L 30 50 L 80 600 Z" />
+    <path d="M 720 600 L 770 80 L 820 600 Z" />
+    <path d="M 100 600 L 130 150 L 160 600 Z" opacity="0.6" />
+    <path d="M 650 600 L 680 200 L 710 600 Z" opacity="0.6" />
+  </g>
+
+  <!-- Moonlight Ray (Illuminating the center) -->
+  <polygon points="300,0 500,0 600,600 200,600" fill="url(#moonlight)" />
+
+  <!-- 2. The Throne / Sacred Stone -->
+  <g>
+    <!-- Base of the throne -->
+    <path d="M 280 520 L 300 380 L 500 380 L 520 520 Z" fill="#1a1410" stroke="#2a1f18" stroke-width="4" />
+    <!-- Throne back -->
+    <path d="M 300 380 L 320 250 L 480 250 L 500 380 Z" fill="#1f1812" stroke="#2a1f18" stroke-width="4" />
+    <!-- Mystical carvings on the throne -->
+    <path d="M 330 350 L 470 350 M 340 300 L 460 300" stroke="#3a2a1a" stroke-width="3" fill="none" />
+    <circle cx="400" cy="325" r="15" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.4" />
+  </g>
+
+  <!-- 3. Agu the Leopard (The King) -->
+  <g>
+    <!-- Agu's Aura -->
+    <circle cx="400" cy="320" r="180" fill="url(#aguGlow)" filter="url(#softGlow)" />
+
+    <!-- Agu's Body (Seated majestically) -->
+    <path d="M 330 420 Q 320 350 360 320 Q 400 290 440 320 Q 480 350 470 420 Q 460 480 400 500 Q 340 480 330 420 Z" fill="url(#leopardBody)" />
+    
+    <!-- Leopard Spots (Rosettes) -->
+    <g fill="#2a1a0a" opacity="0.8">
+      <circle cx="360" cy="350" r="6" />
+      <circle cx="390" cy="340" r="7" />
+      <circle cx="420" cy="350" r="6" />
+      <circle cx="440" cy="380" r="5" />
+      <circle cx="350" cy="390" r="5" />
+      <circle cx="380" cy="400" r="8" />
+      <circle cx="410" cy="410" r="6" />
+      <circle cx="440" cy="420" r="5" />
+      <circle cx="370" cy="440" r="6" />
+      <circle cx="400" cy="460" r="5" />
+    </g>
+
+    <!-- Agu's Head -->
+    <ellipse cx="400" cy="280" rx="40" ry="35" fill="url(#leopardBody)" />
+    
+    <!-- Ears -->
+    <path d="M 365 255 Q 350 230 370 240 Q 375 250 375 260 Z" fill="#c88a20" />
+    <path d="M 435 255 Q 450 230 430 240 Q 425 250 425 260 Z" fill="#c88a20" />
+
+    <!-- Face details (Eyes, Nose, Whiskers) -->
+    <ellipse cx="385" cy="275" rx="6" ry="4" fill="#0a0505" />
+    <ellipse cx="415" cy="275" rx="6" ry="4" fill="#0a0505" />
+    <circle cx="385" cy="275" r="2" fill="#ffd700" />
+    <circle cx="415" cy="275" r="2" fill="#ffd700" />
+    <path d="M 395 290 L 405 290 L 400 295 Z" fill="#0a0505" />
+    <!-- Whiskers -->
+    <path d="M 380 295 L 350 290 M 380 300 L 350 305 M 420 295 L 450 290 M 420 300 L 450 305" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.5" />
+
+    <!-- Crown / Chieftain Beads -->
+    <path d="M 360 255 Q 400 230 440 255 L 445 270 Q 400 250 355 270 Z" fill="#ffd700" />
+    <circle cx="370" cy="260" r="4" fill="#ff3300" />
+    <circle cx="400" cy="250" r="5" fill="#ff3300" />
+    <circle cx="430" cy="260" r="4" fill="#ff3300" />
+
+    <!-- Agu's Tail (Wrapping around the throne) -->
+    <path d="M 330 480 Q 280 520 300 560 Q 320 580 350 560" stroke="url(#leopardBody)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <!-- Tail spots -->
+    <circle cx="310" cy="530" r="4" fill="#2a1a0a" />
+    <circle cx="320" cy="550" r="4" fill="#2a1a0a" />
+    <circle cx="340" cy="565" r="3" fill="#2a1a0a" />
+  </g>
+
+  <!-- 4. The Python (The Wise Wife) -->
+  <g>
+    <!-- Python's Aura -->
+    <circle cx="530" cy="400" r="120" fill="url(#pythonGlow)" filter="url(#softGlow)" />
+
+    <!-- Python's Body (Coiled next to the throne) -->
+    <path d="M 500 520 Q 580 520 580 460 Q 580 400 520 400 Q 460 400 460 460 Q 460 500 520 500 Q 560 500 560 460" 
+          stroke="url(#pythonBody)" stroke-width="25" fill="none" stroke-linecap="round" />
+    
+    <!-- Python's Head (Raised, looking at Agu) -->
+    <path d="M 520 400 Q 500 350 480 330 Q 470 320 490 310 Q 510 300 520 320 Q 530 350 520 400 Z" fill="#006b5a" />
+    
+    <!-- Python's Eyes (Glowing with wisdom) -->
+    <g filter="url(#glow)">
+      <ellipse cx="490" cy="320" rx="5" ry="3" fill="#00ffcc" />
+      <ellipse cx="505" cy="325" rx="5" ry="3" fill="#00ffcc" />
+      <circle cx="490" cy="320" r="1.5" fill="#000000" />
+      <circle cx="505" cy="325" r="1.5" fill="#000000" />
+    </g>
+
+    <!-- Python's Tongue -->
+    <path d="M 480 330 L 460 335 L 455 340 M 460 335 L 455 330" stroke="#ff3300" stroke-width="2" fill="none" />
+
+    <!-- Sacred / Wisdom Symbols around the Python -->
+    <g fill="#00ffcc" opacity="0.6" filter="url(#glow)">
+      <circle cx="560" cy="340" r="3" />
+      <circle cx="580" cy="380" r="2" />
+      <circle cx="550" cy="440" r="4" />
+      <circle cx="600" cy="420" r="2" />
+    </g>
+  </g>
+
+  <!-- 5. The Antelope & The Gazelle (The Jealous Wives) -->
+  <g>
+    <!-- Shadowy area for the jealous wives -->
+    <path d="M 0 450 Q 150 400 250 450 L 250 600 L 0 600 Z" fill="#050302" opacity="0.6" />
+
+    <!-- The Antelope (First Wife - Gentle, not beautiful) -->
+    <g fill="#4a3018">
+      <!-- Body -->
+      <path d="M 80 520 Q 70 460 100 430 Q 130 400 150 430 Q 170 460 160 520 Z" />
+      <!-- Head -->
+      <ellipse cx="120" cy="410" rx="15" ry="20" transform="rotate(-10 120 410)" />
+      <!-- Ears -->
+      <path d="M 110 395 Q 100 380 115 385 Z" fill="#3a2010" />
+      <path d="M 130 395 Q 140 380 135 385 Z" fill="#3a2010" />
+      <!-- Small Horns -->
+      <path d="M 115 390 Q 110 360 120 350" stroke="#2a1a0a" stroke-width="3" fill="none" />
+      <path d="M 125 390 Q 130 360 120 350" stroke="#2a1a0a" stroke-width="3" fill="none" />
+      <!-- Holding a calabash (cooking pot) -->
+      <ellipse cx="150" cy="480" rx="20" ry="15" fill="#3a2010" />
+      <path d="M 140 470 Q 150 450 160 470" stroke="#3a2010" stroke-width="4" fill="none" />
+      <!-- Legs -->
+      <path d="M 100 520 L 95 570 M 115 520 L 110 570 M 140 520 L 145 570 M 155 520 L 160 570" stroke="#4a3018" stroke-width="8" fill="none" stroke-linecap="round" />
+      <!-- Eye (Looking towards Python) -->
+      <circle cx="128" cy="408" r="2" fill="#ffd700" />
+    </g>
+
+    <!-- The Gazelle (Second Wife - Beautiful, not clever) -->
+    <g fill="#c8a070">
+      <!-- Body (Slim and elegant) -->
+      <path d="M 200 520 Q 190 450 220 420 Q 250 390 270 420 Q 290 450 280 520 Z" />
+      <!-- Head -->
+      <ellipse cx="240" cy="400" rx="12" ry="18" transform="rotate(-15 240 400)" />
+      <!-- Large Ears -->
+      <path d="M 230 385 Q 220 360 235 370 Z" fill="#b08050" />
+      <path d="M 250 385 Q 260 360 245 370 Z" fill="#b08050" />
+      <!-- Elegant Horns -->
+      <path d="M 235 380 Q 225 340 240 320" stroke="#8a6030" stroke-width="3" fill="none" />
+      <path d="M 245 380 Q 255 340 240 320" stroke="#8a6030" stroke-width="3" fill="none" />
+      <!-- Flower Adornment in Hair -->
+      <circle cx="235" cy="385" r="5" fill="#ff6699" />
+      <circle cx="235" cy="385" r="2" fill="#ffd700" />
+      <!-- Legs -->
+      <path d="M 220 520 L 215 570 M 235 520 L 230 570 M 260 520 L 265 570 M 275 520 L 280 570" stroke="#c8a070" stroke-width="6" fill="none" stroke-linecap="round" />
+      <!-- Eye (Looking towards Python) -->
+      <circle cx="245" cy="398" r="2" fill="#ffd700" />
+    </g>
+
+    <!-- Jealous Whispers (Visualized as dark, swirling lines between them) -->
+    <g stroke="#2a0a0a" stroke-width="2" fill="none" opacity="0.6" filter="url(#glow)">
+      <path d="M 150 430 Q 180 410 200 420" />
+      <path d="M 160 440 Q 190 420 210 430" />
+      <path d="M 170 450 Q 200 430 220 440" />
+    </g>
+
+    <!-- Envious Aura (Subtle dark red glow around the wives) -->
+    <circle cx="180" cy="450" r="100" fill="#4a0000" opacity="0.1" filter="url(#softGlow)" />
+  </g>
+
+  <!-- 6. Foreground Ground -->
+  <path d="M 0 600 L 0 550 Q 200 520 400 540 Q 600 560 800 520 L 800 600 Z" fill="#050302" />
+
+  <!-- 7. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    AGU'S WIVES
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Wisdom is the greatest of all gifts. Do not be deceived by beauty or flattery; the one who speaks truth is the true treasure."
+  </text>
+
+</svg>
 <p>The Leopard, Agu, was the king of the forest. He was strong. He was handsome. He was feared. And he had many wives.</p>
 <p>His first wife was the Antelope. She was gentle and kind. She kept his home clean. She cooked his food. She bore him children. But she was not beautiful. Agu looked at her and saw only her dull coat and her timid eyes.</p>
 <p>His second wife was the Gazelle. She was graceful and swift. She danced for him at night. She sang songs of the forest. She was beautiful. But she was not clever. Agu looked at her and saw only her beauty, and he grew bored.</p>
