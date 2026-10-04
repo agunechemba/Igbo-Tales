@@ -969,6 +969,167 @@
 <p><strong>The Lesson:</strong> The gifts of the spirit world are not for the taking. Honor the boundaries, or the waters will rise.</p>
 
 <h1 id="story5">5. Omalido: The Girl Who Did Not Listen</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Sky Gradient -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b10" />
+      <stop offset="60%" stop-color="#141824" />
+      <stop offset="100%" stop-color="#1a1f2e" />
+    </linearGradient>
+
+    <!-- Mysterious Fire Glow -->
+    <radialGradient id="fireGlow" cx="65%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#ff7b00" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#cc3300" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Warm Light on Omalido -->
+    <linearGradient id="omalidoLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e67e22" />
+      <stop offset="50%" stop-color="#d35400" />
+      <stop offset="100%" stop-color="#4a1a00" />
+    </linearGradient>
+
+    <!-- Demon Shadow Gradient -->
+    <linearGradient id="demonShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a0000" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+
+    <!-- Glowing Eyes Filter -->
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Fire Filter for Soft Glow -->
+    <filter id="fireBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#nightSky)" />
+
+  <!-- 2. The Dark Forest (Layered for depth) -->
+  <!-- Back layer of trees -->
+  <g fill="#0d111a">
+    <path d="M 50 600 L 80 200 L 110 600 Z" />
+    <path d="M 200 600 L 230 150 L 260 600 Z" />
+    <path d="M 600 600 L 630 180 L 660 600 Z" />
+    <path d="M 720 600 L 750 220 L 780 600 Z" />
+  </g>
+  
+  <!-- Mid layer of trees with twisted branches -->
+  <g fill="#111724">
+    <path d="M 0 600 L 30 250 L 60 600 Z" />
+    <path d="M 120 600 L 150 300 Q 130 200 80 150 Q 120 220 170 300 L 180 600 Z" />
+    <path d="M 680 600 L 710 250 Q 750 150 780 100 Q 730 200 740 250 L 760 600 Z" />
+  </g>
+
+  <!-- Front layer of trees framing the scene -->
+  <g fill="#080b12">
+    <path d="M -20 600 L 20 100 L 60 600 Z" />
+    <path d="M 100 600 L 130 350 L 160 600 Z" />
+    <path d="M 700 600 L 730 320 L 760 600 Z" />
+    <path d="M 760 600 L 790 150 L 820 600 Z" />
+  </g>
+
+  <!-- 3. The Tempting Fire & Glowing Clearing -->
+  <!-- Fire Glow Background -->
+  <rect width="800" height="600" fill="url(#fireGlow)" />
+
+  <!-- The Fire -->
+  <g filter="url(#fireBlur)">
+    <path d="M 520 500 Q 530 450 550 420 Q 540 460 560 500 Q 570 460 580 430 Q 590 470 600 500 Z" fill="#ff7b00" opacity="0.8" />
+    <path d="M 530 500 Q 540 460 555 440 Q 550 470 565 500 Q 575 470 585 450 Q 590 480 595 500 Z" fill="#ffb347" />
+    <path d="M 540 500 Q 550 470 560 460 Q 565 480 570 500 Q 575 480 580 470 Q 585 490 585 500 Z" fill="#ffe066" />
+  </g>
+
+  <!-- Sparks / Fireflies -->
+  <g fill="#ffb347" opacity="0.6">
+    <circle cx="500" cy="450" r="2" />
+    <circle cx="560" cy="400" r="3" />
+    <circle cx="620" cy="460" r="2" />
+    <circle cx="580" cy="380" r="1.5" />
+    <circle cx="480" cy="480" r="2.5" />
+  </g>
+
+  <!-- 4. The Demon and the Pot -->
+  <g>
+    <!-- The Cooking Pot -->
+    <path d="M 620 480 Q 650 480 670 480 Q 680 520 660 540 L 630 540 Q 610 520 620 480 Z" fill="#0a0505" stroke="#1a0000" stroke-width="2" />
+    <!-- Steam from Pot -->
+    <path d="M 640 470 Q 630 450 645 430 Q 660 410 650 390" stroke="#555" stroke-width="4" fill="none" opacity="0.2" filter="url(#fireBlur)" />
+    <path d="M 655 475 Q 670 455 655 435 Q 640 415 655 395" stroke="#555" stroke-width="3" fill="none" opacity="0.2" filter="url(#fireBlur)" />
+
+    <!-- The Demon Silhouette (Looming in the shadows behind the fire) -->
+    <path d="M 680 500 Q 670 400 700 300 Q 720 200 750 150 Q 730 250 740 350 Q 760 450 770 520 Z" fill="url(#demonShadow)" />
+    
+    <!-- Demon's Head (No Nose, just smooth and terrifying) -->
+    <ellipse cx="710" cy="220" rx="35" ry="45" fill="#0a0000" />
+    
+    <!-- Demon's Horns -->
+    <path d="M 685 190 Q 670 140 690 110 Q 695 140 700 180 Z" fill="#0a0000" />
+    <path d="M 730 185 Q 750 130 740 100 Q 735 140 725 180 Z" fill="#0a0000" />
+
+    <!-- Demon's Eyes (Burning Coals) -->
+    <g filter="url(#eyeGlow)">
+      <ellipse cx="695" cy="210" rx="6" ry="4" fill="#ff3300" />
+      <ellipse cx="725" cy="210" rx="6" ry="4" fill="#ff3300" />
+      <!-- Eye highlights -->
+      <ellipse cx="694" cy="209" rx="2" ry="1" fill="#ffff00" />
+      <ellipse cx="724" cy="209" rx="2" ry="1" fill="#ffff00" />
+    </g>
+
+    <!-- Demon's Spindly Arm reaching towards the pot -->
+    <path d="M 680 320 Q 660 380 650 430 Q 645 440 640 430" stroke="#0a0000" stroke-width="8" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 5. Omalido (The Girl Who Did Not Listen) -->
+  <g>
+    <!-- Omalido's Body (Silhouette with warm rim light from the fire) -->
+    <path d="M 220 520 Q 210 460 230 420 Q 240 390 250 420 Q 270 460 260 520 Z" fill="url(#omalidoLight)" />
+    
+    <!-- Omalido's Head -->
+    <ellipse cx="240" cy="380" rx="18" ry="22" fill="url(#omalidoLight)" />
+    
+    <!-- Omalido's Hair (Traditional African style) -->
+    <path d="M 220 380 Q 210 350 240 350 Q 270 350 260 380 Q 265 360 240 360 Q 215 360 220 380 Z" fill="#0a0505" />
+    
+    <!-- Omalido's Arm reaching out towards the music/fire -->
+    <path d="M 245 430 Q 280 420 320 400" stroke="url(#omalidoLight)" stroke-width="8" fill="none" stroke-linecap="round" />
+    
+    <!-- Omalido's Legs (Walking into the forest) -->
+    <path d="M 235 520 L 230 570" stroke="url(#omalidoLight)" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 250 520 L 260 570" stroke="url(#omalidoLight)" stroke-width="10" fill="none" stroke-linecap="round" />
+
+    <!-- The Sweet Music (Visual representation) -->
+    <g fill="#ffb347" opacity="0.7" filter="url(#fireBlur)">
+      <text x="360" y="380" font-family="Georgia, serif" font-size="24" fill="#ffb347">♪</text>
+      <text x="400" y="340" font-family="Georgia, serif" font-size="20" fill="#ffb347">♫</text>
+      <text x="440" y="390" font-family="Georgia, serif" font-size="18" fill="#ffb347">♪</text>
+      <text x="480" y="350" font-family="Georgia, serif" font-size="22" fill="#ffb347">♫</text>
+    </g>
+  </g>
+
+  <!-- 6. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.6" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#e0cfa5" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    OMALIDO: THE GIRL WHO DID NOT LISTEN
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#ffb347" text-anchor="middle" opacity="0.7" letter-spacing="1">
+    "Disobedience leads to destruction. The warnings of your parents are shields, not chains."
+  </text>
+
+</svg>
 <p>Omalido was the most beautiful girl in the village. Her skin was the color of fresh palm oil, and her smile was like the sun breaking through the clouds. But Omalido was also the most stubborn. She did not listen to her parents. She did not heed the warnings of the elders. She did what she wanted, when she wanted, without thought of consequence.</p>
 <p>Her parents warned her: "Do not go into the forest alone. Do not speak to strangers. Do not follow the fire that burns at night." But Omalido laughed at their warnings. She said: "I am not a child. I know what I am doing."</p>
 <p>One evening, Omalido saw a fire burning at the edge of the forest. It was a small fire, warm and inviting. She heard music—soft, sweet music, like the singing of birds. She followed the fire. She followed the music. She walked into the forest, deeper and deeper, until she came to a clearing.</p>
@@ -979,6 +1140,181 @@
 <p><strong>The Lesson:</strong> Disobedience leads to destruction. The warnings of your parents are shields, not chains.</p>
 
 <h1 id="story6">6. Inyiama: The Rebel Girl</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Famine Sky Gradient (Dusty and Dry) -->
+    <linearGradient id="famineSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a3b32" />
+      <stop offset="50%" stop-color="#7a5c4a" />
+      <stop offset="100%" stop-color="#b88a6a" />
+    </linearGradient>
+
+    <!-- Lush Forest Gradient -->
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a1c14" />
+      <stop offset="50%" stop-color="#143a24" />
+      <stop offset="100%" stop-color="#0a1c14" />
+    </linearGradient>
+
+    <!-- Golden Forest Light -->
+    <radialGradient id="forestLight" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#ffb347" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Inyiama's Earthy Tones -->
+    <linearGradient id="inyiamaSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5a33" />
+      <stop offset="50%" stop-color="#5a3a22" />
+      <stop offset="100%" stop-color="#2a1a0a" />
+    </linearGradient>
+
+    <!-- Glowing Aura for Magical Elements -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background: The Dying Village -->
+  <rect width="800" height="600" fill="url(#famineSky)" />
+
+  <!-- Barren Ground -->
+  <path d="M 0 400 Q 200 380 400 420 Q 600 450 800 400 L 800 600 L 0 600 Z" fill="#3a2a1a" />
+  
+  <!-- Distant Huts (Silhouettes) -->
+  <g fill="#1a120a" opacity="0.7">
+    <path d="M 100 420 L 120 370 L 140 420 Z" />
+    <rect x="110" y="420" width="20" height="30" />
+    <path d="M 250 430 L 270 380 L 290 430 Z" />
+    <rect x="260" y="430" width="20" height="30" />
+    <path d="M 680 410 L 700 360 L 720 410 Z" />
+    <rect x="690" y="410" width="20" height="30" />
+  </g>
+
+  <!-- Starving Figures (Bent over) -->
+  <g fill="#1a120a" opacity="0.5">
+    <path d="M 330 450 Q 320 430 340 430 Q 350 430 345 450 Z" />
+    <path d="M 360 460 Q 350 440 370 440 Q 380 440 375 460 Z" />
+  </g>
+
+  <!-- 2. The Magical Forest (Left and Right Foreground) -->
+  <!-- Left Forest Edge -->
+  <path d="M 0 0 L 200 0 Q 180 200 220 400 Q 240 500 200 600 L 0 600 Z" fill="url(#forestGrad)" />
+  
+  <!-- Right Forest Edge -->
+  <path d="M 800 0 L 600 0 Q 620 200 580 400 Q 560 500 600 600 L 800 600 Z" fill="url(#forestGrad)" />
+
+  <!-- Forest Canopy Overhang -->
+  <g fill="#0a1c14">
+    <circle cx="50" cy="50" r="80" />
+    <circle cx="180" cy="80" r="100" />
+    <circle cx="750" cy="40" r="90" />
+    <circle cx="620" cy="100" r="80" />
+  </g>
+
+  <!-- Lush Leaves (Overlay) -->
+  <g fill="#1e4d2b" opacity="0.8">
+    <circle cx="100" cy="100" r="60" />
+    <circle cx="200" cy="150" r="70" />
+    <circle cx="700" cy="120" r="60" />
+    <circle cx="600" cy="180" r="70" />
+  </g>
+
+  <!-- Mystical Light Rays from the Forest -->
+  <polygon points="0,0 150,0 400,600 100,600" fill="url(#forestLight)" />
+  <polygon points="800,0 650,0 400,600 700,600" fill="url(#forestLight)" opacity="0.5" />
+
+  <!-- 3. Inyiama (The Rebel Girl) -->
+  <g>
+    <!-- Inyiama's Aura -->
+    <circle cx="400" cy="380" r="120" fill="#ffd700" opacity="0.1" filter="url(#glow)" />
+
+    <!-- Inyiama's Body (Standing tall and defiant) -->
+    <path d="M 360 520 Q 340 450 370 400 Q 400 360 430 400 Q 460 450 440 520 Z" fill="url(#inyiamaSkin)" />
+    
+    <!-- Inyiama's Head -->
+    <ellipse cx="400" cy="340" rx="22" ry="28" fill="url(#inyiamaSkin)" />
+    
+    <!-- Inyiama's Hair (Natural, wild, adorned with forest elements) -->
+    <path d="M 370 340 Q 360 300 400 290 Q 440 300 430 340 Q 440 310 400 300 Q 360 310 370 340 Z" fill="#1a0a05" />
+    <path d="M 380 300 Q 390 280 400 290 Q 410 280 420 300" fill="#1a0a05" />
+    
+    <!-- Forest Adornments in Hair (Leaves/Feathers) -->
+    <path d="M 375 310 Q 360 290 370 280 Q 380 290 380 305 Z" fill="#3a7d44" />
+    <path d="M 420 305 Q 440 280 430 270 Q 420 285 415 300 Z" fill="#3a7d44" />
+
+    <!-- Inyiama's Arms (Holding the harvest) -->
+    <!-- Left Arm -->
+    <path d="M 370 410 Q 340 440 330 480" stroke="url(#inyiamaSkin)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <!-- Right Arm -->
+    <path d="M 430 410 Q 460 440 470 480" stroke="url(#inyiamaSkin)" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- The Harvest (Wild Yams and Roots) -->
+    <g>
+      <!-- Yam 1 -->
+      <ellipse cx="330" cy="490" rx="20" ry="35" transform="rotate(-20 330 490)" fill="#6b4423" stroke="#3a2010" stroke-width="2" />
+      <!-- Yam 2 -->
+      <ellipse cx="370" cy="510" rx="18" ry="30" transform="rotate(15 370 510)" fill="#5c3a1a" stroke="#3a2010" stroke-width="2" />
+      <!-- Yam 3 -->
+      <ellipse cx="430" cy="505" rx="22" ry="38" transform="rotate(-10 430 505)" fill="#7a4e28" stroke="#3a2010" stroke-width="2" />
+      <!-- Yam 4 -->
+      <ellipse cx="470" cy="490" rx="15" ry="25" transform="rotate(25 470 490)" fill="#6b4423" stroke="#3a2010" stroke-width="2" />
+      
+      <!-- Leaves attached to yams -->
+      <path d="M 330 460 Q 320 440 340 430 Q 345 445 330 460 Z" fill="#3a7d44" />
+      <path d="M 430 470 Q 440 450 420 440 Q 415 455 430 470 Z" fill="#3a7d44" />
+    </g>
+
+    <!-- Inyiama's Legs (Grounded and strong) -->
+    <path d="M 380 520 L 370 580" stroke="url(#inyiamaSkin)" stroke-width="14" fill="none" stroke-linecap="round" />
+    <path d="M 420 520 L 430 580" stroke="url(#inyiamaSkin)" stroke-width="14" fill="none" stroke-linecap="round" />
+
+    <!-- The Language of the Birds (Golden Birds flying around her) -->
+    <g fill="#ffd700" filter="url(#glow)">
+      <!-- Bird 1 -->
+      <path d="M 280 320 Q 290 310 300 320 Q 290 315 280 320 Z" />
+      <path d="M 300 320 Q 310 310 320 320 Q 310 315 300 320 Z" />
+      <!-- Bird 2 -->
+      <path d="M 500 280 Q 510 270 520 280 Q 510 275 500 280 Z" />
+      <path d="M 520 280 Q 530 270 540 280 Q 530 275 520 280 Z" />
+      <!-- Bird 3 -->
+      <path d="M 340 250 Q 350 240 360 250 Q 350 245 340 250 Z" />
+      <path d="M 360 250 Q 370 240 380 250 Q 370 245 360 250 Z" />
+    </g>
+
+    <!-- A Bird perched on her shoulder -->
+    <g fill="#ffd700" filter="url(#glow)">
+      <path d="M 435 390 Q 445 380 455 390 Q 445 385 435 390 Z" />
+      <path d="M 455 390 Q 465 380 475 390 Q 465 385 455 390 Z" />
+      <path d="M 455 390 L 450 400 L 460 400 Z" /> <!-- Tail -->
+    </g>
+
+    <!-- Magical Forest Dust / Fireflies around her -->
+    <g fill="#aaffaa" opacity="0.6" filter="url(#glow)">
+      <circle cx="310" cy="380" r="3" />
+      <circle cx="350" cy="450" r="4" />
+      <circle cx="460" cy="420" r="3" />
+      <circle cx="490" cy="360" r="4" />
+      <circle cx="380" cy="280" r="2" />
+      <circle cx="420" cy="520" r="3" />
+    </g>
+  </g>
+
+  <!-- 4. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.7" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    INYIAMA: THE REBEL GIRL
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "The rebel can be the savior. Do not dismiss those who refuse to follow, for they may find new paths."
+  </text>
+
+</svg>
+      
 <p>Inyiama was not like the other girls of her village. She did not want to marry the man her father had chosen for her. She did not want to spend her days in the compound, cooking and cleaning and bearing children. She wanted to see the world. She wanted to learn the secrets of the forest. She wanted to be free.</p>
 <p>Her father beat her. He locked her in the hut. He threatened to sell her to a man from a distant village. But Inyiama would not yield. She said: "I am not a goat to be traded. I am a woman. I have a mind. I have a spirit. I will not be owned."</p>
 <p>One night, she escaped. She ran into the forest. She lived among the animals. She learned their ways. She learned the language of the birds and the secrets of the trees.</p>
@@ -988,6 +1324,172 @@
 <p><strong>The Lesson:</strong> The rebel can be the savior. Do not dismiss those who refuse to follow, for they may be the ones who find new paths.</p>
 
 <h1 id="story7">7. Osa's Mother</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Forest Gradient -->
+    <linearGradient id="nightForest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050a14" />
+      <stop offset="40%" stop-color="#0a1c2e" />
+      <stop offset="100%" stop-color="#0f2b1f" />
+    </linearGradient>
+
+    <!-- Moonlight Ray -->
+    <linearGradient id="moonlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4e6ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#d4e6ff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Ethereal Glow for the Mother -->
+    <radialGradient id="motherGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#ff8c00" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ghost Osa Gradient -->
+    <linearGradient id="ghostOsa" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00ffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Mother Antelope Body Gradient -->
+    <linearGradient id="motherBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a2312" />
+      <stop offset="50%" stop-color="#5a3a22" />
+      <stop offset="100%" stop-color="#1a0f0a" />
+    </linearGradient>
+
+    <!-- Glowing Tears Filter -->
+    <filter id="tearGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Soft Blur for Background -->
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Forest -->
+  <rect width="800" height="600" fill="url(#nightForest)" />
+
+  <!-- Distant Trees (Silhouettes) -->
+  <g fill="#0a121e" opacity="0.6">
+    <path d="M 50 600 L 80 200 L 110 600 Z" />
+    <path d="M 200 600 L 230 150 L 260 600 Z" />
+    <path d="M 650 600 L 680 180 L 710 600 Z" />
+    <path d="M 750 600 L 780 250 L 810 600 Z" />
+  </g>
+
+  <!-- Midground Trees -->
+  <g fill="#050a14">
+    <path d="M 0 600 L 30 250 L 60 600 Z" />
+    <path d="M 120 600 L 150 300 L 180 600 Z" />
+    <path d="M 700 600 L 730 280 L 760 600 Z" />
+  </g>
+
+  <!-- 2. The Moonlight Ray (Illuminating the clearing) -->
+  <polygon points="200,0 500,0 600,600 100,600" fill="url(#moonlight)" />
+  
+  <!-- The Moon (Subtle) -->
+  <circle cx="350" cy="80" r="40" fill="#d4e6ff" opacity="0.15" filter="url(#softBlur)" />
+
+  <!-- 3. The Ghostly Spirit of Osa (Running freely in the light) -->
+  <g opacity="0.4" filter="url(#softBlur)">
+    <!-- Osa's Body (Leaping) -->
+    <path d="M 450 250 Q 470 220 490 230 Q 510 240 520 220 Q 530 200 540 210 L 550 240 Q 530 260 510 270 L 480 280 Q 460 270 450 250 Z" fill="url(#ghostOsa)" />
+    <!-- Osa's Head -->
+    <ellipse cx="535" cy="200" rx="12" ry="18" transform="rotate(30 535 200)" fill="#ffffff" opacity="0.8" />
+    <!-- Osa's Legs (Mid-run) -->
+    <path d="M 470 275 L 460 310 M 485 280 L 480 315 M 510 270 L 515 305 M 525 260 L 535 290" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.6" stroke-linecap="round" />
+    <!-- Osa's Horns -->
+    <path d="M 540 190 Q 550 170 560 175 M 535 185 Q 540 165 550 165" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- 4. The Ground and the Tragic Spot -->
+  <path d="M 0 450 Q 200 430 400 440 Q 600 450 800 430 L 800 600 L 0 600 Z" fill="#08140d" />
+  
+  <!-- The Blood Stain (Symbolic, subtle) -->
+  <ellipse cx="350" cy="480" rx="40" ry="15" fill="#4a0000" opacity="0.4" filter="url(#softBlur)" />
+  <ellipse cx="350" cy="480" rx="20" ry="8" fill="#8b0000" opacity="0.3" filter="url(#softBlur)" />
+
+  <!-- 5. The Mother Antelope (Central Figure of Grief) -->
+  <g>
+    <!-- Ethereal Aura around the Mother -->
+    <circle cx="350" cy="400" r="150" fill="url(#motherGlow)" />
+
+    <!-- Mother's Body (Bowed in sorrow) -->
+    <path d="M 280 520 Q 270 440 300 400 Q 320 370 350 380 Q 380 390 390 430 Q 400 480 380 520 Z" fill="url(#motherBody)" />
+    
+    <!-- Mother's Neck and Head (Bowed down towards the spot) -->
+    <path d="M 320 390 Q 300 350 310 320 Q 320 300 340 310 Q 350 330 350 380 Z" fill="url(#motherBody)" />
+    
+    <!-- Mother's Head (Lowered) -->
+    <ellipse cx="330" cy="310" rx="15" ry="22" transform="rotate(-30 330 310)" fill="#3a2312" />
+    
+    <!-- Mother's Ears (Drooping) -->
+    <path d="M 320 295 Q 300 290 295 305 Q 310 310 320 305 Z" fill="#2a1a0a" />
+    <path d="M 340 295 Q 360 290 365 305 Q 350 310 340 305 Z" fill="#2a1a0a" />
+
+    <!-- Mother's Horns -->
+    <path d="M 325 290 Q 310 250 320 230 Q 330 250 335 285 Z" fill="#1a0f0a" />
+    <path d="M 335 290 Q 325 240 340 220 Q 345 250 345 285 Z" fill="#1a0f0a" />
+
+    <!-- Mother's Legs (Standing still) -->
+    <path d="M 310 520 L 300 580 M 330 520 L 330 580 M 360 520 L 370 580 M 380 520 L 390 580" stroke="url(#motherBody)" stroke-width="10" fill="none" stroke-linecap="round" />
+
+    <!-- Mother's Tail (Drooping) -->
+    <path d="M 280 460 Q 260 470 260 490" stroke="#3a2312" stroke-width="6" fill="none" stroke-linecap="round" />
+
+    <!-- The Weeping Tears (Glowing, turning into fireflies) -->
+    <g filter="url(#tearGlow)">
+      <!-- Tears falling from the eye -->
+      <circle cx="322" cy="315" r="3" fill="#00ffff" opacity="0.9" />
+      <circle cx="320" cy="330" r="2.5" fill="#00ffff" opacity="0.8" />
+      <circle cx="318" cy="345" r="2" fill="#00ffff" opacity="0.7" />
+      <circle cx="315" cy="360" r="1.5" fill="#00ffff" opacity="0.6" />
+      <circle cx="312" cy="375" r="1" fill="#00ffff" opacity="0.5" />
+
+      <!-- Tears hitting the ground and transforming -->
+      <circle cx="310" cy="400" r="4" fill="#ffd700" opacity="0.8" />
+      <circle cx="300" cy="420" r="3" fill="#ffd700" opacity="0.7" />
+      <circle cx="290" cy="440" r="5" fill="#ffd700" opacity="0.6" />
+      <circle cx="280" cy="460" r="2" fill="#ffd700" opacity="0.5" />
+      <circle cx="270" cy="480" r="4" fill="#ffd700" opacity="0.4" />
+      <circle cx="260" cy="500" r="3" fill="#ffd700" opacity="0.3" />
+
+      <!-- Fireflies of eternal love floating upwards -->
+      <circle cx="250" cy="450" r="2" fill="#aaffaa" opacity="0.6" />
+      <circle cx="280" cy="410" r="3" fill="#aaffaa" opacity="0.5" />
+      <circle cx="310" cy="380" r="2" fill="#aaffaa" opacity="0.7" />
+      <circle cx="340" cy="420" r="2.5" fill="#aaffaa" opacity="0.4" />
+      <circle cx="260" cy="390" r="1.5" fill="#aaffaa" opacity="0.6" />
+    </g>
+  </g>
+
+  <!-- 6. Foreground Framing Trees (Adding depth) -->
+  <g fill="#020508">
+    <path d="M -10 600 L 20 100 L 50 600 Z" />
+    <path d="M 760 600 L 780 50 L 810 600 Z" />
+    <!-- Fallen leaves / debris -->
+    <path d="M 100 550 Q 120 540 130 550 Q 120 560 100 550 Z" fill="#0a1c14" />
+    <path d="M 680 520 Q 700 510 710 520 Q 700 530 680 520 Z" fill="#0a1c14" />
+  </g>
+
+  <!-- 7. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    OSA'S MOTHER
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Disobedience brings sorrow, and a mother's love is eternal."
+  </text>
+
+</svg>
 <p>Osa was a young antelope who lived in the forest. She was swift and beautiful, but she was also foolish. She did not listen to her mother. She did not heed the warnings of the older animals. She wandered far from the herd. She played at the edge of the clearing where the hunters came.</p>
 <p>Her mother warned her: "Do not go to the clearing. The hunters come there. They will kill you." But Osa laughed. She said: "I am too fast. No hunter can catch me."</p>
 <p>One day, Osa went to the clearing. She saw a hunter. She ran. But the hunter was not alone. There were others, waiting in the shadows. They caught her. They killed her.</p>
@@ -997,6 +1499,191 @@
 <p><strong>The Lesson:</strong> Listen to those who came before you. Disobedience brings sorrow, and a mother's love is eternal.</p>
 
 <h1 id="story8">8. The Spirit Woman</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Sky / Forest Background -->
+    <linearGradient id="nightBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050308" />
+      <stop offset="50%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#0a1410" />
+    </linearGradient>
+
+    <!-- Ethereal Spirit Light (Radial) -->
+    <radialGradient id="spiritLight" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="20%" stop-color="#00ffff" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#8a2be2" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Mortal Fire Glow -->
+    <radialGradient id="fireGlow" cx="20%" cy="80%" r="40%">
+      <stop offset="0%" stop-color="#ff7b00" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#cc3300" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Spirit Woman Body Gradient (Light and Shadow) -->
+    <linearGradient id="spiritBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#00ffff" />
+      <stop offset="70%" stop-color="#4b0082" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+
+    <!-- Ndubuisi Silhouette Gradient -->
+    <linearGradient id="mortalBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0f0a" />
+      <stop offset="100%" stop-color="#050302" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Shattering Effect Filter -->
+    <filter id="shatter" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#nightBg)" />
+
+  <!-- 2. The Deep Forest (Ancient Trees) -->
+  <g fill="#08050a">
+    <path d="M 0 600 L 50 100 L 100 600 Z" />
+    <path d="M 150 600 L 200 50 L 250 600 Z" />
+    <path d="M 700 600 L 750 80 L 800 600 Z" />
+    <path d="M 600 600 L 650 150 L 700 600 Z" />
+  </g>
+
+  <!-- Mystical Mist in the Forest -->
+  <path d="M 0 450 Q 200 400 400 450 T 800 420 L 800 600 L 0 600 Z" fill="#0e0a1c" opacity="0.6" filter="url(#glow)" />
+
+  <!-- 3. Spirit Realm Background Elements -->
+  <!-- Other Spirits (Faint Silhouettes) -->
+  <g fill="#ffffff" opacity="0.05" filter="url(#intenseGlow)">
+    <circle cx="650" cy="200" r="30" />
+    <circle cx="720" cy="250" r="20" />
+    <circle cx="580" cy="150" r="40" />
+    <path d="M 650 230 Q 660 300 640 350 Q 680 300 650 230 Z" />
+    <path d="M 580 190 Q 590 260 570 300 Q 610 260 580 190 Z" />
+  </g>
+
+  <!-- Glowing Spirit Orbs / Fireflies -->
+  <g fill="#00ffff" opacity="0.6" filter="url(#glow)">
+    <circle cx="500" cy="300" r="4" />
+    <circle cx="550" cy="250" r="3" />
+    <circle cx="680" cy="350" r="5" />
+    <circle cx="620" cy="400" r="2" />
+    <circle cx="450" cy="200" r="4" />
+    <circle cx="750" cy="300" r="3" />
+  </g>
+
+  <!-- 4. The Mortal World (Left Side) -->
+  <!-- The Fire (Dying Embers) -->
+  <g filter="url(#glow)">
+    <path d="M 120 520 Q 130 480 140 520 Q 150 490 160 520 Z" fill="#ff7b00" opacity="0.6" />
+    <path d="M 130 520 Q 135 500 140 520 Z" fill="#ffe066" opacity="0.8" />
+    <circle cx="140" cy="520" r="5" fill="#ff3300" />
+  </g>
+  
+  <!-- Ndubuisi (Kneeling in despair) -->
+  <g fill="url(#mortalBody)">
+    <!-- Body -->
+    <path d="M 100 580 Q 90 520 120 480 Q 140 450 160 480 Q 180 520 170 580 Z" />
+    <!-- Head (Bowed) -->
+    <ellipse cx="140" cy="450" rx="18" ry="22" fill="#1a0f0a" />
+    <!-- Arm reaching out desperately -->
+    <path d="M 150 490 Q 200 480 250 470" stroke="#1a0f0a" stroke-width="12" fill="none" stroke-linecap="round" />
+    <!-- Hand (Fingers spread) -->
+    <path d="M 250 470 L 260 460 M 250 470 L 265 470 M 250 470 L 260 480" stroke="#1a0f0a" stroke-width="4" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 5. The Broken Covenant (The Center) -->
+  <!-- A glowing, shattered thread between them -->
+  <g filter="url(#glow)">
+    <path d="M 260 470 Q 350 400 420 380" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.4" stroke-dasharray="10 5" />
+    <path d="M 430 380 Q 480 370 520 360" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.2" stroke-dasharray="5 15" />
+    <path d="M 530 360 Q 560 350 580 340" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.1" stroke-dasharray="2 20" />
+    <!-- Shattered fragments -->
+    <polygon points="420,380 430,370 440,385 425,390" fill="#ffd700" opacity="0.6" />
+    <polygon points="450,375 460,365 465,380 455,385" fill="#ffd700" opacity="0.4" />
+    <polygon points="480,370 490,360 495,375 485,380" fill="#ffd700" opacity="0.3" />
+  </g>
+
+  <!-- 6. The Spirit Woman (The Focal Point) -->
+  <g>
+    <!-- Ethereal Aura -->
+    <circle cx="520" cy="300" r="180" fill="url(#spiritLight)" filter="url(#intenseGlow)" />
+
+    <!-- The Spirit Woman's Form (Transforming) -->
+    <!-- Lower body dissolving into shadow and light -->
+    <path d="M 450 500 Q 480 400 520 380 Q 560 400 590 500 Q 550 550 520 580 Q 490 550 450 500 Z" fill="url(#spiritBody)" opacity="0.8" filter="url(#glow)" />
+    
+    <!-- Ethereal wisps/dress flowing -->
+    <path d="M 450 480 Q 400 520 420 560 Q 460 540 470 500 Z" fill="#00ffff" opacity="0.3" filter="url(#glow)" />
+    <path d="M 590 480 Q 640 520 620 560 Q 580 540 570 500 Z" fill="#8a2be2" opacity="0.3" filter="url(#glow)" />
+
+    <!-- Upper Body (Beautiful, solidifying) -->
+    <path d="M 480 380 Q 470 300 520 280 Q 570 300 560 380 Q 540 400 520 400 Q 500 400 480 380 Z" fill="url(#spiritBody)" />
+    
+    <!-- Neck and Head -->
+    <path d="M 505 285 L 505 260 L 535 260 L 535 285 Z" fill="#ffffff" opacity="0.9" />
+    <ellipse cx="520" cy="240" rx="22" ry="28" fill="#ffffff" opacity="0.95" />
+
+    <!-- Hair (Flowing like mist, transforming into light) -->
+    <path d="M 500 230 Q 480 200 490 170 Q 510 190 520 220 Z" fill="#00ffff" opacity="0.6" filter="url(#glow)" />
+    <path d="M 540 230 Q 560 190 570 160 Q 550 180 530 210 Z" fill="#8a2be2" opacity="0.6" filter="url(#glow)" />
+    <path d="M 510 215 Q 520 180 530 150 Q 535 180 525 215 Z" fill="#ffffff" opacity="0.8" filter="url(#glow)" />
+
+    <!-- Her Eyes (Empty, but glowing) -->
+    <g filter="url(#intenseGlow)">
+      <ellipse cx="510" cy="235" rx="5" ry="3" fill="#ffffff" />
+      <ellipse cx="530" cy="235" rx="5" ry="3" fill="#ffffff" />
+      <!-- Empty pupils staring into Ndubuisi's soul -->
+      <circle cx="510" cy="235" r="2" fill="#000000" />
+      <circle cx="530" cy="235" r="2" fill="#000000" />
+    </g>
+
+    <!-- The Single Tear (For the broken promise) -->
+    <g filter="url(#glow)">
+      <circle cx="530" cy="245" r="3" fill="#00ffff" opacity="0.9" />
+      <circle cx="531" cy="255" r="2" fill="#00ffff" opacity="0.6" />
+      <circle cx="532" cy="265" r="1" fill="#00ffff" opacity="0.3" />
+    </g>
+
+    <!-- Her Hands (Reaching out, but pulling away) -->
+    <path d="M 485 320 Q 450 350 440 380" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.7" />
+    <path d="M 555 320 Q 580 340 590 360" stroke="#8a2be2" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.7" filter="url(#glow)" />
+  </g>
+
+  <!-- 7. Foreground Silhouette (Framing the tragedy) -->
+  <path d="M 0 600 L 0 550 Q 100 520 200 560 L 300 600 Z" fill="#020104" />
+  <path d="M 800 600 L 800 520 Q 700 540 600 570 L 500 600 Z" fill="#020104" />
+
+  <!-- 8. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#00ffff" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE SPIRIT WOMAN
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Some secrets are not for humans to know. Trust is a covenant, and breaking it destroys the bond."
+  </text>
+
+</svg>
 <p>There was once a man named Ndubuisi who was lonely. He had no wife. He had no children. He lived alone in a compound at the edge of the village. He worked all day in his farm, and at night, he sat by his fire and watched the shadows dance on the walls.</p>
 <p>One night, a woman came to him. She was beautiful beyond description. Her skin was the color of moonlight. Her eyes were deep as the river. She said: "I have watched you. I have seen your loneliness. I will be your wife."</p>
 <p>Ndubuisi was amazed. He asked: "Where do you come from? Who are your people?"</p>
