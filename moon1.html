@@ -804,6 +804,204 @@
 <p><strong>The Lesson:</strong> Some things are not meant to be taken. The wealth of the spirit world is not the wealth of men.</p>
 
 <h1 id="story4">4. The Ogbono Tree of Asaba</h1>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { background-color: #0a0a0a; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: 'Georgia', serif; }
+    canvas { box-shadow: 0 0 30px rgba(0, 50, 100, 0.5); border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<canvas id="storyCanvas" width="600" height="400"></canvas>
+
+<script>
+  const canvas = document.getElementById('storyCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // --- 1. NIGHT SKY ---
+  const skyGrad = ctx.createLinearGradient(0, 0, 0, 200);
+  skyGrad.addColorStop(0, '#0d1321');
+  skyGrad.addColorStop(1, '#2b1d42');
+  ctx.fillStyle = skyGrad;
+  ctx.fillRect(0, 0, 600, 200);
+
+  // Moon
+  ctx.beginPath();
+  ctx.arc(500, 70, 30, 0, Math.PI * 2);
+  ctx.fillStyle = '#fdf4dc';
+  ctx.shadowColor = '#fdf4dc';
+  ctx.shadowBlur = 20;
+  ctx.fill();
+  ctx.shadowBlur = 0; // Reset shadow
+
+  // --- 2. THE RIVER (Niger) ---
+  const riverGrad = ctx.createLinearGradient(0, 200, 0, 400);
+  riverGrad.addColorStop(0, '#0b2e4a');
+  riverGrad.addColorStop(1, '#02111d');
+  ctx.fillStyle = riverGrad;
+  ctx.fillRect(0, 200, 600, 200);
+
+  // River waves
+  ctx.strokeStyle = 'rgba(100, 180, 255, 0.15)';
+  ctx.lineWidth = 2;
+  for (let i = 0; i < 5; i++) {
+    ctx.beginPath();
+    ctx.moveTo(0, 220 + i * 30);
+    ctx.bezierCurveTo(150, 210 + i * 30, 450, 230 + i * 30, 600, 220 + i * 30);
+    ctx.stroke();
+  }
+
+  // --- 3. THE WESTERN BANK (Asaba) ---
+  ctx.beginPath();
+  ctx.moveTo(0, 200);
+  ctx.lineTo(180, 200);
+  ctx.quadraticCurveTo(120, 300, 0, 400);
+  ctx.closePath();
+  
+  const bankGrad = ctx.createLinearGradient(0, 200, 0, 400);
+  bankGrad.addColorStop(0, '#1a2b1a');
+  bankGrad.addColorStop(1, '#0a110a');
+  ctx.fillStyle = bankGrad;
+  ctx.fill();
+
+  // --- 4. THE OGBONO TREE ---
+  // Tree Trunk (bending over the river)
+  ctx.beginPath();
+  ctx.moveTo(40, 200);
+  ctx.quadraticCurveTo(50, 100, 250, 80);
+  ctx.lineTo(260, 95);
+  ctx.quadraticCurveTo(70, 130, 80, 200);
+  ctx.closePath();
+
+  const trunkGrad = ctx.createLinearGradient(40, 100, 260, 100);
+  trunkGrad.addColorStop(0, '#3b2313');
+  trunkGrad.addColorStop(0.5, '#5a3a22');
+  trunkGrad.addColorStop(1, '#2a180d');
+  ctx.fillStyle = trunkGrad;
+  ctx.fill();
+
+  // Branches
+  ctx.beginPath();
+  ctx.moveTo(150, 105);
+  ctx.quadraticCurveTo(200, 60, 300, 50);
+  ctx.lineTo(305, 60);
+  ctx.quadraticCurveTo(210, 75, 160, 115);
+  ctx.closePath();
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(220, 85);
+  ctx.quadraticCurveTo(280, 40, 380, 60);
+  ctx.lineTo(385, 70);
+  ctx.quadraticCurveTo(290, 55, 230, 95);
+  ctx.closePath();
+  ctx.fill();
+
+  // Leaves (Clusters)
+  ctx.fillStyle = '#1e4d1e';
+  const leafClusters = [
+    [300, 50, 40, 25], [360, 55, 45, 30], [250, 70, 35, 20],
+    [400, 70, 30, 20], [180, 80, 25, 15], [450, 80, 20, 15]
+  ];
+  
+  leafClusters.forEach(([x, y, rx, ry]) => {
+    ctx.beginPath();
+    ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2);
+    ctx.fill();
+    // Add a lighter green highlight
+    ctx.beginPath();
+    ctx.ellipse(x - 5, y - 5, rx * 0.7, ry * 0.7, 0, 0, Math.PI * 2);
+    ctx.fillStyle = '#2b6b2b';
+    ctx.fill();
+    ctx.fillStyle = '#1e4d1e'; // Reset
+  });
+
+  // --- 5. OGBONO FRUIT (Bush Mango) ---
+  // Hanging from tree
+  const fruitPositions = [
+    [280, 80], [320, 70], [350, 85], [260, 100], [400, 95], [220, 110]
+  ];
+  
+  fruitPositions.forEach(([x, y]) => {
+    // Stem
+    ctx.beginPath();
+    ctx.moveTo(x, y - 10);
+    ctx.lineTo(x, y);
+    ctx.strokeStyle = '#4a3b2a';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Fruit
+    ctx.beginPath();
+    ctx.arc(x, y + 5, 8, 0, Math.PI * 2);
+    ctx.fillStyle = '#e6a817'; // Golden orange
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(x - 2, y + 3, 3, 0, Math.PI * 2);
+    ctx.fillStyle = '#fcd15c'; // Highlight
+    ctx.fill();
+  });
+
+  // Floating in the river
+  const floatingFruit = [
+    [350, 250], [420, 280], [500, 230], [380, 320], [550, 300]
+  ];
+  
+  floatingFruit.forEach(([x, y]) => {
+    ctx.beginPath();
+    ctx.ellipse(x, y, 10, 6, 0.2, 0, Math.PI * 2);
+    ctx.fillStyle = '#c98a12';
+    ctx.fill();
+    // Reflection
+    ctx.beginPath();
+    ctx.ellipse(x, y + 10, 8, 4, 0.2, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(201, 138, 18, 0.3)';
+    ctx.fill();
+  });
+
+  // --- 6. THE RIVER GODDESS (Mystical Presence) ---
+  // A soft, ethereal glow rising from the water
+  const goddessGlow = ctx.createRadialGradient(400, 300, 10, 400, 300, 150);
+  goddessGlow.addColorStop(0, 'rgba(0, 255, 255, 0.15)');
+  goddessGlow.addColorStop(0.5, 'rgba(0, 150, 255, 0.05)');
+  goddessGlow.addColorStop(1, 'rgba(0, 0, 0, 0)');
+  ctx.fillStyle = goddessGlow;
+  ctx.fillRect(200, 200, 400, 200);
+
+  // Subtle glowing eyes in the water
+  ctx.beginPath();
+  ctx.arc(380, 290, 4, 0, Math.PI * 2);
+  ctx.arc(420, 290, 4, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(150, 255, 255, 0.6)';
+  ctx.shadowColor = '#00ffff';
+  ctx.shadowBlur = 15;
+  ctx.fill();
+  ctx.shadowBlur = 0;
+
+  // --- 7. TITLE & LESSON ---
+  ctx.textAlign = 'center';
+  
+  // Title
+  ctx.font = 'bold 28px Georgia, serif';
+  ctx.fillStyle = '#d4af37'; // Gold
+  ctx.shadowColor = 'rgba(0,0,0,0.8)';
+  ctx.shadowBlur = 5;
+  ctx.fillText('The Ogbono Tree of Asaba', 300, 40);
+
+  // Subtitle / Lesson hint
+  ctx.font = 'italic 14px Georgia, serif';
+  ctx.fillStyle = '#a0c4d4';
+  ctx.shadowBlur = 0;
+  ctx.fillText('"Honor the boundaries, or the waters will rise."', 300, 380);
+
+</script>
+
+</body>
+</html>
+
 <p>In the town of Asaba, on the western bank of the Niger, there was a tree that the people did not eat. It was the ogbono tree—the bush mango. Its fruit was sweet. Its seed was prized for soup. But the people of Asaba did not touch it.</p>
 <p>The elders said that the ogbono tree bent over the river. Its branches stretched across the water, and its roots reached deep into the bank. Whenever it shed its leaves, something mysterious happened. Whenever it dropped its fruit, the river would stir.</p>
 <p>Long ago, a woman named Nneka went to the river to fetch water. She saw the ogbono fruit floating on the surface. She gathered them. She took them home. She cracked the seeds and cooked them in her soup. The soup was the finest she had ever tasted.</p>
