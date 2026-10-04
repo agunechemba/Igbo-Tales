@@ -202,6 +202,228 @@
 <p><strong>The Lesson:</strong> Cunning may work for a time, but it always leads to punishment. Honesty is the best path.</p>
 
 <h1 id="story21">21. The Mushroom Baby</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <title>The Mushroom Baby</title>
+  <desc>An illustration of Inkang holding the mushroom baby in a forest clearing, surrounded by mushrooms and village huts.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7d9a0"/>
+      <stop offset="45%" stop-color="#cfe3b0"/>
+      <stop offset="100%" stop-color="#2d6a4f"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#fff5cc" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#f2c96d" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f2c96d" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f7d4a"/>
+      <stop offset="100%" stop-color="#1d3b2a"/>
+    </linearGradient>
+
+    <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a9d8f"/>
+      <stop offset="100%" stop-color="#145c55"/>
+    </linearGradient>
+
+    <linearGradient id="wrap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4a261"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="mushCap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7d774"/>
+      <stop offset="100%" stop-color="#d99a2b"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Sky and sunlight -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="400" cy="220" r="260" fill="url(#sunGlow)"/>
+
+  <!-- Distant forest -->
+  <g opacity="0.55">
+    <rect x="0" y="250" width="800" height="250" fill="#2d6a4f" opacity="0.35"/>
+    <circle cx="80" cy="280" r="70" fill="#1b4332"/>
+    <circle cx="160" cy="260" r="80" fill="#2d6a4f"/>
+    <circle cx="250" cy="290" r="65" fill="#1b4332"/>
+    <circle cx="620" cy="270" r="85" fill="#2d6a4f"/>
+    <circle cx="710" cy="250" r="75" fill="#1b4332"/>
+    <circle cx="760" cy="300" r="60" fill="#2d6a4f"/>
+
+    <rect x="70" y="300" width="20" height="180" fill="#5c3d2e"/>
+    <rect x="150" y="280" width="22" height="200" fill="#5c3d2e"/>
+    <rect x="240" y="310" width="18" height="170" fill="#5c3d2e"/>
+    <rect x="610" y="290" width="24" height="190" fill="#5c3d2e"/>
+    <rect x="700" y="270" width="20" height="210" fill="#5c3d2e"/>
+  </g>
+
+  <!-- Mid forest -->
+  <g opacity="0.8">
+    <circle cx="40" cy="330" r="90" fill="#1b4332"/>
+    <circle cx="120" cy="310" r="70" fill="#2d6a4f"/>
+    <circle cx="680" cy="320" r="95" fill="#1b4332"/>
+    <circle cx="760" cy="300" r="80" fill="#2d6a4f"/>
+  </g>
+
+  <!-- Village huts -->
+  <g opacity="0.75">
+    <path d="M100,430 L100,390 Q130,350 160,390 L160,430 Z" fill="#8a5a44"/>
+    <path d="M85,395 Q130,340 175,395 Q130,375 85,395 Z" fill="#d4a373"/>
+    <rect x="120" y="405" width="18" height="25" fill="#5c3d2e"/>
+
+    <path d="M660,420 L660,380 Q690,340 720,380 L720,420 Z" fill="#8a5a44"/>
+    <path d="M645,385 Q690,330 735,385 Q690,365 645,385 Z" fill="#d4a373"/>
+    <rect x="680" y="395" width="18" height="25" fill="#5c3d2e"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0,470 Q200,430 400,450 Q600,470 800,430 L800,600 L0,600 Z" fill="url(#ground)"/>
+  <path d="M0,500 Q200,470 400,490 Q600,510 800,470 L800,600 L0,600 Z" fill="#1d3b2a" opacity="0.6"/>
+
+  <!-- Grass tufts -->
+  <g stroke="#4caf50" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M40,520 Q45,500 50,520"/>
+    <path d="M50,525 Q58,505 66,525"/>
+    <path d="M720,510 Q725,490 730,510"/>
+    <path d="M735,515 Q742,495 750,515"/>
+  </g>
+
+  <!-- Glowing magic mushroom -->
+  <g filter="url(#glow)">
+    <rect x="95" y="440" width="18" height="70" rx="9" fill="#f5f0d8"/>
+    <path d="M70,450 Q104,390 138,450 Q104,465 70,450 Z" fill="url(#mushCap)" stroke="#b8791a" stroke-width="2"/>
+    <circle cx="95" cy="425" r="6" fill="#fff8dc"/>
+    <circle cx="115" cy="435" r="4" fill="#fff8dc"/>
+    <circle cx="80" cy="438" r="4" fill="#fff8dc"/>
+  </g>
+
+  <!-- Small ground mushrooms -->
+  <g>
+    <rect x="290" y="500" width="6" height="18" rx="3" fill="#f5f0d8"/>
+    <path d="M282,503 Q293,488 304,503 Z" fill="#e9b44c" stroke="#b8791a" stroke-width="1"/>
+
+    <rect x="520" y="495" width="6" height="20" rx="3" fill="#f5f0d8"/>
+    <path d="M512,498 Q523,482 534,498 Z" fill="#e9b44c" stroke="#b8791a" stroke-width="1"/>
+  </g>
+
+  <!-- Basket with mushrooms -->
+  <g>
+    <ellipse cx="220" cy="510" rx="70" ry="20" fill="#000" opacity="0.2"/>
+    <path d="M160,470 Q220,530 280,470 L270,430 Q220,455 170,430 Z" fill="#b07d4a" stroke="#7a4f2a" stroke-width="3"/>
+    <path d="M160,470 Q220,500 280,470" stroke="#7a4f2a" stroke-width="3" fill="none"/>
+    <path d="M180,430 Q220,410 260,430" stroke="#7a4f2a" stroke-width="4" fill="none"/>
+
+    <rect x="195" y="405" width="8" height="30" rx="4" fill="#f5f0d8"/>
+    <path d="M185,410 Q199,390 213,410 Z" fill="#e9b44c" stroke="#b8791a" stroke-width="1.5"/>
+
+    <rect x="225" y="400" width="8" height="35" rx="4" fill="#f5f0d8"/>
+    <path d="M215,405 Q229,382 243,405 Z" fill="#e9b44c" stroke="#b8791a" stroke-width="1.5"/>
+
+    <rect x="250" y="415" width="7" height="25" rx="3" fill="#f5f0d8"/>
+    <path d="M242,420 Q253,402 265,420 Z" fill="#e9b44c" stroke="#b8791a" stroke-width="1.5"/>
+  </g>
+
+  <!-- Inkang and the mushroom baby -->
+  <g id="woman-and-baby">
+    <!-- Shadow -->
+    <ellipse cx="400" cy="525" rx="120" ry="25" fill="#000" opacity="0.25"/>
+
+    <!-- Dress -->
+    <path d="M355,270 Q400,245 445,270 L480,515 Q400,540 320,515 Z" fill="url(#dress)" stroke="#0b3d38" stroke-width="2"/>
+    <path d="M360,340 Q400,360 440,340" stroke="#7ed6c4" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M350,390 Q400,410 450,390" stroke="#7ed6c4" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M340,440 Q400,460 460,440" stroke="#7ed6c4" stroke-width="3" fill="none" opacity="0.6"/>
+
+    <!-- Neck -->
+    <rect x="386" y="248" width="28" height="35" rx="12" fill="#6b3e26"/>
+
+    <!-- Head -->
+    <ellipse cx="400" cy="215" rx="42" ry="48" fill="#6b3e26"/>
+
+    <!-- Ears -->
+    <circle cx="358" cy="220" r="9" fill="#6b3e26"/>
+    <circle cx="442" cy="220" r="9" fill="#6b3e26"/>
+    <circle cx="358" cy="232" r="4" fill="#f4c430"/>
+    <circle cx="442" cy="232" r="4" fill="#f4c430"/>
+
+    <!-- Headwrap -->
+    <path d="M350,205 Q355,145 400,140 Q448,145 452,205 Q440,185 400,182 Q360,185 350,205 Z" fill="url(#wrap)" stroke="#a85d0a" stroke-width="2"/>
+    <path d="M350,205 Q370,195 400,195 Q430,195 452,205 Q440,215 400,215 Q360,215 350,205 Z" fill="#f4a261" opacity="0.7"/>
+    <path d="M445,160 Q475,150 480,175 Q465,180 450,175" fill="#f4a261" stroke="#a85d0a" stroke-width="2"/>
+
+    <!-- Face -->
+    <ellipse cx="382" cy="215" rx="4" ry="5" fill="#1a1a1a"/>
+    <ellipse cx="418" cy="215" rx="4" ry="5" fill="#1a1a1a"/>
+    <path d="M388,238 Q400,248 412,238" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M375,205 Q382,200 389,205" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+    <path d="M411,205 Q418,200 425,205" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+
+    <!-- Left arm supporting baby -->
+    <path d="M360,285 Q330,320 360,350 Q380,370 400,360" stroke="#6b3e26" stroke-width="22" fill="none" stroke-linecap="round"/>
+
+    <!-- Mushroom baby -->
+    <g id="baby">
+      <ellipse cx="400" cy="340" rx="45" ry="38" fill="#f7e7c6"/>
+      <circle cx="400" cy="305" r="28" fill="#f7e7c6"/>
+
+      <!-- Mushroom cap -->
+      <path d="M365,300 Q400,250 435,300 Q400,315 365,300 Z" fill="url(#mushCap)" stroke="#b8791a" stroke-width="2"/>
+      <circle cx="385" cy="280" r="4" fill="#fff8dc" opacity="0.9"/>
+      <circle cx="410" cy="272" r="3" fill="#fff8dc" opacity="0.9"/>
+      <circle cx="422" cy="288" r="3" fill="#fff8dc" opacity="0.9"/>
+
+      <!-- Baby face -->
+      <circle cx="390" cy="305" r="2.5" fill="#1a1a1a"/>
+      <circle cx="410" cy="305" r="2.5" fill="#1a1a1a"/>
+      <path d="M393,315 Q400,321 407,315" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- Baby arms -->
+      <path d="M370,340 Q350,345 360,360" stroke="#f7e7c6" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M430,340 Q450,345 440,360" stroke="#f7e7c6" stroke-width="10" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right arm over baby -->
+    <path d="M440,285 Q470,320 440,350 Q420,370 400,360" stroke="#6b3e26" stroke-width="22" fill="none" stroke-linecap="round"/>
+
+    <!-- Hands -->
+    <circle cx="360" cy="350" r="11" fill="#6b3e26"/>
+    <circle cx="440" cy="350" r="11" fill="#6b3e26"/>
+  </g>
+
+  <!-- Fireflies / ancestral spirits -->
+  <g fill="#fff8b0" opacity="0.8">
+    <circle cx="180" cy="220" r="3"/>
+    <circle cx="230" cy="180" r="2"/>
+    <circle cx="610" cy="200" r="3"/>
+    <circle cx="660" cy="250" r="2"/>
+    <circle cx="550" cy="160" r="2.5"/>
+  </g>
+
+  <!-- Text -->
+  <text x="400" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#fff8e7" filter="url(#shadow)">
+    The Mushroom Baby
+  </text>
+  <text x="400" y="570" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#fff8e7" filter="url(#shadow)">
+    Love makes a family.
+  </text>
+</svg>
 <p>In the land of the Ikom, there was a woman named Inkang who had no children. She was barren. She had been married for many years, but her womb remained closed. Her husband's family mocked her. Her co-wives laughed at her. She was alone in her sorrow.</p>
 <p>One day, Inkang went into the forest to gather mushrooms. She found a beautiful mushroom—large and white, with a golden cap. She picked it and put it in her basket. But as she walked home, she heard a sound. It was a baby crying.</p>
 <p>She looked in her basket. The mushroom had turned into a baby boy. He was small and round, with skin like the cap of a mushroom. He was crying.</p>
