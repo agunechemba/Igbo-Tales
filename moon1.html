@@ -804,203 +804,161 @@
 <p><strong>The Lesson:</strong> Some things are not meant to be taken. The wealth of the spirit world is not the wealth of men.</p>
 
 <h1 id="story4">4. The Ogbono Tree of Asaba</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Sky Gradient (Mystical Dusk) -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a0b2e" />
+      <stop offset="40%" stop-color="#4a2c4a" />
+      <stop offset="70%" stop-color="#8c4a5a" />
+      <stop offset="100%" stop-color="#d06a55" />
+    </linearGradient>
 
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body { background-color: #0a0a0a; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: 'Georgia', serif; }
-    canvas { box-shadow: 0 0 30px rgba(0, 50, 100, 0.5); border-radius: 8px; }
-  </style>
-</head>
-<body>
+    <!-- River Gradient -->
+    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f3057" />
+      <stop offset="50%" stop-color="#00587a" />
+      <stop offset="100%" stop-color="#00334e" />
+    </linearGradient>
 
-<canvas id="storyCanvas" width="600" height="400"></canvas>
+    <!-- Tree Trunk Gradient -->
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a0f0a" />
+      <stop offset="50%" stop-color="#3b2314" />
+      <stop offset="100%" stop-color="#1a0f0a" />
+    </linearGradient>
 
-<script>
-  const canvas = document.getElementById('storyCanvas');
-  const ctx = canvas.getContext('2d');
+    <!-- Mystical Glow behind the tree -->
+    <radialGradient id="mysticGlow" cx="30%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#ff8c00" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
 
-  // --- 1. NIGHT SKY ---
-  const skyGrad = ctx.createLinearGradient(0, 0, 0, 200);
-  skyGrad.addColorStop(0, '#0d1321');
-  skyGrad.addColorStop(1, '#2b1d42');
-  ctx.fillStyle = skyGrad;
-  ctx.fillRect(0, 0, 600, 200);
+    <!-- Ogbono Fruit Gradient -->
+    <radialGradient id="fruitGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffdf00" />
+      <stop offset="60%" stop-color="#e6a817" />
+      <stop offset="100%" stop-color="#8c4a00" />
+    </radialGradient>
 
-  // Moon
-  ctx.beginPath();
-  ctx.arc(500, 70, 30, 0, Math.PI * 2);
-  ctx.fillStyle = '#fdf4dc';
-  ctx.shadowColor = '#fdf4dc';
-  ctx.shadowBlur = 20;
-  ctx.fill();
-  ctx.shadowBlur = 0; // Reset shadow
+    <!-- Water Goddess Glow -->
+    <radialGradient id="goddessGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00ffff" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Filter for soft glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
 
-  // --- 2. THE RIVER (Niger) ---
-  const riverGrad = ctx.createLinearGradient(0, 200, 0, 400);
-  riverGrad.addColorStop(0, '#0b2e4a');
-  riverGrad.addColorStop(1, '#02111d');
-  ctx.fillStyle = riverGrad;
-  ctx.fillRect(0, 200, 600, 200);
+  <!-- 1. Sky Background -->
+  <rect width="800" height="600" fill="url(#skyGrad)" />
 
-  // River waves
-  ctx.strokeStyle = 'rgba(100, 180, 255, 0.15)';
-  ctx.lineWidth = 2;
-  for (let i = 0; i < 5; i++) {
-    ctx.beginPath();
-    ctx.moveTo(0, 220 + i * 30);
-    ctx.bezierCurveTo(150, 210 + i * 30, 450, 230 + i * 30, 600, 220 + i * 30);
-    ctx.stroke();
-  }
+  <!-- 2. Mystical Glow & Moon -->
+  <circle cx="250" cy="300" r="250" fill="url(#mysticGlow)" />
+  <circle cx="650" cy="150" r="40" fill="#ffeaa7" opacity="0.8" filter="url(#softGlow)" />
 
-  // --- 3. THE WESTERN BANK (Asaba) ---
-  ctx.beginPath();
-  ctx.moveTo(0, 200);
-  ctx.lineTo(180, 200);
-  ctx.quadraticCurveTo(120, 300, 0, 400);
-  ctx.closePath();
+  <!-- 3. The River Niger -->
+  <rect x="0" y="350" width="800" height="250" fill="url(#riverGrad)" />
+
+  <!-- 4. The Riverbank (Left Side) -->
+  <path d="M 0 350 Q 150 350 250 400 Q 350 450 300 600 L 0 600 Z" fill="#2b1b17" />
+  <path d="M 0 350 Q 150 350 250 400 Q 350 450 300 600 L 0 600 Z" fill="#3b2314" opacity="0.5" />
+
+  <!-- 5. The Ancient Ogbono Tree -->
+  <!-- Roots digging into the bank -->
+  <path d="M 120 450 Q 80 480 50 520 M 140 460 Q 120 500 100 550 M 160 470 Q 160 510 180 560" 
+        stroke="#1a0f0a" stroke-width="12" fill="none" stroke-linecap="round" />
   
-  const bankGrad = ctx.createLinearGradient(0, 200, 0, 400);
-  bankGrad.addColorStop(0, '#1a2b1a');
-  bankGrad.addColorStop(1, '#0a110a');
-  ctx.fillStyle = bankGrad;
-  ctx.fill();
-
-  // --- 4. THE OGBONO TREE ---
-  // Tree Trunk (bending over the river)
-  ctx.beginPath();
-  ctx.moveTo(40, 200);
-  ctx.quadraticCurveTo(50, 100, 250, 80);
-  ctx.lineTo(260, 95);
-  ctx.quadraticCurveTo(70, 130, 80, 200);
-  ctx.closePath();
-
-  const trunkGrad = ctx.createLinearGradient(40, 100, 260, 100);
-  trunkGrad.addColorStop(0, '#3b2313');
-  trunkGrad.addColorStop(0.5, '#5a3a22');
-  trunkGrad.addColorStop(1, '#2a180d');
-  ctx.fillStyle = trunkGrad;
-  ctx.fill();
-
-  // Branches
-  ctx.beginPath();
-  ctx.moveTo(150, 105);
-  ctx.quadraticCurveTo(200, 60, 300, 50);
-  ctx.lineTo(305, 60);
-  ctx.quadraticCurveTo(210, 75, 160, 115);
-  ctx.closePath();
-  ctx.fill();
-
-  ctx.beginPath();
-  ctx.moveTo(220, 85);
-  ctx.quadraticCurveTo(280, 40, 380, 60);
-  ctx.lineTo(385, 70);
-  ctx.quadraticCurveTo(290, 55, 230, 95);
-  ctx.closePath();
-  ctx.fill();
-
-  // Leaves (Clusters)
-  ctx.fillStyle = '#1e4d1e';
-  const leafClusters = [
-    [300, 50, 40, 25], [360, 55, 45, 30], [250, 70, 35, 20],
-    [400, 70, 30, 20], [180, 80, 25, 15], [450, 80, 20, 15]
-  ];
+  <!-- Main Trunk -->
+  <path d="M 100 450 Q 150 300 200 200 Q 220 150 250 100 L 180 120 Q 160 200 120 350 Q 90 420 100 450 Z" fill="url(#trunkGrad)" />
   
-  leafClusters.forEach(([x, y, rx, ry]) => {
-    ctx.beginPath();
-    ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2);
-    ctx.fill();
-    // Add a lighter green highlight
-    ctx.beginPath();
-    ctx.ellipse(x - 5, y - 5, rx * 0.7, ry * 0.7, 0, 0, Math.PI * 2);
-    ctx.fillStyle = '#2b6b2b';
-    ctx.fill();
-    ctx.fillStyle = '#1e4d1e'; // Reset
-  });
+  <!-- Branches stretching across the water -->
+  <path d="M 200 200 Q 350 150 500 250 Q 600 300 700 280" stroke="#2b1b17" stroke-width="15" fill="none" stroke-linecap="round" />
+  <path d="M 220 180 Q 300 100 450 120" stroke="#2b1b17" stroke-width="10" fill="none" stroke-linecap="round" />
+  <path d="M 300 220 Q 400 350 550 400" stroke="#2b1b17" stroke-width="8" fill="none" stroke-linecap="round" />
+  <path d="M 400 230 Q 500 200 650 220" stroke="#2b1b17" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M 500 250 Q 550 350 680 380" stroke="#2b1b17" stroke-width="5" fill="none" stroke-linecap="round" />
 
-  // --- 5. OGBONO FRUIT (Bush Mango) ---
-  // Hanging from tree
-  const fruitPositions = [
-    [280, 80], [320, 70], [350, 85], [260, 100], [400, 95], [220, 110]
-  ];
+  <!-- 6. Leaves and Ogbono Fruit -->
+  <!-- Leaf Clusters -->
+  <g fill="#1e4d2b" opacity="0.9">
+    <circle cx="350" cy="140" r="30" />
+    <circle cx="400" cy="130" r="40" />
+    <circle cx="480" cy="160" r="35" />
+    <circle cx="550" cy="230" r="45" />
+    <circle cx="620" cy="260" r="35" />
+    <circle cx="680" cy="270" r="25" />
+    <circle cx="450" cy="300" r="40" />
+    <circle cx="520" cy="350" r="30" />
+    <circle cx="600" cy="380" r="25" />
+  </g>
   
-  fruitPositions.forEach(([x, y]) => {
-    // Stem
-    ctx.beginPath();
-    ctx.moveTo(x, y - 10);
-    ctx.lineTo(x, y);
-    ctx.strokeStyle = '#4a3b2a';
-    ctx.lineWidth = 2;
-    ctx.stroke();
+  <!-- Lighter Leaves for depth -->
+  <g fill="#3a7d44" opacity="0.7">
+    <circle cx="370" cy="150" r="20" />
+    <circle cx="420" cy="140" r="25" />
+    <circle cx="500" cy="180" r="20" />
+    <circle cx="570" cy="240" r="30" />
+    <circle cx="650" cy="280" r="20" />
+    <circle cx="470" cy="310" r="25" />
+  </g>
 
-    // Fruit
-    ctx.beginPath();
-    ctx.arc(x, y + 5, 8, 0, Math.PI * 2);
-    ctx.fillStyle = '#e6a817'; // Golden orange
-    ctx.fill();
-    ctx.beginPath();
-    ctx.arc(x - 2, y + 3, 3, 0, Math.PI * 2);
-    ctx.fillStyle = '#fcd15c'; // Highlight
-    ctx.fill();
-  });
+  <!-- Ogbono Fruits (Bush Mango) -->
+  <g fill="url(#fruitGrad)" filter="url(#softGlow)">
+    <circle cx="360" cy="170" r="8" />
+    <circle cx="430" cy="160" r="9" />
+    <circle cx="510" cy="200" r="7" />
+    <circle cx="580" cy="260" r="10" />
+    <circle cx="640" cy="290" r="8" />
+    <circle cx="460" cy="330" r="9" />
+    <circle cx="530" cy="370" r="7" />
+    <circle cx="610" cy="400" r="8" />
+    <circle cx="680" cy="300" r="6" />
+    <circle cx="300" cy="200" r="9" />
+  </g>
 
-  // Floating in the river
-  const floatingFruit = [
-    [350, 250], [420, 280], [500, 230], [380, 320], [550, 300]
-  ];
+  <!-- 7. Nneka (Silhouette gathering fruit) -->
+  <g fill="#0a0a0a">
+    <!-- Body -->
+    <path d="M 180 480 Q 170 430 190 400 Q 200 380 210 400 Q 230 430 220 480 Z" />
+    <!-- Head -->
+    <circle cx="205" cy="370" r="15" />
+    <!-- Arms reaching for fruit -->
+    <path d="M 190 410 Q 250 380 280 350" stroke="#0a0a0a" stroke-width="8" fill="none" stroke-linecap="round" />
+    <path d="M 210 420 Q 260 410 300 380" stroke="#0a0a0a" stroke-width="8" fill="none" stroke-linecap="round" />
+    <!-- Basket/Calabash -->
+    <ellipse cx="290" cy="390" rx="15" ry="10" fill="#0a0a0a" />
+  </g>
+
+  <!-- 8. The Rising Waters & River Goddess -->
+  <!-- Mystical Goddess Face in the water -->
+  <g opacity="0.15" filter="url(#softGlow)">
+    <ellipse cx="550" cy="480" rx="60" ry="80" fill="url(#goddessGlow)" />
+    <path d="M 520 470 Q 550 460 580 470" stroke="#00ffff" stroke-width="3" fill="none" />
+    <path d="M 520 490 Q 550 500 580 490" stroke="#00ffff" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- Rising Flood Waters (Layered waves) -->
+  <path d="M 0 500 Q 100 480 200 510 T 400 500 T 600 520 T 800 500 L 800 600 L 0 600 Z" fill="#00587a" opacity="0.6" />
+  <path d="M 0 530 Q 150 510 300 540 T 600 530 T 800 550 L 800 600 L 0 600 Z" fill="#00334e" opacity="0.8" />
+  <path d="M 0 560 Q 200 540 400 570 T 800 560 L 800 600 L 0 600 Z" fill="#001a2e" opacity="0.9" />
+
+  <!-- 9. Title & Lesson (Embedded in SVG) -->
+  <text x="400" y="580" font-family="Georgia, serif" font-size="16" fill="#e0cfa5" text-anchor="middle" opacity="0.7" letter-spacing="2">
+    THE OGBONO TREE OF ASABA
+  </text>
   
-  floatingFruit.forEach(([x, y]) => {
-    ctx.beginPath();
-    ctx.ellipse(x, y, 10, 6, 0.2, 0, Math.PI * 2);
-    ctx.fillStyle = '#c98a12';
-    ctx.fill();
-    // Reflection
-    ctx.beginPath();
-    ctx.ellipse(x, y + 10, 8, 4, 0.2, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(201, 138, 18, 0.3)';
-    ctx.fill();
-  });
+  <!-- Subtle Warning Glow on the water -->
+  <text x="400" y="580" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.3" filter="url(#softGlow)" letter-spacing="2">
+    THE OGBONO TREE OF ASABA
+  </text>
 
-  // --- 6. THE RIVER GODDESS (Mystical Presence) ---
-  // A soft, ethereal glow rising from the water
-  const goddessGlow = ctx.createRadialGradient(400, 300, 10, 400, 300, 150);
-  goddessGlow.addColorStop(0, 'rgba(0, 255, 255, 0.15)');
-  goddessGlow.addColorStop(0.5, 'rgba(0, 150, 255, 0.05)');
-  goddessGlow.addColorStop(1, 'rgba(0, 0, 0, 0)');
-  ctx.fillStyle = goddessGlow;
-  ctx.fillRect(200, 200, 400, 200);
-
-  // Subtle glowing eyes in the water
-  ctx.beginPath();
-  ctx.arc(380, 290, 4, 0, Math.PI * 2);
-  ctx.arc(420, 290, 4, 0, Math.PI * 2);
-  ctx.fillStyle = 'rgba(150, 255, 255, 0.6)';
-  ctx.shadowColor = '#00ffff';
-  ctx.shadowBlur = 15;
-  ctx.fill();
-  ctx.shadowBlur = 0;
-
-  // --- 7. TITLE & LESSON ---
-  ctx.textAlign = 'center';
-  
-  // Title
-  ctx.font = 'bold 28px Georgia, serif';
-  ctx.fillStyle = '#d4af37'; // Gold
-  ctx.shadowColor = 'rgba(0,0,0,0.8)';
-  ctx.shadowBlur = 5;
-  ctx.fillText('The Ogbono Tree of Asaba', 300, 40);
-
-  // Subtitle / Lesson hint
-  ctx.font = 'italic 14px Georgia, serif';
-  ctx.fillStyle = '#a0c4d4';
-  ctx.shadowBlur = 0;
-  ctx.fillText('"Honor the boundaries, or the waters will rise."', 300, 380);
-
-</script>
-
-</body>
-</html>
+</svg>
 
 <p>In the town of Asaba, on the western bank of the Niger, there was a tree that the people did not eat. It was the ogbono tree—the bush mango. Its fruit was sweet. Its seed was prized for soup. But the people of Asaba did not touch it.</p>
 <p>The elders said that the ogbono tree bent over the river. Its branches stretched across the water, and its roots reached deep into the bank. Whenever it shed its leaves, something mysterious happened. Whenever it dropped its fruit, the river would stir.</p>
