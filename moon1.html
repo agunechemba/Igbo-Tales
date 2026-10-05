@@ -2153,12 +2153,658 @@
 <p><strong>The Lesson:</strong> Wisdom is the greatest of all gifts. Do not be deceived by beauty or flattery; the one who speaks truth is the true treasure.</p>
 
 <h1 id="story11">11. The Shapeshifting Crow</h1>
-<p>Udenolu was a large, black bird known as the king of the crows. He possessed a magical gift: he could shapeshift. He often transformed into a handsome young man to walk among the villagers, tricking them and stealing their food. The people grew suspicious of this beautiful stranger who was always followed by a large crow. They set a trap. When Udenolu was discovered, he tried to fly away, but the villagers caught him. His shame was so great that he never again returned to the village in human form. <strong>The Lesson:</strong> Deceit may bring temporary gain, but it always leads to a fall.</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Forest Background -->
+    <linearGradient id="nightBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050308" />
+      <stop offset="50%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Torch Light Glow (Left) -->
+    <radialGradient id="torchLeft" cx="15%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#ff7b00" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Torch Light Glow (Right) -->
+    <radialGradient id="torchRight" cx="85%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#ff7b00" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Udenolu's Shadow Crow Gradient -->
+    <linearGradient id="crowShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Magical Net Glow -->
+    <filter id="netGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Soft Glow for Atmosphere -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+
+    <!-- Udenolu's Skin Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c88a50" />
+      <stop offset="50%" stop-color="#8b5a33" />
+      <stop offset="100%" stop-color="#3a2010" />
+    </linearGradient>
+
+    <!-- Cloak Gradient -->
+    <linearGradient id="cloakGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a0a" />
+      <stop offset="50%" stop-color="#1a0f05" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#nightBg)" />
+
+  <!-- Distant Forest Silhouettes -->
+  <g fill="#0a0505">
+    <path d="M 0 400 L 50 150 L 100 400 Z" />
+    <path d="M 120 420 L 160 200 L 200 420 Z" />
+    <path d="M 600 420 L 640 180 L 680 420 Z" />
+    <path d="M 700 400 L 750 120 L 800 400 Z" />
+  </g>
+
+  <!-- 2. The Giant Crow Shadow (True Nature Revealed) -->
+  <g filter="url(#softGlow)">
+    <path d="M 400 500 Q 250 450 150 300 Q 200 250 300 300 Q 350 200 400 150 Q 450 200 500 300 Q 600 250 650 300 Q 550 450 400 500 Z" fill="url(#crowShadow)" opacity="0.5" />
+    <!-- Crow Head & Beak -->
+    <path d="M 350 200 Q 380 120 400 100 Q 420 120 450 200 Q 400 180 350 200 Z" fill="#000000" opacity="0.6" />
+    <path d="M 400 100 L 380 80 L 410 90 Z" fill="#000000" opacity="0.6" />
+    <!-- Crow Eyes (Glowing in the shadow) -->
+    <circle cx="385" cy="140" r="4" fill="#ff3300" opacity="0.4" filter="url(#netGlow)" />
+    <circle cx="415" cy="140" r="4" fill="#ff3300" opacity="0.4" filter="url(#netGlow)" />
+  </g>
+
+  <!-- 3. Ambient Torch Light -->
+  <rect width="800" height="600" fill="url(#torchLeft)" />
+  <rect width="800" height="600" fill="url(#torchRight)" />
+
+  <!-- 4. The Villagers (Torch-bearing Silhouettes) -->
+  <!-- Left Side Villagers -->
+  <g fill="#050302">
+    <!-- Villager 1 (Holding Torch) -->
+    <path d="M 80 520 Q 70 460 90 430 Q 110 400 120 430 Q 140 460 130 520 Z" />
+    <circle cx="105" cy="410" r="14" />
+    <!-- Arm raising torch -->
+    <path d="M 110 440 Q 130 410 150 380" stroke="#050302" stroke-width="8" fill="none" stroke-linecap="round" />
+    <!-- Torch -->
+    <path d="M 150 380 L 160 340" stroke="#3a2010" stroke-width="6" fill="none" />
+    <path d="M 145 340 Q 160 310 175 340 Q 160 350 145 340 Z" fill="#ff7b00" />
+    <path d="M 150 335 Q 160 320 170 335 Q 160 340 150 335 Z" fill="#ffd700" />
+
+    <!-- Villager 2 -->
+    <path d="M 180 530 Q 170 480 190 460 Q 210 440 220 460 Q 240 480 230 530 Z" />
+    <circle cx="205" cy="440" r="12" />
+    <!-- Spear -->
+    <path d="M 180 460 L 150 420" stroke="#3a2010" stroke-width="4" fill="none" />
+    <path d="M 150 420 L 140 410 L 155 415 Z" fill="#c0c0c0" />
+  </g>
+
+  <!-- Right Side Villagers -->
+  <g fill="#050302">
+    <!-- Villager 3 (Holding Torch) -->
+    <path d="M 720 520 Q 730 460 710 430 Q 690 400 680 430 Q 660 460 670 520 Z" />
+    <circle cx="695" cy="410" r="14" />
+    <!-- Arm raising torch -->
+    <path d="M 690 440 Q 670 410 650 380" stroke="#050302" stroke-width="8" fill="none" stroke-linecap="round" />
+    <!-- Torch -->
+    <path d="M 650 380 L 640 340" stroke="#3a2010" stroke-width="6" fill="none" />
+    <path d="M 645 340 Q 630 310 615 340 Q 630 350 645 340 Z" fill="#ff7b00" />
+    <path d="M 640 335 Q 630 320 620 335 Q 630 340 640 335 Z" fill="#ffd700" />
+
+    <!-- Villager 4 -->
+    <path d="M 620 530 Q 630 480 610 460 Q 590 440 580 460 Q 560 480 570 530 Z" />
+    <circle cx="595" cy="440" r="12" />
+    <!-- Pointing arm -->
+    <path d="M 590 460 Q 550 450 520 440" stroke="#050302" stroke-width="6" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 5. The Central Figure (Udenolu Caught in the Trap) -->
+  <g>
+    <!-- Spotlight on Udenolu -->
+    <circle cx="400" cy="400" r="150" fill="#ffb347" opacity="0.1" filter="url(#softGlow)" />
+
+    <!-- Udenolu's Body (Kneeling, defeated) -->
+    <path d="M 340 520 Q 330 450 360 400 Q 380 370 400 370 Q 420 370 440 400 Q 470 450 460 520 Z" fill="url(#cloakGrad)" />
+    
+    <!-- Arms bound behind back -->
+    <path d="M 360 420 Q 330 440 320 470" stroke="url(#skinGrad)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M 440 420 Q 470 440 480 470" stroke="url(#skinGrad)" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- Udenolu's Head (Thrown back in shame/defiance) -->
+    <ellipse cx="400" cy="340" rx="22" ry="28" fill="url(#skinGrad)" />
+    
+    <!-- Hair -->
+    <path d="M 378 340 Q 370 310 400 305 Q 430 310 422 340 Q 430 320 400 315 Q 370 320 378 340 Z" fill="#0a0502" />
+
+    <!-- Face Details (Struggling) -->
+    <ellipse cx="390" cy="335" rx="4" ry="3" fill="#0a0502" />
+    <ellipse cx="410" cy="335" rx="4" ry="3" fill="#0a0502" />
+    <path d="M 395 350 Q 400 355 405 350" stroke="#0a0502" stroke-width="2" fill="none" />
+    
+    <!-- The Transition (Feathers sprouting on his back/shoulders) -->
+    <g fill="#0a0502">
+      <path d="M 370 380 Q 350 370 340 390 Q 360 390 370 380 Z" />
+      <path d="M 430 380 Q 450 370 460 390 Q 440 390 430 380 Z" />
+      <path d="M 360 400 Q 340 395 330 410 Q 350 410 360 400 Z" />
+      <path d="M 440 400 Q 460 395 470 410 Q 450 410 440 400 Z" />
+    </g>
+
+    <!-- The Magical Trap (Glowing Net) -->
+    <g stroke="#00ffff" stroke-width="2" fill="none" opacity="0.8" filter="url(#netGlow)">
+      <!-- Net lines -->
+      <path d="M 320 380 Q 400 350 480 380" />
+      <path d="M 310 420 Q 400 390 490 420" />
+      <path d="M 310 460 Q 400 430 490 460" />
+      <path d="M 320 500 Q 400 470 480 500" />
+      
+      <path d="M 340 370 L 320 510" />
+      <path d="M 380 370 L 360 520" />
+      <path d="M 420 370 L 440 520" />
+      <path d="M 460 370 L 480 510" />
+    </g>
+
+    <!-- Falling Feathers (Signs of the broken disguise) -->
+    <g fill="#0a0502" opacity="0.8">
+      <path d="M 350 550 Q 360 540 370 550 Q 360 560 350 550 Z" />
+      <path d="M 430 540 Q 440 530 450 540 Q 440 550 430 540 Z" />
+      <path d="M 380 570 Q 390 560 400 570 Q 390 580 380 570 Z" />
+      <path d="M 410 560 Q 420 550 430 560 Q 420 570 410 560 Z" />
+    </g>
+  </g>
+
+  <!-- 6. Foreground Ground -->
+  <path d="M 0 600 L 0 550 Q 200 530 400 540 Q 600 550 800 530 L 800 600 Z" fill="#050302" />
+
+  <!-- 7. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE SHAPESHIFTING CROW
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Deceit may bring temporary gain, but it always leads to a fall."
+  </text>
+
+</svg>
+<p>Udenolu was a large, black bird known as the king of the crows. He possessed a magical gift: he could shapeshift. He often transformed into a handsome young man to walk among the villagers, tricking them and stealing their food. The people grew suspicious of this beautiful stranger who was always followed by a large crow. They set a trap. When Udenolu was discovered, he tried to fly away, but the villagers caught him. His shame was so great that he never again returned to the village in human form. 
+<br>
+<strong>The Lesson:</strong> Deceit may bring temporary gain, but it always leads to a fall.</p>
 
 <h1 id="story12">12. The Tortoise and the Cane Rat</h1>
-<p>The Tortoise and the Cane Rat were friends, but the Tortoise was lazy. When the other animals went on a hunting expedition, the Tortoise refused to join them, preferring to stay and eat the food they had stored. The Cane Rat shared his food with the Tortoise, but soon the Tortoise ate more than his share. When the hunters returned, they found their stores empty and the Tortoise fat and happy. The Cane Rat, ashamed and angry, banished the Tortoise from his home, and the two were never friends again. <strong>The Lesson:</strong> Laziness and greed will exhaust the patience of even the best of friends.</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Twilight Sky Gradient -->
+    <linearGradient id="twilightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0510" />
+      <stop offset="40%" stop-color="#1a1020" />
+      <stop offset="100%" stop-color="#2a1a10" />
+    </linearGradient>
+
+    <!-- Central Fire Glow -->
+    <radialGradient id="fireGlow" cx="50%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#ff7b00" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#cc3300" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Tortoise Shell Gradient -->
+    <linearGradient id="shellGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a5a2a" />
+      <stop offset="50%" stop-color="#2a3a10" />
+      <stop offset="100%" stop-color="#0a1a05" />
+    </linearGradient>
+
+    <!-- Cane Rat Fur Gradient -->
+    <linearGradient id="furGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b6a4a" />
+      <stop offset="50%" stop-color="#5a3a22" />
+      <stop offset="100%" stop-color="#2a1a0a" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#twilightSky)" />
+
+  <!-- Distant Trees and Huts -->
+  <g fill="#0a0505" opacity="0.8">
+    <path d="M 50 400 L 80 250 L 110 400 Z" />
+    <path d="M 150 420 L 170 300 L 190 420 Z" />
+    <path d="M 650 420 L 670 280 L 690 420 Z" />
+    <path d="M 720 400 L 750 220 L 780 400 Z" />
+    <!-- Huts -->
+    <path d="M 220 420 L 250 370 L 280 420 Z" />
+    <rect x="240" y="420" width="20" height="30" />
+    <path d="M 580 430 L 610 380 L 640 430 Z" />
+    <rect x="600" y="430" width="20" height="30" />
+  </g>
+
+  <!-- 2. The Returning Hunters (Background Silhouettes) -->
+  <g fill="#0a0505" opacity="0.6">
+    <!-- Hunter 1 -->
+    <path d="M 320 440 Q 310 400 325 380 Q 340 360 350 380 Q 365 400 355 440 Z" />
+    <circle cx="335" cy="365" r="10" />
+    <!-- Spear -->
+    <path d="M 340 380 L 360 320" stroke="#0a0505" stroke-width="3" fill="none" />
+    <path d="M 360 320 L 355 310 L 365 315 Z" fill="#0a0505" />
+
+    <!-- Hunter 2 -->
+    <path d="M 370 450 Q 360 420 375 400 Q 390 380 400 400 Q 415 420 405 450 Z" />
+    <circle cx="385" cy="385" r="8" />
+    <!-- Bow -->
+    <path d="M 380 400 Q 400 380 410 360" stroke="#0a0505" stroke-width="2" fill="none" />
+
+    <!-- Hunter 3 -->
+    <path d="M 420 440 Q 410 410 425 390 Q 440 370 450 390 Q 465 410 455 440 Z" />
+    <circle cx="435" cy="375" r="9" />
+    <!-- Carrying an animal (small silhouette) -->
+    <path d="M 440 390 Q 460 380 480 390 Q 470 400 450 400 Z" fill="#0a0505" />
+  </g>
+
+  <!-- 3. Fire and Ambient Light -->
+  <rect width="800" height="600" fill="url(#fireGlow)" />
+
+  <!-- The Fire (Center) -->
+  <g filter="url(#glow)">
+    <path d="M 370 520 Q 380 480 390 450 Q 400 490 410 520 Z" fill="#ff7b00" />
+    <path d="M 380 520 Q 390 490 395 470 Q 400 500 405 520 Z" fill="#ffd700" />
+    <path d="M 390 520 Q 395 500 400 490 Q 405 510 410 520 Z" fill="#ffffff" opacity="0.8" />
+    <!-- Logs -->
+    <path d="M 360 530 Q 390 510 420 530 Q 390 540 360 530 Z" fill="#1a0f0a" />
+    <path d="M 370 540 Q 400 520 430 540 Q 400 550 370 540 Z" fill="#2a1a0a" />
+  </g>
+
+  <!-- 4. The Empty Food Stores (The Theft) -->
+  <g>
+    <!-- Tipped over calabash -->
+    <ellipse cx="550" cy="510" rx="40" ry="25" fill="#3a2010" stroke="#1a0f05" stroke-width="3" />
+    <path d="M 550 485 Q 560 470 570 490" stroke="#1a0f05" stroke-width="4" fill="none" />
+    
+    <!-- Another empty calabash (upright but empty) -->
+    <path d="M 620 520 Q 600 480 620 460 Q 640 450 660 460 Q 680 480 660 520 Z" fill="#3a2010" stroke="#1a0f05" stroke-width="3" />
+    <ellipse cx="630" cy="460" rx="30" ry="10" fill="#1a0f05" />
+
+    <!-- Scattered crumbs / remnants -->
+    <g fill="#8b6a4a" opacity="0.6">
+      <circle cx="500" cy="530" r="3" />
+      <circle cx="510" cy="540" r="2" />
+      <circle cx="520" cy="525" r="4" />
+      <circle cx="480" cy="545" r="2" />
+      <circle cx="590" cy="535" r="3" />
+      <circle cx="600" cy="545" r="2" />
+      <circle cx="680" cy="530" r="3" />
+    </g>
+  </g>
+
+  <!-- 5. The Tortoise (The Guilty, Lazy Friend) -->
+  <g>
+    <!-- Shadow isolating the Tortoise -->
+    <ellipse cx="520" cy="520" rx="80" ry="40" fill="#000000" opacity="0.4" filter="url(#softGlow)" />
+
+    <!-- The Tortoise's Body (Very round, fat) -->
+    <ellipse cx="520" cy="490" rx="60" ry="40" fill="url(#shellGrad)" stroke="#0a1a05" stroke-width="4" />
+    
+    <!-- Shell Pattern -->
+    <path d="M 480 480 Q 520 450 560 480" stroke="#5a7a3a" stroke-width="3" fill="none" />
+    <path d="M 490 500 Q 520 480 550 500" stroke="#5a7a3a" stroke-width="3" fill="none" />
+    <path d="M 500 510 Q 520 490 540 510" stroke="#5a7a3a" stroke-width="2" fill="none" />
+    
+    <!-- Tortoise Head (Looking away in shame/indifference) -->
+    <path d="M 460 480 Q 440 470 435 485 Q 430 500 450 505 Z" fill="#4a5a2a" />
+    
+    <!-- Eye (Narrowed, avoiding eye contact) -->
+    <path d="M 445 485 L 440 483" stroke="#ffd700" stroke-width="2" fill="none" />
+    
+    <!-- Tortoise Legs (Stubby, resting) -->
+    <ellipse cx="480" cy="525" rx="15" ry="8" fill="#2a3a10" />
+    <ellipse cx="560" cy="525" rx="15" ry="8" fill="#2a3a10" />
+    
+    <!-- Tortoise Tail -->
+    <path d="M 580 500 Q 595 505 590 515" stroke="#2a3a10" stroke-width="6" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 6. The Cane Rat (The Betrayed, Angry Friend) -->
+  <g>
+    <!-- Cane Rat Aura (Anger/Righteousness) -->
+    <circle cx="300" cy="450" r="120" fill="#ff7b00" opacity="0.1" filter="url(#softGlow)" />
+
+    <!-- Cane Rat Body (Lean, standing upright) -->
+    <path d="M 280 520 Q 270 440 300 400 Q 320 380 330 400 Q 350 440 340 520 Z" fill="url(#furGrad)" />
+    
+    <!-- Cane Rat Head -->
+    <ellipse cx="310" cy="380" rx="18" ry="22" transform="rotate(-10 310 380)" fill="url(#furGrad)" />
+    
+    <!-- Ears (Large, rounded) -->
+    <circle cx="295" cy="360" r="10" fill="#8b6a4a" />
+    <circle cx="320" cy="358" r="10" fill="#8b6a4a" />
+    
+    <!-- Eyes (Wide, angry, betrayed) -->
+    <circle cx="305" cy="375" r="3" fill="#000000" />
+    <circle cx="318" cy="375" r="3" fill="#000000" />
+    <!-- Highlight in eyes -->
+    <circle cx="304" cy="374" r="1" fill="#ffffff" />
+    <circle cx="317" cy="374" r="1" fill="#ffffff" />
+    
+    <!-- Snout & Whiskers -->
+    <path d="M 300 390 Q 295 395 300 400 Q 310 395 320 400 Q 325 395 320 390 Z" fill="#2a1a0a" />
+    <path d="M 295 395 L 280 390 M 295 398 L 280 400 M 325 395 L 340 390 M 325 398 L 340 400" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.6" />
+
+    <!-- The Accusing Arm (Pointing at the Tortoise/Empty Stores) -->
+    <path d="M 320 430 Q 360 420 400 440" stroke="url(#furGrad)" stroke-width="10" fill="none" stroke-linecap="round" />
+    
+    <!-- Pointing Finger -->
+    <path d="M 400 440 L 410 438" stroke="url(#furGrad)" stroke-width="6" fill="none" stroke-linecap="round" />
+    
+    <!-- Glowing Accusation Point -->
+    <circle cx="410" cy="438" r="5" fill="#ff3300" opacity="0.8" filter="url(#glow)" />
+
+    <!-- Other Arm (Clenched in anger) -->
+    <path d="M 280 440 Q 260 460 270 480" stroke="url(#furGrad)" stroke-width="8" fill="none" stroke-linecap="round" />
+    <circle cx="270" cy="480" r="5" fill="#5a3a22" />
+
+    <!-- Legs (Grounded, tense) -->
+    <path d="M 295 520 L 290 570 M 310 520 L 310 570 M 325 520 L 330 570" stroke="url(#furGrad)" stroke-width="10" fill="none" stroke-linecap="round" />
+    
+    <!-- Cane Rat Tail (Long, drooping in sorrow) -->
+    <path d="M 340 500 Q 380 520 400 560 Q 410 580 390 590" stroke="#5a3a22" stroke-width="4" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 7. Symbolic Broken Bond (A glowing, broken thread between them) -->
+  <g filter="url(#glow)">
+    <path d="M 350 450 Q 400 420 450 460" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="5 5" />
+    <path d="M 450 460 Q 480 480 500 470" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.2" stroke-dasharray="2 10" />
+    <!-- Broken fragments -->
+    <polygon points="450,460 455,455 460,462 452,465" fill="#ffd700" opacity="0.6" />
+  </g>
+
+  <!-- 8. Foreground Ground -->
+  <path d="M 0 600 L 0 550 Q 200 530 400 540 Q 600 550 800 530 L 800 600 Z" fill="#050302" />
+
+  <!-- 9. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE TORTOISE AND THE CANE RAT
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Greed destroys friendship. Do not take advantage of generosity."
+  </text>
+
+</svg>
+<p>The Tortoise and the Cane Rat were friends, but the Tortoise was lazy. When the other animals went on a hunting expedition, the Tortoise refused to join them, preferring to stay and eat the food they had stored. The Cane Rat shared his food with the Tortoise, but soon the Tortoise ate more than his share. When the hunters returned, they found their stores empty and the Tortoise fat and happy. The Cane Rat, ashamed and angry, banished the Tortoise from his home, and the two were never friends again.
+<br>
+<strong>The Lesson:</strong> Laziness and greed will exhaust the patience of even the best of friends.</p>
 
 <h1 id="story13">13. The War of Heaven and Earth</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Cosmic Background (Sky to Earth) -->
+    <linearGradient id="cosmicBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="30%" stop-color="#0e0a1c" />
+      <stop offset="60%" stop-color="#1a120a" />
+      <stop offset="100%" stop-color="#0a1c14" />
+    </linearGradient>
+
+    <!-- Sky God's Ethereal Glow -->
+    <radialGradient id="skyGlow" cx="50%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#d4e6ff" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#4a6bff" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#1a1c4e" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Earth Goddess's Warm Glow -->
+    <radialGradient id="earthGlow" cx="50%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.5" />
+      <stop offset="40%" stop-color="#8b5a33" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Tree of Life Gradient -->
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a7d44" />
+      <stop offset="40%" stop-color="#1e4d2b" />
+      <stop offset="100%" stop-color="#0a1c14" />
+    </linearGradient>
+
+    <!-- Divine Rain Gradient -->
+    <linearGradient id="rainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00ffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#cosmicBg)" />
+
+  <!-- 2. The Sky God (Top Realm) -->
+  <g>
+    <!-- Divine Aura -->
+    <circle cx="400" cy="120" r="250" fill="url(#skyGlow)" filter="url(#intenseGlow)" />
+
+    <!-- The Sky God's Face (Abstract, Proud) -->
+    <path d="M 300 80 Q 400 20 500 80 Q 520 150 450 200 Q 400 180 350 200 Q 280 150 300 80 Z" fill="#d4e6ff" opacity="0.15" />
+    
+    <!-- Eyes of the Sky (Glowing stars) -->
+    <g filter="url(#intenseGlow)">
+      <ellipse cx="360" cy="120" rx="15" ry="6" fill="#ffffff" />
+      <ellipse cx="440" cy="120" rx="15" ry="6" fill="#ffffff" />
+      <circle cx="360" cy="120" r="4" fill="#4a6bff" />
+      <circle cx="440" cy="120" r="4" fill="#4a6bff" />
+    </g>
+
+    <!-- Crown / Diadem of the Sky -->
+    <path d="M 330 80 Q 400 40 470 80 L 480 100 Q 400 60 320 100 Z" fill="#ffd700" opacity="0.3" />
+    <circle cx="400" cy="60" r="8" fill="#ffd700" opacity="0.6" filter="url(#intenseGlow)" />
+
+    <!-- Swirling Clouds of the Sky Realm -->
+    <path d="M 0 200 Q 150 150 300 220 Q 400 250 500 200 Q 650 150 800 220" stroke="#4a6bff" stroke-width="2" fill="none" opacity="0.3" filter="url(#softGlow)" />
+    <path d="M 0 250 Q 200 200 400 260 Q 600 300 800 250" stroke="#4a6bff" stroke-width="1" fill="none" opacity="0.2" filter="url(#softGlow)" />
+  </g>
+
+  <!-- 3. The Earth Goddess (Bottom Realm) -->
+  <g>
+    <!-- Warm Aura -->
+    <circle cx="400" cy="480" r="300" fill="url(#earthGlow)" filter="url(#intenseGlow)" />
+
+    <!-- Earth Mother's Body (Formed by the landscape) -->
+    <!-- Left hip/hill -->
+    <path d="M 0 600 L 0 450 Q 100 400 200 450 Q 280 500 300 600 Z" fill="#2a1a0a" />
+    <!-- Right hip/hill -->
+    <path d="M 800 600 L 800 420 Q 700 380 600 440 Q 520 500 500 600 Z" fill="#2a1a0a" />
+    
+    <!-- Earth Mother's Face (Gentle, in the center valley) -->
+    <path d="M 350 480 Q 400 440 450 480 Q 460 520 400 540 Q 340 520 350 480 Z" fill="#3b2314" opacity="0.6" />
+    
+    <!-- Eyes of the Earth (Warm, glowing) -->
+    <g filter="url(#softGlow)">
+      <ellipse cx="375" cy="490" rx="6" ry="4" fill="#ffd700" opacity="0.8" />
+      <ellipse cx="425" cy="490" rx="6" ry="4" fill="#ffd700" opacity="0.8" />
+    </g>
+
+    <!-- Cracked Earth (The Drought) -->
+    <g stroke="#0a0505" stroke-width="2" fill="none" opacity="0.5">
+      <path d="M 100 550 L 150 530 L 180 560" />
+      <path d="M 650 540 L 700 520 L 730 550" />
+      <path d="M 200 580 L 250 560 L 280 590" />
+      <path d="M 550 570 L 600 550 L 630 580" />
+    </g>
+  </g>
+
+  <!-- 4. The Tree of Life (The Bridge / Mediator) -->
+  <g>
+    <!-- Tree Aura / Divine Light at the point of connection -->
+    <circle cx="400" cy="200" r="120" fill="#ffd700" opacity="0.1" filter="url(#intenseGlow)" />
+
+    <!-- Roots Digging Deep into the Earth -->
+    <g stroke="#2a1a0a" stroke-width="12" fill="none" stroke-linecap="round">
+      <path d="M 400 500 Q 350 540 300 580" />
+      <path d="M 400 500 Q 450 540 500 580" />
+      <path d="M 400 500 Q 380 560 360 600" />
+      <path d="M 400 500 Q 420 560 440 600" />
+      <path d="M 400 500 Q 300 520 250 550" />
+      <path d="M 400 500 Q 500 520 550 550" />
+    </g>
+
+    <!-- Trunk of the Tree (Sturdy, ancient) -->
+    <path d="M 370 500 Q 360 350 380 200 Q 400 150 420 200 Q 440 350 430 500 Z" fill="url(#treeGrad)" />
+    
+    <!-- Bark Texture -->
+    <path d="M 390 500 Q 385 350 395 200" stroke="#0a1c14" stroke-width="4" fill="none" opacity="0.5" />
+    <path d="M 410 500 Q 415 350 405 200" stroke="#0a1c14" stroke-width="4" fill="none" opacity="0.5" />
+
+    <!-- Branches Reaching Up to the Sky -->
+    <g stroke="#1e4d2b" stroke-width="15" fill="none" stroke-linecap="round">
+      <!-- Main branches -->
+      <path d="M 390 250 Q 300 180 250 100" />
+      <path d="M 410 250 Q 500 180 550 100" />
+      <path d="M 395 220 Q 350 120 320 50" />
+      <path d="M 405 220 Q 450 120 480 50" />
+      <path d="M 400 200 Q 400 100 400 30" />
+      
+      <!-- Secondary branches -->
+      <path d="M 350 180 Q 280 140 220 150" stroke-width="8" />
+      <path d="M 450 180 Q 520 140 580 150" stroke-width="8" />
+      <path d="M 370 120 Q 320 80 280 80" stroke-width="6" />
+      <path d="M 430 120 Q 480 80 520 80" stroke-width="6" />
+    </g>
+
+    <!-- Canopy / Leaves (Glowing with life) -->
+    <g fill="#3a7d44" opacity="0.8">
+      <circle cx="250" cy="100" r="40" />
+      <circle cx="300" cy="60" r="50" />
+      <circle cx="400" cy="30" r="60" />
+      <circle cx="500" cy="60" r="50" />
+      <circle cx="550" cy="100" r="40" />
+      <circle cx="220" cy="150" r="30" />
+      <circle cx="580" cy="150" r="30" />
+      <circle cx="280" cy="80" r="35" />
+      <circle cx="520" cy="80" r="35" />
+    </g>
+    
+    <!-- Lighter Canopy Highlights -->
+    <g fill="#5aad6a" opacity="0.5">
+      <circle cx="260" cy="110" r="20" />
+      <circle cx="310" cy="70" r="25" />
+      <circle cx="400" cy="40" r="30" />
+      <circle cx="490" cy="70" r="25" />
+      <circle cx="540" cy="110" r="20" />
+    </g>
+  </g>
+
+  <!-- 5. The Divine Rain (Restoration of Balance) -->
+  <g>
+    <!-- Rain streaks -->
+    <g stroke="url(#rainGrad)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#softGlow)">
+      <path d="M 200 50 L 180 200" />
+      <path d="M 250 80 L 230 230" />
+      <path d="M 300 100 L 280 250" />
+      <path d="M 500 100 L 520 250" />
+      <path d="M 550 80 L 570 230" />
+      <path d="M 600 50 L 620 200" />
+      <path d="M 350 120 L 340 280" />
+      <path d="M 450 120 L 460 280" />
+    </g>
+
+    <!-- Glowing Rain Drops -->
+    <g fill="#00ffff" opacity="0.8" filter="url(#intenseGlow)">
+      <circle cx="180" cy="200" r="4" />
+      <circle cx="230" cy="230" r="3" />
+      <circle cx="280" cy="250" r="5" />
+      <circle cx="520" cy="250" r="4" />
+      <circle cx="570" cy="230" r="3" />
+      <circle cx="620" cy="200" r="5" />
+      <circle cx="340" cy="280" r="4" />
+      <circle cx="460" cy="280" r="4" />
+    </g>
+
+    <!-- Rain hitting the tree and earth (Splash effects) -->
+    <g fill="#00ffff" opacity="0.6" filter="url(#intenseGlow)">
+      <circle cx="300" cy="300" r="2" />
+      <circle cx="500" cy="300" r="2" />
+      <circle cx="350" cy="350" r="3" />
+      <circle cx="450" cy="350" r="3" />
+      <circle cx="400" cy="400" r="4" />
+    </g>
+  </g>
+
+  <!-- 6. The Creatures (Witnesses to the Reunion) -->
+  <g fill="#0a0505">
+    <!-- Antelope (Left) -->
+    <path d="M 120 520 Q 110 490 130 480 Q 140 470 150 480 Q 160 490 150 520 Z" />
+    <ellipse cx="140" cy="470" rx="8" ry="12" transform="rotate(-15 140 470)" />
+    <!-- Antelope Horns -->
+    <path d="M 135 460 Q 130 440 140 430" stroke="#0a0505" stroke-width="2" fill="none" />
+    <path d="M 145 460 Q 150 440 140 430" stroke="#0a0505" stroke-width="2" fill="none" />
+    
+    <!-- Tortoise (Right) -->
+    <ellipse cx="660" cy="530" rx="20" ry="12" fill="#0a0505" />
+    <path d="M 640 530 Q 635 520 640 515 L 645 520 Z" fill="#0a0505" />
+    <ellipse cx="665" cy="535" rx="5" ry="3" fill="#0a0505" />
+    <ellipse cx="675" cy="535" rx="5" ry="3" fill="#0a0505" />
+
+    <!-- Birds (Flying up towards the tree) -->
+    <path d="M 550 450 Q 560 440 570 450 Q 560 445 550 450 Z" fill="#0a0505" />
+    <path d="M 570 450 Q 580 440 590 450 Q 580 445 570 450 Z" fill="#0a0505" />
+    
+    <path d="M 600 480 Q 610 470 620 480 Q 610 475 600 480 Z" fill="#0a0505" />
+    <path d="M 620 480 Q 630 470 640 480 Q 630 475 620 480 Z" fill="#0a0505" />
+  </g>
+
+  <!-- 7. Foreground Ground / Framing -->
+  <path d="M 0 600 L 0 580 Q 200 550 400 560 Q 600 570 800 580 L 800 600 Z" fill="#0a0505" />
+
+  <!-- 8. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE WAR OF HEAVEN AND EARTH
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "No one can stand alone. Balance is the law of the cosmos."
+  </text>
+
+</svg>
 <p>Long ago, the sky and the earth were not separate. They were one. They were husband and wife. They lived together in peace, and all the creatures lived between them.</p>
 <p>But the sky grew proud. He said: "I am greater than the earth. I am higher. I am brighter. I should rule alone."</p>
 <p>The earth heard his words. She was hurt. She said: "You may be higher, but I am the ground beneath your feet. You may be brighter, but I am the womb that gives life. Without me, there would be no creatures to look up at you."</p>
@@ -2170,6 +2816,210 @@
 <p><strong>The Lesson:</strong> No one can stand alone. The sky needs the earth, and the earth needs the sky. Balance is the law of the cosmos.</p>
 
 <h1 id="story14">14. Obiadi and the Spirit</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Sky Gradient -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050308" />
+      <stop offset="40%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#0a1c2e" />
+    </linearGradient>
+
+    <!-- River Water Gradient -->
+    <linearGradient id="riverWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00334e" />
+      <stop offset="50%" stop-color="#00223b" />
+      <stop offset="100%" stop-color="#000d1a" />
+    </linearGradient>
+
+    <!-- Spirit's Ethereal Glow -->
+    <radialGradient id="spiritAura" cx="60%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#4a0080" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Stone of the River Glow -->
+    <radialGradient id="stoneGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="30%" stop-color="#ffd700" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#ff8c00" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Spirit Body Gradient -->
+    <linearGradient id="spiritBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a0b2e" />
+      <stop offset="50%" stop-color="#0a0510" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#nightSky)" />
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.4" filter="url(#softGlow)">
+    <circle cx="100" cy="80" r="1.5" />
+    <circle cx="250" cy="50" r="1" />
+    <circle cx="400" cy="100" r="2" />
+    <circle cx="600" cy="60" r="1.5" />
+    <circle cx="750" cy="120" r="1" />
+    <circle cx="680" cy="40" r="2" />
+    <circle cx="150" cy="150" r="1" />
+    <circle cx="550" cy="130" r="1.5" />
+  </g>
+
+  <!-- Distant Riverbank / Mangroves -->
+  <g fill="#0a0505" opacity="0.8">
+    <path d="M 0 350 L 50 320 L 100 350 L 150 310 L 200 360 L 250 330 L 300 370 L 350 340 L 400 380 L 450 350 L 500 390 L 550 360 L 600 400 L 650 370 L 700 410 L 750 380 L 800 420 L 800 450 L 0 450 Z" />
+  </g>
+
+  <!-- 2. The River -->
+  <rect x="0" y="420" width="800" height="180" fill="url(#riverWater)" />
+
+  <!-- River Mist -->
+  <g fill="#00ffff" opacity="0.05" filter="url(#intenseGlow)">
+    <ellipse cx="200" cy="450" rx="150" ry="30" />
+    <ellipse cx="600" cy="480" rx="200" ry="40" />
+    <ellipse cx="400" cy="520" rx="250" ry="50" />
+  </g>
+
+  <!-- 3. The Illusion (The Woman in White - Background) -->
+  <g opacity="0.15" filter="url(#softGlow)">
+    <!-- Fading silhouette of the crying woman -->
+    <path d="M 150 350 Q 140 300 160 280 Q 180 260 190 280 Q 210 300 200 350 Z" fill="#ffffff" />
+    <ellipse cx="170" cy="260" rx="10" ry="14" fill="#ffffff" />
+    <!-- Flowing dress -->
+    <path d="M 150 350 Q 120 380 130 420 Q 160 400 180 420 Q 200 380 200 350 Z" fill="#ffffff" opacity="0.5" />
+  </g>
+
+  <!-- 4. The Spirit of the River (The True Form) -->
+  <g>
+    <!-- Spirit's Ethereal Aura -->
+    <circle cx="550" cy="280" r="220" fill="url(#spiritAura)" filter="url(#intenseGlow)" />
+
+    <!-- The Spirit's Body (Towering, cloaked) -->
+    <path d="M 450 480 Q 430 380 480 280 Q 520 200 550 180 Q 580 200 620 280 Q 670 380 650 480 Q 600 520 550 520 Q 500 520 450 480 Z" fill="url(#spiritBody)" />
+    
+    <!-- Ethereal Wisps / Robes flowing into the water -->
+    <path d="M 450 480 Q 400 500 420 540 Q 460 520 480 500 Z" fill="#00ffff" opacity="0.1" filter="url(#softGlow)" />
+    <path d="M 650 480 Q 700 500 680 540 Q 640 520 620 500 Z" fill="#4a0080" opacity="0.1" filter="url(#softGlow)" />
+
+    <!-- The Spirit's Head (Tall, elongated, NO FACE) -->
+    <ellipse cx="550" cy="180" rx="30" ry="45" fill="#0a0510" />
+    
+    <!-- A subtle, hollow void where the face should be -->
+    <ellipse cx="550" cy="180" rx="20" ry="30" fill="#000000" opacity="0.8" />
+    
+    <!-- Glowing markings / Crown on the Spirit's head (Signifying status) -->
+    <g fill="#00ffff" opacity="0.6" filter="url(#intenseGlow)">
+      <path d="M 520 150 Q 550 130 580 150" stroke="#00ffff" stroke-width="2" fill="none" />
+      <circle cx="520" cy="150" r="3" />
+      <circle cx="550" cy="135" r="4" />
+      <circle cx="580" cy="150" r="3" />
+    </g>
+
+    <!-- The Spirit's Arms (Reaching down to give the gift) -->
+    <!-- Right Arm -->
+    <path d="M 620 280 Q 650 350 620 400 Q 600 420 580 410" stroke="#0a0510" stroke-width="15" fill="none" stroke-linecap="round" />
+    <!-- Left Arm (Holding a staff or gesturing) -->
+    <path d="M 480 280 Q 450 350 470 400" stroke="#0a0510" stroke-width="15" fill="none" stroke-linecap="round" />
+
+    <!-- Hand offering the stone (A claw-like, elegant hand) -->
+    <path d="M 580 410 Q 560 420 540 430" stroke="#0a0510" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 540 430 L 530 435 M 540 430 L 530 425 M 540 430 L 535 440" stroke="#0a0510" stroke-width="4" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 5. The Gift (The Stone of the River) -->
+  <g>
+    <!-- Intense Glow of the Stone -->
+    <circle cx="535" cy="430" r="60" fill="url(#stoneGlow)" filter="url(#intenseGlow)" />
+    
+    <!-- The Stone Itself -->
+    <ellipse cx="535" cy="430" rx="12" ry="9" fill="#ffffff" />
+    <ellipse cx="535" cy="430" rx="8" ry="6" fill="#ffd700" />
+    
+    <!-- Light Rays emanating from the stone -->
+    <g stroke="#ffffff" stroke-width="2" opacity="0.6" filter="url(#intenseGlow)">
+      <path d="M 535 400 L 535 370" />
+      <path d="M 535 460 L 535 490" />
+      <path d="M 505 430 L 475 430" />
+      <path d="M 565 430 L 595 430" />
+      <path d="M 515 410 L 495 390" />
+      <path d="M 555 450 L 575 470" />
+      <path d="M 555 410 L 575 390" />
+      <path d="M 515 450 L 495 470" />
+    </g>
+  </g>
+
+  <!-- 6. Obiadi (The Compassionate Mortal) -->
+  <g>
+    <!-- Obiadi's Body (Emerging from the river, kneeling) -->
+    <path d="M 420 520 Q 400 460 430 420 Q 450 400 470 420 Q 500 460 480 520 Z" fill="#1a0f0a" />
+    
+    <!-- Obiadi's Head (Looking up in awe) -->
+    <ellipse cx="450" cy="390" rx="18" ry="22" transform="rotate(-15 450 390)" fill="#2a1a0a" />
+    
+    <!-- Wet Hair -->
+    <path d="M 435 390 Q 430 370 450 365 Q 470 370 465 390 Q 460 375 450 375 Q 440 375 435 390 Z" fill="#0a0502" />
+
+    <!-- Obiadi's Arm (Reaching out to accept the stone) -->
+    <path d="M 460 430 Q 490 420 520 425" stroke="#2a1a0a" stroke-width="12" fill="none" stroke-linecap="round" />
+    
+    <!-- Obiadi's Hand (Open, receiving) -->
+    <path d="M 520 425 L 530 420 M 520 425 L 532 425 M 520 425 L 528 432" stroke="#2a1a0a" stroke-width="4" fill="none" stroke-linecap="round" />
+
+    <!-- Water ripples around Obiadi -->
+    <g stroke="#00ffff" stroke-width="1.5" fill="none" opacity="0.4">
+      <ellipse cx="450" cy="520" rx="60" ry="15" />
+      <ellipse cx="450" cy="520" rx="90" ry="25" opacity="0.6" />
+      <ellipse cx="450" cy="520" rx="120" ry="35" opacity="0.3" />
+    </g>
+
+    <!-- Obiadi's Face (Illuminated by the stone) -->
+    <!-- Eye (Wide with wonder) -->
+    <circle cx="445" cy="385" r="2" fill="#ffffff" />
+    <!-- Mouth (Slightly open) -->
+    <path d="M 440 400 Q 445 402 450 398" stroke="#0a0502" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- 7. Foreground Elements (Riverbank & Reeds) -->
+  <g fill="#050302">
+    <!-- Left Bank -->
+    <path d="M 0 600 L 0 520 Q 100 540 200 580 L 250 600 Z" />
+    <!-- Right Bank -->
+    <path d="M 800 600 L 800 500 Q 700 520 600 580 L 550 600 Z" />
+    
+    <!-- Reeds / Grass -->
+    <path d="M 50 550 Q 60 500 70 480 Q 80 500 80 550 Z" />
+    <path d="M 80 560 Q 100 520 110 500 Q 120 520 110 560 Z" />
+    <path d="M 720 540 Q 730 490 740 470 Q 750 490 750 540 Z" />
+    <path d="M 750 560 Q 770 520 780 500 Q 790 520 780 560 Z" />
+  </g>
+
+  <!-- 8. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    OBIADI AND THE SPIRIT
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Kindness to strangers is repaid in ways we cannot see."
+  </text>
+
+</svg>
 <p>Obiadi was a young man who lived in a village by the river. He was curious. He was brave. And he did not believe in the old stories. He did not believe in the spirits. He did not believe in the power of the ancestors.</p>
 <p>One day, Obiadi was walking by the river when he saw a woman. She was beautiful. She was dressed in white. She was crying.</p>
 <p>"Why are you crying?" Obiadi asked.</p>
