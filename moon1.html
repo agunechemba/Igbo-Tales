@@ -5453,6 +5453,327 @@
 <p><strong>The Lesson:</strong> Faithfulness is greater than beauty or strength. Stay true to those who have given you shelter.</p>
 
 <h1 id="story23">23. The Unknown Brute</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Deep Forest Night Background -->
+    <linearGradient id="forestNight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020503" />
+      <stop offset="30%" stop-color="#050f08" />
+      <stop offset="60%" stop-color="#0a1c14" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- The Brute's Ethereal Aura (Radial) -->
+    <radialGradient id="bruteAura" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.35" />
+      <stop offset="25%" stop-color="#00ffff" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#ff3300" stop-opacity="0.08" />
+      <stop offset="80%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Shadow Creature Body -->
+    <linearGradient id="bruteBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#0a0510" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1a0a20" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Okeke's Skin Gradient -->
+    <linearGradient id="okekeSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a3a22" />
+      <stop offset="50%" stop-color="#3a2010" />
+      <stop offset="100%" stop-color="#1a0f05" />
+    </linearGradient>
+
+    <!-- Okeke's Wrapper Cloth -->
+    <linearGradient id="okekeCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a3a1a" />
+      <stop offset="50%" stop-color="#2a1a05" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+
+    <!-- The Dropped Torch Glow -->
+    <radialGradient id="torchGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#ff7b00" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#cc3300" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Mystical Forest Mist -->
+    <linearGradient id="mistGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00ffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#00ffff" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+
+    <!-- Distortion for the Brute (Shapeshifting effect) -->
+    <filter id="distort" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#forestNight)" />
+
+  <!-- 2. The Unknown Brute's Aura -->
+  <rect width="800" height="600" fill="url(#bruteAura)" />
+
+  <!-- 3. Deep Forest Trees (Massive, Ancient, Enclosing) -->
+  <!-- Far Background Trees -->
+  <g fill="#030a06" opacity="0.8">
+    <path d="M 0 500 L 40 120 L 80 500 Z" />
+    <path d="M 120 520 L 150 80 L 180 520 Z" />
+    <path d="M 620 520 L 650 100 L 680 520 Z" />
+    <path d="M 720 500 L 760 150 L 800 500 Z" />
+  </g>
+
+  <!-- Midground Trees -->
+  <g fill="#050f08">
+    <path d="M 80 520 L 110 200 L 140 520 Z" />
+    <path d="M 180 540 L 210 150 L 240 540 Z" />
+    <path d="M 560 540 L 590 180 L 620 540 Z" />
+    <path d="M 680 520 L 710 220 L 740 520 Z" />
+  </g>
+
+  <!-- Twisted Branches Overhead -->
+  <g stroke="#030a06" stroke-width="20" fill="none" stroke-linecap="round">
+    <path d="M 50 150 Q 200 100 350 180" />
+    <path d="M 750 120 Q 600 80 450 160" />
+    <path d="M 150 250 Q 250 200 350 280" stroke-width="12" />
+    <path d="M 650 220 Q 550 180 450 260" stroke-width="12" />
+  </g>
+
+  <!-- 4. The Watching Eyes of the Forest (Everywhere) -->
+  <g filter="url(#intenseGlow)">
+    <!-- Eyes in the trees -->
+    <ellipse cx="100" cy="180" rx="4" ry="3" fill="#ffd700" opacity="0.6" />
+    <ellipse cx="200" cy="130" rx="3" ry="2" fill="#ffd700" opacity="0.5" />
+    <ellipse cx="330" cy="100" rx="5" ry="4" fill="#ffd700" opacity="0.7" />
+    <ellipse cx="480" cy="120" rx="4" ry="3" fill="#ffd700" opacity="0.6" />
+    <ellipse cx="600" cy="160" rx="3" ry="2" fill="#ffd700" opacity="0.5" />
+    <ellipse cx="700" cy="200" rx="5" ry="4" fill="#ffd700" opacity="0.7" />
+
+    <!-- Eyes lower in the bushes -->
+    <ellipse cx="50" cy="400" rx="4" ry="3" fill="#00ffff" opacity="0.5" />
+    <ellipse cx="150" cy="430" rx="3" ry="2" fill="#00ffff" opacity="0.4" />
+    <ellipse cx="680" cy="420" rx="4" ry="3" fill="#00ffff" opacity="0.5" />
+    <ellipse cx="760" cy="380" rx="3" ry="2" fill="#00ffff" opacity="0.4" />
+    
+    <!-- Glowing pupils -->
+    <circle cx="100" cy="180" r="1.5" fill="#ffffff" />
+    <circle cx="330" cy="100" r="2" fill="#ffffff" />
+    <circle cx="700" cy="200" r="2" fill="#ffffff" />
+    <circle cx="50" cy="400" r="1.5" fill="#ffffff" />
+    <circle cx="680" cy="420" r="1.5" fill="#ffffff" />
+  </g>
+
+  <!-- 5. The Unknown Brute (Center, Dominant, Terrifying) -->
+  <g filter="url(#distort)">
+    <!-- Brute's Massive Shadow Form -->
+    <path d="M 250 550 Q 200 400 280 280 Q 350 180 450 150 Q 550 180 620 280 Q 700 400 650 550 Q 500 580 250 550 Z" fill="url(#bruteBody)" />
+
+    <!-- Multiple Limb-like Appendages (Not arms, not legs, something in between) -->
+    <!-- Left side - clawed limb -->
+    <path d="M 280 350 Q 180 320 120 380 Q 160 400 220 380 Q 250 370 280 350 Z" fill="#0a0510" opacity="0.9" />
+    <!-- Left side - wing-like membrane -->
+    <path d="M 300 300 Q 150 200 80 280 Q 180 260 250 300 Z" fill="#0a0510" opacity="0.7" />
+    
+    <!-- Right side - coiled serpentine limb -->
+    <path d="M 600 380 Q 700 340 760 400 Q 720 430 660 410 Q 630 395 600 380 Z" fill="#0a0510" opacity="0.9" />
+    <!-- Right side - feathered wing -->
+    <path d="M 580 290 Q 720 180 780 250 Q 680 240 620 290 Z" fill="#0a0510" opacity="0.7" />
+
+    <!-- The Brute's Head Region (Amorphous, shifting) -->
+    <!-- Multiple overlapping head shapes -->
+    <ellipse cx="400" cy="220" rx="100" ry="80" fill="#050208" opacity="0.95" />
+    <ellipse cx="380" cy="200" rx="70" ry="60" fill="#0a0510" opacity="0.9" />
+    <ellipse cx="430" cy="210" rx="60" ry="50" fill="#050208" opacity="0.85" />
+
+    <!-- Horns (Buffalo-like) -->
+    <path d="M 320 200 Q 260 120 280 80 Q 300 130 340 190 Z" fill="#1a0a20" />
+    <path d="M 480 200 Q 540 120 520 80 Q 500 130 460 190 Z" fill="#1a0a20" />
+
+    <!-- Feathers emerging from the top -->
+    <path d="M 350 160 Q 340 100 370 60 Q 380 110 390 160 Z" fill="#0a0510" />
+    <path d="M 400 150 Q 400 80 430 40 Q 430 100 420 155 Z" fill="#0a0510" />
+    <path d="M 440 160 Q 460 100 490 70 Q 480 120 460 165 Z" fill="#0a0510" />
+
+    <!-- The Many Eyes of the Brute (Glowing, Unblinking) -->
+    <g filter="url(#intenseGlow)">
+      <!-- Central large eye -->
+      <ellipse cx="400" cy="210" rx="25" ry="18" fill="#000000" />
+      <ellipse cx="400" cy="210" rx="18" ry="12" fill="#8a2be2" opacity="0.8" />
+      <ellipse cx="400" cy="210" rx="8" ry="6" fill="#ffffff" />
+      <circle cx="400" cy="210" r="3" fill="#000000" />
+
+      <!-- Left eye cluster -->
+      <ellipse cx="340" cy="200" rx="12" ry="9" fill="#000000" />
+      <ellipse cx="340" cy="200" rx="8" ry="6" fill="#00ffff" opacity="0.8" />
+      <circle cx="340" cy="200" r="3" fill="#ffffff" />
+
+      <ellipse cx="310" cy="230" rx="8" ry="6" fill="#000000" />
+      <ellipse cx="310" cy="230" rx="5" ry="4" fill="#ff3300" opacity="0.8" />
+      <circle cx="310" cy="230" r="2" fill="#ffffff" />
+
+      <ellipse cx="350" cy="250" rx="7" ry="5" fill="#000000" />
+      <ellipse cx="350" cy="250" rx="4" ry="3" fill="#ffd700" opacity="0.8" />
+      <circle cx="350" cy="250" r="1.5" fill="#ffffff" />
+
+      <!-- Right eye cluster -->
+      <ellipse cx="460" cy="200" rx="12" ry="9" fill="#000000" />
+      <ellipse cx="460" cy="200" rx="8" ry="6" fill="#00ffff" opacity="0.8" />
+      <circle cx="460" cy="200" r="3" fill="#ffffff" />
+
+      <ellipse cx="490" cy="230" rx="8" ry="6" fill="#000000" />
+      <ellipse cx="490" cy="230" rx="5" ry="4" fill="#ff3300" opacity="0.8" />
+      <circle cx="490" cy="230" r="2" fill="#ffffff" />
+
+      <ellipse cx="450" cy="255" rx="7" ry="5" fill="#000000" />
+      <ellipse cx="450" cy="255" rx="4" ry="3" fill="#ffd700" opacity="0.8" />
+      <circle cx="450" cy="255" r="1.5" fill="#ffffff" />
+
+      <!-- Additional scattered eyes -->
+      <ellipse cx="380" cy="170" rx="6" ry="4" fill="#000000" />
+      <ellipse cx="380" cy="170" rx="3" ry="2" fill="#8a2be2" opacity="0.8" />
+      
+      <ellipse cx="420" cy="170" rx="6" ry="4" fill="#000000" />
+      <ellipse cx="420" cy="170" rx="3" ry="2" fill="#8a2be2" opacity="0.8" />
+
+      <!-- Eyes on the limbs -->
+      <ellipse cx="200" cy="340" rx="8" ry="6" fill="#000000" />
+      <ellipse cx="200" cy="340" rx="5" ry="4" fill="#00ffff" opacity="0.7" />
+      
+      <ellipse cx="660" cy="370" rx="8" ry="6" fill="#000000" />
+      <ellipse cx="660" cy="370" rx="5" ry="4" fill="#00ffff" opacity="0.7" />
+    </g>
+
+    <!-- The Mouth (A void, no teeth, just darkness) -->
+    <path d="M 360 280 Q 400 300 440 280 Q 420 310 400 315 Q 380 310 360 280 Z" fill="#000000" />
+    
+    <!-- Spectral wisps emanating from the mouth -->
+    <path d="M 380 300 Q 370 340 380 380" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.3" filter="url(#intenseGlow)" />
+    <path d="M 420 300 Q 430 340 420 380" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.3" filter="url(#intenseGlow)" />
+  </g>
+
+  <!-- 6. The Sacred Boundary (Mist between forest and village) -->
+  <g fill="url(#mistGrad)" opacity="0.6">
+    <ellipse cx="400" cy="500" rx="500" ry="80" />
+    <ellipse cx="200" cy="520" rx="250" ry="60" />
+    <ellipse cx="600" cy="530" rx="250" ry="70" />
+  </g>
+
+  <!-- 7. Okeke (The Terrified Hunter - Foreground, Running) -->
+  <g>
+    <!-- Okeke's Shadow -->
+    <ellipse cx="580" cy="570" rx="60" ry="15" fill="#000000" opacity="0.5" filter="url(#softGlow)" />
+
+    <!-- Okeke's Body (Running desperately toward viewer) -->
+    <path d="M 550 570 Q 540 500 560 460 Q 580 440 600 460 Q 620 500 610 570 Z" fill="url(#okekeCloth)" />
+
+    <!-- Okeke's Chest/Torso (Bare) -->
+    <path d="M 560 460 Q 570 430 590 440 Q 600 460 590 500 Q 570 490 560 460 Z" fill="url(#okekeSkin)" />
+
+    <!-- Okeke's Head (Looking back over his shoulder in terror) -->
+    <ellipse cx="580" cy="420" rx="20" ry="25" transform="rotate(15 580 420)" fill="url(#okekeSkin)" />
+
+    <!-- Okeke's Hair (Wild, unkempt) -->
+    <path d="M 560 415 Q 555 385 580 380 Q 605 385 600 415 Q 605 395 580 390 Q 555 395 560 415 Z" fill="#0a0502" />
+
+    <!-- Okeke's Face (Terrified) -->
+    <!-- Wide eyes -->
+    <circle cx="572" cy="415" r="5" fill="#ffffff" />
+    <circle cx="590" cy="418" r="5" fill="#ffffff" />
+    <circle cx="572" cy="415" r="2.5" fill="#000000" />
+    <circle cx="590" cy="418" r="2.5" fill="#000000" />
+    <!-- Tiny pupils of pure terror -->
+    <circle cx="572" cy="415" r="1" fill="#ff3300" />
+    <circle cx="590" cy="418" r="1" fill="#ff3300" />
+
+    <!-- Mouth (Open in a silent scream) -->
+    <ellipse cx="582" cy="432" rx="6" ry="8" fill="#000000" />
+
+    <!-- Sweat drops -->
+    <g fill="#00ffff" opacity="0.6" filter="url(#softGlow)">
+      <circle cx="560" cy="400" r="2" />
+      <circle cx="602" cy="405" r="2" />
+      <circle cx="555" cy="415" r="1.5" />
+    </g>
+
+    <!-- Arms (Flailing, pumping in a run) -->
+    <path d="M 560 480 Q 530 460 510 440" stroke="url(#okekeSkin)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M 600 480 Q 630 470 650 460" stroke="url(#okekeSkin)" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- Legs (Striding, mid-run) -->
+    <path d="M 570 570 Q 560 540 540 530" stroke="url(#okekeSkin)" stroke-width="15" fill="none" stroke-linecap="round" />
+    <path d="M 600 570 Q 610 540 630 535" stroke="url(#okekeSkin)" stroke-width="15" fill="none" stroke-linecap="round" />
+
+    <!-- Feet -->
+    <ellipse cx="535" cy="530" rx="12" ry="6" fill="#3a2010" />
+    <ellipse cx="635" cy="535" rx="12" ry="6" fill="#3a2010" />
+
+    <!-- Motion lines (Desperate speed) -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round">
+      <path d="M 520 500 L 490 500" />
+      <path d="M 530 520 L 480 520" />
+      <path d="M 525 540 L 485 540" />
+      <path d="M 650 500 L 680 500" />
+      <path d="M 660 520 L 700 520" />
+    </g>
+  </g>
+
+  <!-- 8. The Dropped Torch (Symbol of Abandoned Power) -->
+  <g>
+    <!-- Torch on the ground -->
+    <path d="M 680 560 L 700 540" stroke="#3a2010" stroke-width="6" fill="none" stroke-linecap="round" />
+    
+    <!-- Dying flame -->
+    <g filter="url(#intenseGlow)">
+      <path d="M 700 540 Q 705 525 700 515 Q 695 525 700 540 Z" fill="#ff7b00" opacity="0.6" />
+      <path d="M 700 540 Q 703 530 700 525 Q 697 530 700 540 Z" fill="#ffd700" opacity="0.8" />
+    </g>
+
+    <!-- Torch glow on the ground -->
+    <ellipse cx="700" cy="550" rx="60" ry="20" fill="url(#torchGlow)" />
+    
+    <!-- Sparks from the dying torch -->
+    <g fill="#ffb347" opacity="0.5" filter="url(#intenseGlow)">
+      <circle cx="695" cy="530" r="1.5" />
+      <circle cx="708" cy="525" r="2" />
+      <circle cx="690" cy="520" r="1" />
+    </g>
+  </g>
+
+  <!-- 9. Foreground Ground -->
+  <path d="M 0 600 L 0 560 Q 200 540 400 550 Q 600 560 800 540 L 800 600 Z" fill="#050302" />
+
+  <!-- 10. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE UNKNOWN BRUTE
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Respect the forest. Take only what you need. The Unknown Brute watches, and the Unknown Brute remembers."
+  </text>
+
+</svg>
 <p>There was once a creature that lived in the deepest part of the forest. No one had seen it. No one knew its name. It was called the Unknown Brute.</p>
 <p>The elders said that the Unknown Brute was a spirit. It was a guardian of the forest. It protected the animals. It punished those who hunted without respect. It was not evil. It was not good. It was simply the balance.</p>
 <p>There was once a hunter named Okeke who did not respect the forest. He killed more animals than he needed. He left the carcasses to rot. He burned the trees. He polluted the streams. The Unknown Brute watched. And the Unknown Brute waited.</p>
@@ -5464,6 +5785,305 @@
 <p><strong>The Lesson:</strong> Respect the forest. Take only what you need. The Unknown Brute watches, and the Unknown Brute remembers.</p>
 
 <h1 id="story24">24. Sa! My Wailing New-Born Child</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Deep Night Sky -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="40%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Cold Spirit World Glow -->
+    <radialGradient id="spiritGlow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#4a6bff" stop-opacity="0.3" />
+      <stop offset="30%" stop-color="#1a1c4e" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Warm Earthly Hearth Glow -->
+    <radialGradient id="hearthGlow" cx="20%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#8b5a33" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Mother's Love Aura (Warm Gold) -->
+    <radialGradient id="loveAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#ff8c00" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Baby's Fading Spirit Aura -->
+    <radialGradient id="babyAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#4a6bff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Iyi-uwa Stone Glow -->
+    <radialGradient id="stoneGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#4a0080" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Hut Wall Gradient -->
+    <linearGradient id="hutWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a1a0a" />
+      <stop offset="50%" stop-color="#4a2a15" />
+      <stop offset="100%" stop-color="#1a0f05" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#nightSky)" />
+
+  <!-- 2. The Spirit World (Above) -->
+  <rect width="800" height="600" fill="url(#spiritGlow)" />
+
+  <!-- Stars / Ancestral Eyes -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#softGlow)">
+    <circle cx="100" cy="60" r="1.5" />
+    <circle cx="250" cy="40" r="1" />
+    <circle cx="450" cy="80" r="2" />
+    <circle cx="600" cy="50" r="1.5" />
+    <circle cx="750" cy="100" r="1" />
+    <circle cx="680" cy="30" r="1.5" />
+  </g>
+
+  <!-- The Ogbanje Children (Spirit Children Reaching Down) -->
+  <g opacity="0.4" filter="url(#etherealBlur)">
+    <!-- Spirit 1 -->
+    <ellipse cx="300" cy="120" rx="15" ry="22" fill="#00ffff" opacity="0.5" />
+    <ellipse cx="300" cy="100" rx="8" ry="10" fill="#00ffff" opacity="0.6" />
+    <path d="M 290 140 Q 285 180 295 220" stroke="#00ffff" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round" />
+    
+    <!-- Spirit 2 -->
+    <ellipse cx="400" cy="100" rx="18" ry="25" fill="#00ffff" opacity="0.5" />
+    <ellipse cx="400" cy="75" rx="10" ry="12" fill="#00ffff" opacity="0.6" />
+    <path d="M 390 125 Q 380 170 395 210" stroke="#00ffff" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round" />
+    
+    <!-- Spirit 3 -->
+    <ellipse cx="500" cy="130" rx="14" ry="20" fill="#00ffff" opacity="0.5" />
+    <ellipse cx="500" cy="112" rx="7" ry="9" fill="#00ffff" opacity="0.6" />
+    <path d="M 510 150 Q 515 190 505 230" stroke="#00ffff" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. The Human World (Below) -->
+  <!-- Distant Forest Silhouettes -->
+  <g fill="#0a0505">
+    <path d="M 0 400 L 40 200 L 80 400 Z" />
+    <path d="M 100 420 L 130 250 L 160 420 Z" />
+    <path d="M 700 420 L 730 200 L 760 420 Z" />
+    <path d="M 760 400 L 790 250 L 820 400 Z" />
+  </g>
+
+  <!-- Ground / Compound -->
+  <path d="M 0 480 Q 200 450 400 460 Q 600 470 800 450 L 800 600 L 0 600 Z" fill="#1a120a" />
+  <path d="M 0 520 Q 200 490 400 500 Q 600 510 800 490 L 800 600 L 0 600 Z" fill="#0a0805" />
+
+  <!-- Warm Earthly Glow -->
+  <rect width="800" height="600" fill="url(#hearthGlow)" />
+
+  <!-- 4. The Hut (Left Side) -->
+  <g>
+    <!-- Hut Wall -->
+    <path d="M 0 480 L 0 250 L 200 250 L 200 480 Z" fill="url(#hutWall)" />
+    
+    <!-- Thatched Roof -->
+    <path d="M -20 260 L 100 180 L 220 260 L 200 250 L 100 200 L 0 250 Z" fill="#3a2010" />
+    
+    <!-- Roof Texture -->
+    <g stroke="#2a1a0a" stroke-width="2" fill="none">
+      <line x1="20" y1="240" x2="60" y2="210" />
+      <line x1="60" y1="250" x2="100" y2="215" />
+      <line x1="100" y1="255" x2="140" y2="220" />
+      <line x1="140" y1="260" x2="180" y2="230" />
+    </g>
+
+    <!-- The Threshold (Where the Iyi-uwa was buried) -->
+    <path d="M 50 480 L 70 450 L 180 450 L 200 480 Z" fill="#2a1a0a" />
+    <path d="M 70 450 L 180 450 L 180 460 L 70 460 Z" fill="#1a0f05" />
+
+    <!-- The Iyi-uwa (Shattered, fading glow) -->
+    <g filter="url(#intenseGlow)">
+      <ellipse cx="130" cy="470" rx="15" ry="8" fill="url(#stoneGlow)" />
+      <!-- Shattered fragments -->
+      <polygon points="120,470 125,465 130,470 125,475" fill="#8a2be2" opacity="0.6" />
+      <polygon points="135,468 140,463 145,470 140,473" fill="#8a2be2" opacity="0.4" />
+      <polygon points="125,475 130,472 135,478 128,480" fill="#8a2be2" opacity="0.3" />
+      <!-- Dying light -->
+      <circle cx="130" cy="470" r="3" fill="#ffffff" opacity="0.4" />
+    </g>
+  </g>
+
+  <!-- 5. The Dibia (The Healer - Center Right Background) -->
+  <g>
+    <!-- Dibia's Body (Draped in white) -->
+    <path d="M 580 480 Q 570 400 590 370 Q 610 350 630 370 Q 650 400 640 480 Z" fill="#f0f0f0" />
+    
+    <!-- Red Sash -->
+    <path d="M 590 370 Q 610 390 630 370 Q 640 410 630 450 Q 610 430 590 450 Q 580 410 590 370 Z" fill="#cc3300" opacity="0.7" />
+
+    <!-- Dibia's Head -->
+    <ellipse cx="610" cy="340" rx="20" ry="25" fill="#5a3a22" />
+
+    <!-- Dibia's Headdress (Red and White) -->
+    <path d="M 590 330 Q 600 300 610 290 Q 620 300 630 330 Q 620 320 610 315 Q 600 320 590 330 Z" fill="#cc3300" />
+    <path d="M 610 290 Q 615 250 625 230 Q 620 260 615 290 Z" fill="#ffffff" />
+    <path d="M 610 290 Q 605 255 595 240 Q 602 265 608 290 Z" fill="#f0f0f0" />
+
+    <!-- Nzu (White Chalk) markings on Dibia's face -->
+    <g stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.8">
+      <!-- Vertical lines -->
+      <line x1="600" y1="330" x2="600" y2="345" />
+      <line x1="620" y1="330" x2="620" y2="345" />
+      <!-- Horizontal line -->
+      <line x1="595" y1="338" x2="625" y2="338" />
+      <!-- Circle -->
+      <circle cx="610" cy="350" r="4" />
+    </g>
+
+    <!-- Dibia's Eyes (Wise, watching the spirit world) -->
+    <circle cx="603" cy="338" r="2" fill="#ffffff" />
+    <circle cx="617" cy="338" r="2" fill="#ffffff" />
+
+    <!-- Dibia's Hands (Holding divination objects) -->
+    <path d="M 580 400 Q 560 420 550 440" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+    <path d="M 640 400 Q 660 420 670 440" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+
+    <!-- Divination Bowl -->
+    <path d="M 540 440 Q 530 460 550 470 Q 570 460 560 440 Z" fill="#3a2010" />
+    <!-- Cowries / Stones in the bowl -->
+    <circle cx="545" cy="450" r="3" fill="#f5f5dc" />
+    <circle cx="555" cy="448" r="3" fill="#f5f5dc" />
+    <circle cx="550" cy="458" r="3" fill="#f5f5dc" />
+    
+    <!-- Dibia's Staff (Ofo) -->
+    <path d="M 660 420 L 680 500" stroke="#3a2010" stroke-width="6" fill="none" stroke-linecap="round" />
+    <path d="M 660 420 Q 655 400 660 390 Q 665 380 670 390 Q 675 400 670 420 Z" fill="#3a2010" />
+  </g>
+
+  <!-- 6. Nneoma and the Baby (The Triumph of Love - Left Side Foreground) -->
+  <g>
+    <!-- Nneoma's Love Aura (Warm, Golden, Pushing back the darkness) -->
+    <circle cx="300" cy="420" r="160" fill="url(#loveAura)" filter="url(#intenseGlow)" />
+
+    <!-- Nneoma's Body (Kneeling, holding the baby) -->
+    <path d="M 220 520 Q 210 440 240 400 Q 270 370 300 390 Q 330 410 340 450 Q 350 520 320 540 Q 270 550 220 520 Z" fill="#4a2a1a" />
+
+    <!-- Nneoma's Arms (Cradling the baby tightly) -->
+    <path d="M 240 420 Q 270 390 310 400" stroke="#6b4423" stroke-width="14" fill="none" stroke-linecap="round" />
+    <path d="M 330 440 Q 300 410 270 420" stroke="#6b4423" stroke-width="14" fill="none" stroke-linecap="round" />
+
+    <!-- Nneoma's Head (Bowed in love and prayer) -->
+    <ellipse cx="290" cy="370" rx="22" ry="28" fill="#6b4423" transform="rotate(-10 290 370)" />
+
+    <!-- Nneoma's Hair (Traditional, adorned with cowrie shells) -->
+    <path d="M 268 365 Q 260 330 290 320 Q 320 330 312 365 Q 320 345 290 335 Q 260 345 268 365 Z" fill="#0a0502" />
+    
+    <!-- Cowrie shells -->
+    <g fill="#f5f5dc">
+      <ellipse cx="275" cy="335" rx="4" ry="2.5" transform="rotate(-20 275 335)" />
+      <ellipse cx="290" cy="325" rx="4" ry="2.5" />
+      <ellipse cx="305" cy="335" rx="4" ry="2.5" transform="rotate(20 305 335)" />
+    </g>
+
+    <!-- Nneoma's Face (Weeping with love) -->
+    <!-- Eyes (Closed in prayer/relief) -->
+    <path d="M 280 365 Q 285 362 290 365" stroke="#0a0502" stroke-width="2" fill="none" />
+    <path d="M 298 365 Q 303 362 308 365" stroke="#0a0502" stroke-width="2" fill="none" />
+    
+    <!-- The Glowing Tears (The power that broke the pact) -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="282" cy="375" r="3" fill="#00ffff" opacity="0.9" />
+      <circle cx="284" cy="385" r="2.5" fill="#00ffff" opacity="0.8" />
+      <circle cx="286" cy="395" r="2" fill="#00ffff" opacity="0.7" />
+      
+      <circle cx="306" cy="375" r="3" fill="#00ffff" opacity="0.9" />
+      <circle cx="308" cy="385" r="2.5" fill="#00ffff" opacity="0.8" />
+      <circle cx="310" cy="395" r="2" fill="#00ffff" opacity="0.7" />
+    </g>
+
+    <!-- Nneoma's Mouth (Whispering a prayer) -->
+    <path d="M 288 385 Q 293 388 298 385" stroke="#3a2010" stroke-width="1.5" fill="none" />
+
+    <!-- The Baby (Chukwuebuka) -->
+    <g>
+      <!-- Baby's Body (Wrapped in white cloth) -->
+      <path d="M 270 420 Q 260 450 270 470 Q 290 480 310 470 Q 320 450 310 420 Q 290 410 270 420 Z" fill="#ffffff" />
+      
+      <!-- Baby's Head -->
+      <circle cx="290" cy="410" r="16" fill="#6b4423" />
+      
+      <!-- Baby's Hair (Small tuft) -->
+      <path d="M 278 400 Q 290 388 302 400 Q 298 395 290 395 Q 282 395 278 400 Z" fill="#0a0502" />
+
+      <!-- Baby's Eyes (Open, calm, staying) -->
+      <circle cx="284" cy="408" r="3" fill="#ffffff" />
+      <circle cx="296" cy="408" r="3" fill="#ffffff" />
+      <circle cx="284" cy="408" r="1.5" fill="#000000" />
+      <circle cx="296" cy="408" r="1.5" fill="#000000" />
+
+      <!-- Baby's Smile (Finally at peace) -->
+      <path d="M 285 416 Q 290 418 295 416" stroke="#0a0502" stroke-width="1" fill="none" />
+
+      <!-- The Baby's Fading Spirit Aura (Being replaced by warmth) -->
+      <circle cx="290" cy="430" r="50" fill="url(#babyAura)" filter="url(#softGlow)" opacity="0.5" />
+    </g>
+
+    <!-- The Broken Pact (The Thread being severed) -->
+    <g filter="url(#intenseGlow)">
+      <!-- Thread from the baby's chest going up to the spirit world -->
+      <path d="M 290 425 Q 320 350 380 250 Q 400 200 400 150" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.6" stroke-dasharray="8 4" />
+      
+      <!-- The Breaking Point (Right above the baby's head) -->
+      <!-- Upper fragment fading away -->
+      <path d="M 310 300 Q 340 260 360 220" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.3" stroke-dasharray="5 10" />
+      
+      <!-- Shattered golden fragments -->
+      <polygon points="300,320 305,310 312,318 308,325" fill="#ffd700" opacity="0.8" />
+      <polygon points="315,300 320,290 328,298 322,305" fill="#ffd700" opacity="0.6" />
+      <polygon points="290,335 295,325 302,332 296,340" fill="#ffd700" opacity="0.4" />
+      
+      <!-- The Light of Love (Nneoma's tears) hitting the thread -->
+      <circle cx="300" cy="330" r="15" fill="#00ffff" opacity="0.6" />
+      <circle cx="300" cy="330" r="8" fill="#ffffff" opacity="0.9" />
+    </g>
+  </g>
+
+  <!-- 7. Foreground Framing -->
+  <path d="M 0 600 L 0 580 Q 200 560 400 570 Q 600 580 800 560 L 800 600 Z" fill="#050302" />
+
+  <!-- 8. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    SA! MY WAILING NEW-BORN CHILD
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "The love of a mother can break the strongest pact. The spirits cannot resist the power of a mother's tears."
+  </text>
+
+</svg>
 <p>There was once a woman named Nneoma who gave birth to a child. The child was beautiful. The child was perfect. But the child would not stop crying.</p>
 <p>Day and night, the child cried. The mother nursed him. The father held him. The grandparents sang to him. But nothing stopped the crying. The child cried as if his heart would break.</p>
 <p>The elders came. They said: "The child is crying for a reason. He is crying for the spirit world. He does not want to be here."</p>
@@ -5476,6 +6096,325 @@
 <p><strong>The Lesson:</strong> The love of a mother can break the strongest pact. The spirits cannot resist the power of a mother's tears.</p>
 
 <h1 id="story25">25. A Maiden's Cry</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Twilight Sky -->
+    <linearGradient id="twilightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="30%" stop-color="#1a1030" />
+      <stop offset="60%" stop-color="#2a1a20" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Ancestral Light (Above) -->
+    <radialGradient id="ancestralLight" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.4" />
+      <stop offset="30%" stop-color="#ffb347" stop-opacity="0.15" />
+      <stop offset="70%" stop-color="#8a2be2" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Adanna's Sorrow Aura -->
+    <radialGradient id="sorrowAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#4a6bff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Chief's Compound Glow -->
+    <radialGradient id="compoundGlow" cx="70%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#8b5a33" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Adanna's Fine Cloth Gradient -->
+    <linearGradient id="fineCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a1a1a" />
+      <stop offset="50%" stop-color="#5a0a0a" />
+      <stop offset="100%" stop-color="#2a0505" />
+    </linearGradient>
+
+    <!-- Coral Beads Gradient -->
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b" />
+      <stop offset="50%" stop-color="#cc3300" />
+      <stop offset="100%" stop-color="#8b1a1a" />
+    </linearGradient>
+
+    <!-- Chidi's Humble Cloth -->
+    <linearGradient id="humbleCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a2a1a" />
+      <stop offset="50%" stop-color="#2a1a0a" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+
+    <!-- Father's Greed Aura -->
+    <radialGradient id="greedAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.2" />
+      <stop offset="60%" stop-color="#8b4513" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#twilightSky)" />
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#softGlow)">
+    <circle cx="80" cy="60" r="1.5" />
+    <circle cx="200" cy="40" r="1" />
+    <circle cx="350" cy="80" r="2" />
+    <circle cx="500" cy="50" r="1.5" />
+    <circle cx="680" cy="100" r="1" />
+    <circle cx="750" cy="40" r="1.5" />
+  </g>
+
+  <!-- 2. The Ancestral Realm (Above) -->
+  <rect width="800" height="600" fill="url(#ancestralLight)" />
+
+  <!-- The Ancestors (Watching, Glowing) -->
+  <g filter="url(#etherealBlur)" opacity="0.6">
+    <!-- Ancestor 1 (Left) -->
+    <ellipse cx="200" cy="100" rx="25" ry="35" fill="#ffd700" opacity="0.3" />
+    <ellipse cx="200" cy="80" rx="12" ry="15" fill="#ffd700" opacity="0.5" />
+    <!-- Eyes (Watching with anger) -->
+    <ellipse cx="194" cy="78" rx="3" ry="4" fill="#ff3300" opacity="0.8" />
+    <ellipse cx="206" cy="78" rx="3" ry="4" fill="#ff3300" opacity="0.8" />
+    
+    <!-- Ancestor 2 (Center) -->
+    <ellipse cx="400" cy="80" rx="30" ry="42" fill="#ffd700" opacity="0.3" />
+    <ellipse cx="400" cy="55" rx="15" ry="18" fill="#ffd700" opacity="0.5" />
+    <!-- Eyes -->
+    <ellipse cx="393" cy="53" rx="4" ry="5" fill="#ff3300" opacity="0.9" />
+    <ellipse cx="407" cy="53" rx="4" ry="5" fill="#ff3300" opacity="0.9" />
+    
+    <!-- Ancestor 3 (Right) -->
+    <ellipse cx="600" cy="100" rx="25" ry="35" fill="#ffd700" opacity="0.3" />
+    <ellipse cx="600" cy="80" rx="12" ry="15" fill="#ffd700" opacity="0.5" />
+    <!-- Eyes -->
+    <ellipse cx="594" cy="78" rx="3" ry="4" fill="#ff3300" opacity="0.8" />
+    <ellipse cx="606" cy="78" rx="3" ry="4" fill="#ff3300" opacity="0.8" />
+  </g>
+
+  <!-- The Ancestral Hands Reaching Down -->
+  <g stroke="#ffd700" stroke-width="3" fill="none" opacity="0.3" filter="url(#intenseGlow)">
+    <path d="M 200 120 Q 180 180 200 240" stroke-linecap="round" />
+    <path d="M 400 110 Q 380 180 400 250" stroke-linecap="round" />
+    <path d="M 600 120 Q 620 180 600 240" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. The Human World (Below) -->
+  <!-- Distant Forest Silhouettes -->
+  <g fill="#0a0505">
+    <path d="M 0 400 L 40 200 L 80 400 Z" />
+    <path d="M 100 420 L 130 250 L 160 420 Z" />
+    <path d="M 700 420 L 730 200 L 760 420 Z" />
+    <path d="M 760 400 L 790 250 L 820 400 Z" />
+  </g>
+
+  <!-- Ground -->
+  <path d="M 0 480 Q 200 450 400 460 Q 600 470 800 450 L 800 600 L 0 600 Z" fill="#1a120a" />
+  <path d="M 0 520 Q 200 490 400 500 Q 600 510 800 490 L 800 600 L 0 600 Z" fill="#0a0805" />
+
+  <!-- Chief's Compound Glow -->
+  <rect width="800" height="600" fill="url(#compoundGlow)" />
+
+  <!-- 4. The Chief's Compound (Background Right) -->
+  <g>
+    <!-- Compound Walls -->
+    <path d="M 620 480 L 620 350 L 780 350 L 780 480 Z" fill="#2a1a0a" opacity="0.8" />
+    
+    <!-- Thatched Roof -->
+    <path d="M 600 360 L 700 280 L 800 360 L 780 350 L 700 300 L 620 350 Z" fill="#3a2010" opacity="0.8" />
+    
+    <!-- Doorway -->
+    <path d="M 680 480 L 680 400 Q 700 390 720 400 L 720 480 Z" fill="#050302" opacity="0.9" />
+
+    <!-- Fine Cloth Hanging (Sign of wealth) -->
+    <path d="M 640 380 Q 650 420 640 460" stroke="#8a1a1a" stroke-width="4" fill="none" opacity="0.6" />
+    <path d="M 760 380 Q 750 420 760 460" stroke="#8a1a1a" stroke-width="4" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- 5. The Father (The Greedy One - Foreground Left) -->
+  <g>
+    <!-- Father's Greed Aura -->
+    <circle cx="150" cy="500" r="100" fill="url(#greedAura)" filter="url(#softGlow)" />
+
+    <!-- Father's Body (Seated, counting cowries) -->
+    <path d="M 100 560 Q 90 500 110 470 Q 130 450 150 470 Q 170 500 160 560 Z" fill="#1a0f05" />
+    
+    <!-- Father's Head -->
+    <ellipse cx="130" cy="450" rx="18" ry="22" fill="#3a2010" />
+    
+    <!-- Father's Face (Hardened, greedy) -->
+    <circle cx="125" cy="445" r="2" fill="#ffffff" opacity="0.8" />
+    <circle cx="138" cy="445" r="2" fill="#ffffff" opacity="0.8" />
+    <path d="M 125 458 Q 130 455 135 458" stroke="#0a0502" stroke-width="1.5" fill="none" />
+
+    <!-- Father's Hands (Counting cowries) -->
+    <path d="M 110 480 Q 90 500 80 520" stroke="#3a2010" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 150 480 Q 170 500 180 520" stroke="#3a2010" stroke-width="10" fill="none" stroke-linecap="round" />
+
+    <!-- Cowrie Shells (Scattered, glowing with greed) -->
+    <g fill="#f5f5dc" opacity="0.8">
+      <ellipse cx="80" cy="530" rx="6" ry="4" transform="rotate(20 80 530)" />
+      <ellipse cx="95" cy="545" rx="6" ry="4" transform="rotate(-15 95 545)" />
+      <ellipse cx="110" cy="535" rx="6" ry="4" transform="rotate(10 110 535)" />
+      <ellipse cx="125" cy="550" rx="6" ry="4" transform="rotate(-20 125 550)" />
+      <ellipse cx="140" cy="540" rx="6" ry="4" transform="rotate(15 140 540)" />
+      <ellipse cx="155" cy="555" rx="6" ry="4" transform="rotate(-10 155 555)" />
+      <ellipse cx="170" cy="545" rx="6" ry="4" transform="rotate(25 170 545)" />
+      <ellipse cx="185" cy="560" rx="6" ry="4" transform="rotate(-5 185 560)" />
+    </g>
+
+    <!-- Faint golden glow on the cowries -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="125" cy="545" r="4" fill="#ffd700" opacity="0.4" />
+      <circle cx="155" cy="550" r="4" fill="#ffd700" opacity="0.4" />
+    </g>
+  </g>
+
+  <!-- 6. Chidi (The Poor, Loving One - Background Center) -->
+  <g opacity="0.7">
+    <!-- Chidi's Body (Standing alone, humble) -->
+    <path d="M 440 520 Q 430 460 450 430 Q 470 410 490 430 Q 510 460 500 520 Z" fill="url(#humbleCloth)" />
+    
+    <!-- Chidi's Head (Looking down in sorrow) -->
+    <ellipse cx="470" cy="400" rx="16" ry="20" fill="#5a3a22" />
+    
+    <!-- Chidi's Hair -->
+    <path d="M 454 395 Q 450 375 470 370 Q 490 375 486 395 Q 490 380 470 375 Q 450 380 454 395 Z" fill="#0a0502" />
+
+    <!-- Chidi's Arms (Reaching out, helpless) -->
+    <path d="M 450 440 Q 420 450 400 460" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+    <path d="M 490 440 Q 520 450 540 460" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+
+    <!-- Chidi's Legs -->
+    <path d="M 460 520 Q 455 550 450 570" stroke="#5a3a22" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 480 520 Q 485 550 490 570" stroke="#5a3a22" stroke-width="10" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 7. Adanna (The Maiden - Center Foreground, Crying) -->
+  <g>
+    <!-- Adanna's Sorrow Aura -->
+    <circle cx="380" cy="450" r="150" fill="url(#sorrowAura)" filter="url(#intenseGlow)" />
+
+    <!-- Adanna's Body (Kneeling, adorned in fine cloth but sorrowful) -->
+    <path d="M 320 570 Q 310 490 340 450 Q 370 420 400 440 Q 430 470 430 530 Q 440 570 400 580 Q 350 590 320 570 Z" fill="url(#fineCloth)" />
+
+    <!-- Fine cloth folds -->
+    <path d="M 340 480 Q 370 500 400 480" stroke="#cc3300" stroke-width="1.5" fill="none" opacity="0.4" />
+    <path d="M 335 520 Q 370 540 420 520" stroke="#cc3300" stroke-width="1.5" fill="none" opacity="0.4" />
+    <path d="M 330 550 Q 370 570 420 550" stroke="#cc3300" stroke-width="1.5" fill="none" opacity="0.4" />
+
+    <!-- Adanna's Arms (Reaching up to the ancestors) -->
+    <path d="M 340 470 Q 300 420 280 380" stroke="#6b4423" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M 420 470 Q 460 420 480 380" stroke="#6b4423" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- Adanna's Hands (Open in prayer/cry) -->
+    <path d="M 280 380 L 270 370 M 280 380 L 275 365 M 280 380 L 285 368" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round" />
+    <path d="M 480 380 L 490 370 M 480 380 L 485 365 M 480 380 L 475 368" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round" />
+
+    <!-- Adanna's Head (Thrown back, crying out) -->
+    <ellipse cx="380" cy="410" rx="20" ry="26" fill="#6b4423" transform="rotate(-10 380 410)" />
+
+    <!-- Adanna's Hair (Beautiful, adorned with coral) -->
+    <path d="M 360 405 Q 355 370 380 360 Q 405 370 400 405 Q 405 385 380 375 Q 355 385 360 405 Z" fill="#0a0502" />
+
+    <!-- Coral Beads (Sign of her forced wealth) -->
+    <g fill="url(#coralGrad)">
+      <circle cx="365" cy="380" r="4" />
+      <circle cx="375" cy="372" r="4" />
+      <circle cx="385" cy="370" r="4" />
+      <circle cx="395" cy="372" r="4" />
+      <circle cx="405" cy="380" r="4" />
+      
+      <!-- Necklace -->
+      <circle cx="370" cy="425" r="3" />
+      <circle cx="378" cy="428" r="3" />
+      <circle cx="386" cy="430" r="3" />
+      <circle cx="394" cy="428" r="3" />
+      <circle cx="402" cy="425" r="3" />
+    </g>
+
+    <!-- Adanna's Face (Weeping) -->
+    <!-- Eyes (Closed in anguish) -->
+    <path d="M 370 405 Q 376 400 382 405" stroke="#0a0502" stroke-width="2" fill="none" />
+    <path d="M 388 405 Q 394 400 400 405" stroke="#0a0502" stroke-width="2" fill="none" />
+    
+    <!-- The Glowing Tears (The Maiden's Cry) -->
+    <g filter="url(#intenseGlow)">
+      <!-- Left eye tears -->
+      <circle cx="372" cy="412" r="3" fill="#00ffff" opacity="0.9" />
+      <circle cx="370" cy="422" r="2.5" fill="#00ffff" opacity="0.8" />
+      <circle cx="368" cy="432" r="2" fill="#00ffff" opacity="0.7" />
+      
+      <!-- Right eye tears -->
+      <circle cx="392" cy="412" r="3" fill="#00ffff" opacity="0.9" />
+      <circle cx="394" cy="422" r="2.5" fill="#00ffff" opacity="0.8" />
+      <circle cx="396" cy="432" r="2" fill="#00ffff" opacity="0.7" />
+    </g>
+
+    <!-- Mouth (Open in a cry) -->
+    <ellipse cx="382" cy="422" rx="5" ry="7" fill="#000000" />
+
+    <!-- The Single Tear Rising to the Ancestors (The Prayer) -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="382" cy="380" r="5" fill="#00ffff" opacity="0.9" />
+      <circle cx="382" cy="350" r="4" fill="#00ffff" opacity="0.7" />
+      <circle cx="382" cy="320" r="3" fill="#00ffff" opacity="0.5" />
+      <circle cx="382" cy="290" r="2" fill="#00ffff" opacity="0.3" />
+      
+      <!-- The tear reaching the ancestors -->
+      <path d="M 382 380 Q 380 300 400 200 Q 410 150 400 100" stroke="#00ffff" stroke-width="3" fill="none" opacity="0.5" stroke-dasharray="5 5" />
+    </g>
+  </g>
+
+  <!-- 8. The Ancestors' Judgment (Descending Light) -->
+  <g filter="url(#intenseGlow)">
+    <!-- Descending beam of judgment onto the father -->
+    <path d="M 200 150 Q 180 250 150 350" stroke="#ff3300" stroke-width="3" fill="none" opacity="0.4" stroke-dasharray="10 10" />
+    <circle cx="150" cy="350" r="15" fill="#ff3300" opacity="0.3" />
+    
+    <!-- Descending blessing onto Adanna -->
+    <path d="M 400 150 Q 390 250 382 350" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.5" stroke-dasharray="8 8" />
+    <circle cx="382" cy="350" r="12" fill="#ffd700" opacity="0.4" />
+  </g>
+
+  <!-- 9. Foreground Framing -->
+  <g fill="#050302">
+    <path d="M 0 600 L 20 400 L 60 600 Z" />
+    <path d="M 780 600 L 800 350 L 820 600 Z" />
+  </g>
+
+  <!-- 10. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    A MAIDEN'S CRY
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Love is worth more than wealth. Those who sell their children for money will be punished by the ancestors."
+  </text>
+
+</svg>
 <p>There was once a maiden named Adanna who was the most beautiful in the village. She was kind. She was gentle. She was pure. Every young man wanted to marry her. Every young man brought gifts to her father. Every young man sang songs beneath her window.</p>
 <p>But Adanna loved only one man. His name was Chidi. He was not the richest. He was not the strongest. He was not the most handsome. But he was kind. He was gentle. He was honest. And Adanna loved him.</p>
 <p>But Chidi was poor. He could not pay the bride price. He could not afford the yams and the goats and the cloth that her father demanded. He went to her father and said: "I love your daughter. I will work for you. I will serve you. I will do anything. Please, let me marry her."</p>
@@ -5488,6 +6427,329 @@
 <p><strong>The Lesson:</strong> Love is worth more than wealth. Those who sell their children for money will be punished by the ancestors.</p>
 
 <h1 id="story26">26. Ubo</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Shrine Background -->
+    <linearGradient id="shrineNight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="35%" stop-color="#0e0a1c" />
+      <stop offset="70%" stop-color="#1a1008" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+
+    <!-- Sacred Fire / Ritual Glow -->
+    <radialGradient id="ritualGlow" cx="50%" cy="65%" r="55%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.7" />
+      <stop offset="30%" stop-color="#ff7b00" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#8a2be2" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ancestral Aura -->
+    <radialGradient id="ancestralAura" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#8a2be2" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ubo Wood Gradient -->
+    <linearGradient id="uboWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b4423" />
+      <stop offset="50%" stop-color="#4a2a12" />
+      <stop offset="100%" stop-color="#2a1508" />
+    </linearGradient>
+
+    <!-- Ubo Metal Key Gradient (Glowing) -->
+    <linearGradient id="keyGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#ff8c00" />
+    </linearGradient>
+
+    <!-- Ubo Metal Key Gradient (Silent/Dark) -->
+    <linearGradient id="keyDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a3a" />
+      <stop offset="50%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
+
+    <!-- Palm Wine Gradient -->
+    <linearGradient id="palmWine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b4a" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#cc3300" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8b1a00" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Nwankwo's Skin -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5a33" />
+      <stop offset="50%" stop-color="#5a3a22" />
+      <stop offset="100%" stop-color="#2a1a0a" />
+    </linearGradient>
+
+    <!-- Nwankwo's Cloth -->
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a2a1a" />
+      <stop offset="50%" stop-color="#2a1a0a" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#shrineNight)" />
+
+  <!-- Stars / Ancestral Eyes in the Sky -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#softGlow)">
+    <circle cx="100" cy="60" r="1.5" />
+    <circle cx="250" cy="40" r="1" />
+    <circle cx="450" cy="80" r="2" />
+    <circle cx="600" cy="50" r="1.5" />
+    <circle cx="750" cy="100" r="1" />
+    <circle cx="680" cy="30" r="1.5" />
+    <circle cx="350" cy="30" r="1" />
+  </g>
+
+  <!-- 2. Ancestral Realm Glow -->
+  <rect width="800" height="600" fill="url(#ancestralAura)" />
+
+  <!-- 3. The Ancestral Spirits (Watching from the Shadows) -->
+  <g filter="url(#etherealBlur)" opacity="0.5">
+    <!-- Ancestor 1 (Far Left) -->
+    <ellipse cx="100" cy="220" rx="22" ry="32" fill="#8a2be2" opacity="0.3" />
+    <ellipse cx="100" cy="195" rx="11" ry="14" fill="#8a2be2" opacity="0.4" />
+    <!-- Glowing eyes -->
+    <ellipse cx="94" cy="193" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+    <ellipse cx="106" cy="193" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+
+    <!-- Ancestor 2 (Left) -->
+    <ellipse cx="200" cy="180" rx="25" ry="36" fill="#8a2be2" opacity="0.3" />
+    <ellipse cx="200" cy="150" rx="12" ry="16" fill="#8a2be2" opacity="0.4" />
+    <ellipse cx="193" cy="148" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+    <ellipse cx="207" cy="148" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+
+    <!-- Ancestor 3 (Right) -->
+    <ellipse cx="620" cy="190" rx="24" ry="34" fill="#8a2be2" opacity="0.3" />
+    <ellipse cx="620" cy="162" rx="12" ry="15" fill="#8a2be2" opacity="0.4" />
+    <ellipse cx="613" cy="160" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+    <ellipse cx="627" cy="160" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+
+    <!-- Ancestor 4 (Far Right) -->
+    <ellipse cx="720" cy="230" rx="20" ry="30" fill="#8a2be2" opacity="0.3" />
+    <ellipse cx="720" cy="206" rx="10" ry="13" fill="#8a2be2" opacity="0.4" />
+    <ellipse cx="714" cy="204" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+    <ellipse cx="726" cy="204" rx="3" ry="4" fill="#ffd700" opacity="0.9" />
+
+    <!-- Ancestor 5 (Center Back, Most Ancient) -->
+    <ellipse cx="400" cy="140" rx="30" ry="42" fill="#ffd700" opacity="0.15" />
+    <ellipse cx="400" cy="108" rx="15" ry="19" fill="#ffd700" opacity="0.25" />
+    <ellipse cx="392" cy="106" rx="4" ry="5" fill="#ffd700" opacity="0.9" />
+    <ellipse cx="408" cy="106" rx="4" ry="5" fill="#ffd700" opacity="0.9" />
+    <!-- Crown of the eldest ancestor -->
+    <path d="M 385 100 Q 400 85 415 100" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- 4. The Shrine (Background Structure) -->
+  <g fill="#0a0505" opacity="0.8">
+    <!-- Shrine posts -->
+    <path d="M 250 480 L 260 280 L 280 280 L 270 480 Z" />
+    <path d="M 530 480 L 520 280 L 540 280 L 550 480 Z" />
+    <!-- Crossbeam -->
+    <path d="M 240 300 L 560 300 L 560 320 L 240 320 Z" />
+    <!-- Sacred white cloth hanging -->
+    <path d="M 300 320 Q 310 380 300 440" stroke="#f0f0f0" stroke-width="8" fill="none" opacity="0.4" />
+    <path d="M 500 320 Q 490 380 500 440" stroke="#f0f0f0" stroke-width="8" fill="none" opacity="0.4" />
+    <!-- Nzu (White chalk) markings -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.3">
+      <line x1="260" y1="350" x2="260" y2="400" />
+      <line x1="270" y1="350" x2="270" y2="400" />
+      <line x1="520" y1="350" x2="520" y2="400" />
+      <line x1="530" y1="350" x2="530" y2="400" />
+    </g>
+  </g>
+
+  <!-- 5. The Ground and Ritual Space -->
+  <path d="M 0 500 Q 200 470 400 480 Q 600 490 800 470 L 800 600 L 0 600 Z" fill="#0a0805" />
+  <path d="M 0 540 Q 200 510 400 520 Q 600 530 800 510 L 800 600 L 0 600 Z" fill="#050302" />
+
+  <!-- Ritual Glow -->
+  <rect width="800" height="600" fill="url(#ritualGlow)" />
+
+  <!-- White chalk circle on the ground (Sacred space) -->
+  <g stroke="#ffffff" stroke-width="3" fill="none" opacity="0.4" filter="url(#softGlow)">
+    <ellipse cx="400" cy="510" rx="200" ry="50" />
+    <ellipse cx="400" cy="510" rx="160" ry="38" opacity="0.6" />
+  </g>
+
+  <!-- 6. The Sacred Stool (Where the Ubo rests) -->
+  <g>
+    <!-- Stool base -->
+    <path d="M 340 500 L 350 440 L 450 440 L 460 500 Z" fill="#3a2010" stroke="#1a0f05" stroke-width="3" />
+    <!-- Stool top -->
+    <ellipse cx="400" cy="440" rx="55" ry="15" fill="#4a2a12" stroke="#2a1508" stroke-width="3" />
+    <!-- Carved support -->
+    <path d="M 380 500 L 390 450 L 410 450 L 420 500 Z" fill="#2a1508" />
+    <!-- Uli / Nsibidi symbols on the stool -->
+    <g stroke="#ffd700" stroke-width="2" fill="none" opacity="0.4">
+      <circle cx="400" cy="475" r="10" />
+      <line x1="395" y1="475" x2="405" y2="475" />
+      <line x1="400" y1="470" x2="400" y2="480" />
+    </g>
+  </g>
+
+  <!-- 7. The Ubo (The Sacred Thumb Piano - Center) -->
+  <g>
+    <!-- The Ubo's Aura (Its living voice) -->
+    <circle cx="400" cy="425" r="90" fill="#ffd700" opacity="0.15" filter="url(#intenseGlow)" />
+
+    <!-- Ubo Wooden Body -->
+    <path d="M 350 435 Q 340 405 360 390 Q 400 375 440 390 Q 460 405 450 435 Q 400 450 350 435 Z" fill="url(#uboWood)" />
+    
+    <!-- Wood grain texture -->
+    <path d="M 360 400 Q 400 390 440 400" stroke="#2a1508" stroke-width="1.5" fill="none" opacity="0.6" />
+    <path d="M 355 415 Q 400 405 445 415" stroke="#2a1508" stroke-width="1.5" fill="none" opacity="0.6" />
+
+    <!-- Sound hole (Center) -->
+    <ellipse cx="400" cy="415" rx="12" ry="8" fill="#0a0502" />
+
+    <!-- The Metal Keys (Tines) -->
+    <!-- Silent/Dark Keys (Left side - still sleeping) -->
+    <g>
+      <rect x="365" y="395" width="4" height="25" rx="2" fill="url(#keyDark)" />
+      <rect x="375" y="393" width="4" height="28" rx="2" fill="url(#keyDark)" />
+      <rect x="385" y="392" width="4" height="30" rx="2" fill="url(#keyDark)" />
+    </g>
+
+    <!-- Awakening Keys (Right side - voice returning) -->
+    <g filter="url(#intenseGlow)">
+      <rect x="415" y="392" width="4" height="30" rx="2" fill="url(#keyGlow)" />
+      <rect x="425" y="393" width="4" height="28" rx="2" fill="url(#keyGlow)" />
+      <rect x="435" y="395" width="4" height="25" rx="2" fill="url(#keyGlow)" />
+    </g>
+
+    <!-- The Awakening Keys' soft glow -->
+    <ellipse cx="425" cy="405" rx="20" ry="15" fill="#ffd700" opacity="0.3" filter="url(#intenseGlow)" />
+
+    <!-- Faint Musical Notes Rising (The voice returning) -->
+    <g filter="url(#intenseGlow)" opacity="0.7">
+      <text x="440" y="380" font-family="Georgia, serif" font-size="20" fill="#ffd700">♪</text>
+      <text x="460" y="350" font-family="Georgia, serif" font-size="16" fill="#ffd700">♫</text>
+      <text x="430" y="340" font-family="Georgia, serif" font-size="14" fill="#ffd700">♪</text>
+      <text x="470" y="320" font-family="Georgia, serif" font-size="18" fill="#ffd700">♬</text>
+    </g>
+
+    <!-- The Ancestral Presence in the Ubo -->
+    <g filter="url(#intenseGlow)" opacity="0.6">
+      <circle cx="400" cy="380" r="8" fill="#ffd700" opacity="0.4" />
+      <circle cx="400" cy="380" r="4" fill="#ffffff" opacity="0.7" />
+    </g>
+  </g>
+
+  <!-- 8. The Palm Wine Sacrifice (Flowing from the Calabash) -->
+  <g filter="url(#softGlow)">
+    <!-- The Stream of Palm Wine -->
+    <path d="M 320 400 Q 350 410 380 420 Q 395 425 400 425" stroke="url(#palmWine)" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Splashes on the Ubo -->
+    <g fill="#cc3300" opacity="0.7">
+      <circle cx="395" cy="425" r="3" />
+      <circle cx="405" cy="428" r="2.5" />
+      <circle cx="410" cy="422" r="2" />
+    </g>
+
+    <!-- The Calabash Bowl (Held by Nwankwo) -->
+    <path d="M 270 400 Q 250 420 270 440 Q 300 450 320 430 Q 330 410 310 400 Z" fill="#3a2010" stroke="#1a0f05" stroke-width="3" />
+    <!-- Palm wine inside the calabash -->
+    <ellipse cx="295" cy="415" rx="20" ry="8" fill="#cc3300" opacity="0.8" />
+    <!-- Calabash rim -->
+    <ellipse cx="295" cy="400" rx="25" ry="10" fill="none" stroke="#2a1508" stroke-width="3" />
+  </g>
+
+  <!-- 9. Nwankwo (The Humbled Musician - Kneeling, Left Foreground) -->
+  <g>
+    <!-- Nwankwo's Shadow -->
+    <ellipse cx="280" cy="560" rx="70" ry="15" fill="#000000" opacity="0.5" filter="url(#softGlow)" />
+
+    <!-- Nwankwo's Body (Kneeling, bowed in humility) -->
+    <path d="M 220 570 Q 210 490 240 450 Q 270 420 300 440 Q 330 470 330 540 Q 340 580 300 590 Q 250 590 220 570 Z" fill="url(#clothGrad)" />
+    
+    <!-- Cloth folds -->
+    <path d="M 240 480 Q 270 500 300 480" stroke="#5a3a22" stroke-width="1.5" fill="none" opacity="0.4" />
+    <path d="M 235 520 Q 270 540 310 520" stroke="#5a3a22" stroke-width="1.5" fill="none" opacity="0.4" />
+
+    <!-- Nwankwo's Arms (Holding the calabash, pouring the wine) -->
+    <!-- Left arm -->
+    <path d="M 240 470 Q 250 430 280 410" stroke="url(#skinGrad)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <!-- Right arm -->
+    <path d="M 300 480 Q 290 440 300 420" stroke="url(#skinGrad)" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- Nwankwo's Head (Bowed in shame and prayer) -->
+    <ellipse cx="270" cy="430" rx="20" ry="26" fill="url(#skinGrad)" transform="rotate(-15 270 430)" />
+
+    <!-- Nwankwo's Hair (Wild, unkempt from grief) -->
+    <path d="M 250 425 Q 245 395 270 390 Q 295 395 290 425 Q 295 405 270 400 Q 245 405 250 425 Z" fill="#0a0502" />
+
+    <!-- Nwankwo's Face (Weeping) -->
+    <!-- Eyes (Closed in prayer) -->
+    <path d="M 258 425 Q 264 422 268 425" stroke="#0a0502" stroke-width="2" fill="none" />
+    <path d="M 276 425 Q 282 422 286 425" stroke="#0a0502" stroke-width="2" fill="none" />
+
+    <!-- Glowing Tears of Repentance -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="260" cy="432" r="2.5" fill="#00ffff" opacity="0.8" />
+      <circle cx="258" cy="440" r="2" fill="#00ffff" opacity="0.6" />
+      <circle cx="284" cy="432" r="2.5" fill="#00ffff" opacity="0.8" />
+      <circle cx="286" cy="440" r="2" fill="#00ffff" opacity="0.6" />
+    </g>
+
+    <!-- Nwankwo's Mouth (Whispering a prayer of forgiveness) -->
+    <path d="M 265 442 Q 270 445 275 442" stroke="#0a0502" stroke-width="1.5" fill="none" />
+
+    <!-- The Cast-Aside Cowries (Symbol of his forgotten pride) -->
+    <g fill="#f5f5dc" opacity="0.3">
+      <ellipse cx="160" cy="550" rx="5" ry="3.5" transform="rotate(30 160 550)" />
+      <ellipse cx="180" cy="565" rx="5" ry="3.5" transform="rotate(-20 180 565)" />
+      <ellipse cx="150" cy="570" rx="5" ry="3.5" transform="rotate(15 150 570)" />
+      <ellipse cx="200" cy="580" rx="5" ry="3.5" transform="rotate(-10 200 580)" />
+      <ellipse cx="140" cy="585" rx="5" ry="3.5" transform="rotate(25 140 585)" />
+    </g>
+  </g>
+
+  <!-- 10. Foreground Framing -->
+  <g fill="#020104">
+    <path d="M 0 600 L 20 400 L 60 600 Z" />
+    <path d="M 780 600 L 800 350 L 820 600 Z" />
+    <!-- Sacred plants / herbs -->
+    <path d="M 680 560 Q 690 520 700 500 Q 710 520 710 560 Z" opacity="0.5" />
+    <path d="M 720 570 Q 730 530 740 510 Q 750 530 750 570 Z" opacity="0.5" />
+  </g>
+
+  <!-- 11. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    UBO
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Sacred gifts are not for personal gain. Use them for the spirits, and they will sing."
+  </text>
+
+</svg>
 <p>The Ubo was a thumb piano. It was small, made of wood and metal, and it fit in the palm of the hand. But it was not just an instrument. It was a voice. It was a spirit. It was a connection to the ancestors.</p>
 <p>There was once a man named Nwankwo who played the Ubo. He played it at every gathering. He played it at weddings. He played it at funerals. He played it at the shrine. And whenever he played, the ancestors listened.</p>
 <p>But Nwankwo grew proud. He began to play for money. He began to play for fame. He began to play for himself. He forgot the ancestors. He forgot the spirits. He forgot the sacredness of the Ubo.</p>
@@ -5498,6 +6760,363 @@
 <p><strong>The Lesson:</strong> Sacred gifts are not for personal gain. Use them for the spirits, and they will sing. Use them for yourself, and they will fall silent.</p>
 
 <h1 id="story27">27. The Slave</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Oppressive Night (Left) -->
+    <linearGradient id="slaveryNight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="50%" stop-color="#0e0e12" />
+      <stop offset="100%" stop-color="#0a0805" />
+    </linearGradient>
+
+    <!-- Dawn of Freedom (Right) -->
+    <linearGradient id="freedomDawn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a120a" />
+      <stop offset="50%" stop-color="#4a2a10" />
+      <stop offset="100%" stop-color="#8a5a20" />
+    </linearGradient>
+
+    <!-- Sky Gradient (Overall) -->
+    <linearGradient id="overallSky" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#020208" />
+      <stop offset="40%" stop-color="#0a0a14" />
+      <stop offset="70%" stop-color="#2a1a0a" />
+      <stop offset="100%" stop-color="#5a3a10" />
+    </linearGradient>
+
+    <!-- Ancestral Light from Above -->
+    <radialGradient id="ancestralLight" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.35" />
+      <stop offset="40%" stop-color="#ff8c00" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Okafor's Spirit Flame Aura -->
+    <radialGradient id="spiritFlame" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.7" />
+      <stop offset="30%" stop-color="#ff6b00" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#cc3300" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Okafor's Skin -->
+    <linearGradient id="okaforSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5a33" />
+      <stop offset="50%" stop-color="#5a3a22" />
+      <stop offset="100%" stop-color="#2a1a0a" />
+    </linearGradient>
+
+    <!-- Okafor's Wrapper -->
+    <linearGradient id="okaforCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a3a1a" />
+      <stop offset="50%" stop-color="#2a1a05" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+
+    <!-- Broken Chain Gradient -->
+    <linearGradient id="chainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a8a8a" />
+      <stop offset="50%" stop-color="#c0c0c0" />
+      <stop offset="100%" stop-color="#4a4a4a" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+
+    <!-- Fire/Torch Blur -->
+    <filter id="fireBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#overallSky)" />
+
+  <!-- 2. The Split World (Slavery Left / Freedom Right) -->
+  <!-- Left Side: Oppression (Dark, Grey) -->
+  <path d="M 0 0 L 400 0 L 400 600 L 0 600 Z" fill="url(#slaveryNight)" opacity="0.6" />
+  
+  <!-- Right Side: Freedom (Warm, Golden) -->
+  <path d="M 400 0 L 800 0 L 800 600 L 400 600 Z" fill="url(#freedomDawn)" opacity="0.4" />
+
+  <!-- The Dividing Line (Subtle) -->
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffd700" stroke-width="1" opacity="0.15" filter="url(#intenseGlow)" />
+
+  <!-- 3. Stars and Ancestral Eyes -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#softGlow)">
+    <circle cx="80" cy="60" r="1.5" />
+    <circle cx="200" cy="40" r="1" />
+    <circle cx="350" cy="70" r="1.5" />
+    <circle cx="500" cy="50" r="1" />
+    <circle cx="680" cy="90" r="1.5" />
+    <circle cx="750" cy="40" r="1" />
+  </g>
+
+  <!-- Ancestral Light from Above -->
+  <rect width="800" height="600" fill="url(#ancestralLight)" />
+
+  <!-- 4. The Ancestors (Watching from Above) -->
+  <g filter="url(#etherealBlur)" opacity="0.5">
+    <!-- Ancestor 1 (Far Left - Grave) -->
+    <ellipse cx="120" cy="140" rx="22" ry="32" fill="#8a2be2" opacity="0.25" />
+    <ellipse cx="120" cy="115" rx="11" ry="14" fill="#8a2be2" opacity="0.35" />
+    <ellipse cx="114" cy="113" rx="3" ry="4" fill="#ffd700" opacity="0.8" />
+    <ellipse cx="126" cy="113" rx="3" ry="4" fill="#ffd700" opacity="0.8" />
+
+    <!-- Ancestor 2 (Left-Center) -->
+    <ellipse cx="250" cy="110" rx="25" ry="36" fill="#8a2be2" opacity="0.25" />
+    <ellipse cx="250" cy="80" rx="13" ry="17" fill="#8a2be2" opacity="0.35" />
+    <ellipse cx="243" cy="78" rx="3.5" ry="4.5" fill="#ffd700" opacity="0.8" />
+    <ellipse cx="257" cy="78" rx="3.5" ry="4.5" fill="#ffd700" opacity="0.8" />
+
+    <!-- Ancestor 3 (Center - The Eldest) -->
+    <ellipse cx="400" cy="90" rx="30" ry="42" fill="#ffd700" opacity="0.15" />
+    <ellipse cx="400" cy="55" rx="16" ry="20" fill="#ffd700" opacity="0.3" />
+    <ellipse cx="392" cy="52" rx="4" ry="5" fill="#ffd700" opacity="0.9" />
+    <ellipse cx="408" cy="52" rx="4" ry="5" fill="#ffd700" opacity="0.9" />
+    <!-- Crown of the eldest ancestor -->
+    <path d="M 383 45 Q 400 28 417 45" stroke="#ffd700" stroke-width="2.5" fill="none" opacity="0.7" />
+    <!-- Glowing staff -->
+    <path d="M 440 100 L 440 160" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.5" />
+
+    <!-- Ancestor 4 (Right-Center) -->
+    <ellipse cx="550" cy="110" rx="25" ry="36" fill="#8a2be2" opacity="0.25" />
+    <ellipse cx="550" cy="80" rx="13" ry="17" fill="#8a2be2" opacity="0.35" />
+    <ellipse cx="543" cy="78" rx="3.5" ry="4.5" fill="#ffd700" opacity="0.8" />
+    <ellipse cx="557" cy="78" rx="3.5" ry="4.5" fill="#ffd700" opacity="0.8" />
+
+    <!-- Ancestor 5 (Far Right - Proud) -->
+    <ellipse cx="680" cy="140" rx="22" ry="32" fill="#8a2be2" opacity="0.25" />
+    <ellipse cx="680" cy="115" rx="11" ry="14" fill="#8a2be2" opacity="0.35" />
+    <ellipse cx="674" cy="113" rx="3" ry="4" fill="#ffd700" opacity="0.8" />
+    <ellipse cx="686" cy="113" rx="3" ry="4" fill="#ffd700" opacity="0.8" />
+  </g>
+
+  <!-- 5. The Plantation (Left Background) -->
+  <g fill="#0a0505" opacity="0.7">
+    <!-- Field rows (perspective) -->
+    <path d="M 0 450 L 200 350 L 220 360 L 0 480 Z" />
+    <path d="M 0 480 L 250 380 L 270 390 L 0 510 Z" />
+    <path d="M 0 510 L 300 410 L 320 420 L 0 540 Z" />
+
+    <!-- Plantation House -->
+    <path d="M 80 400 L 100 320 L 180 320 L 200 400 Z" />
+    <path d="M 70 325 L 140 280 L 210 325 Z" />
+    <!-- Windows (dark) -->
+    <rect x="105" y="340" width="15" height="20" fill="#020104" />
+    <rect x="160" y="340" width="15" height="20" fill="#020104" />
+  </g>
+
+  <!-- 6. The Overseer (Left Foreground - Shadowy Figure with Whip) -->
+  <g opacity="0.7">
+    <!-- Overseer's Body -->
+    <path d="M 100 520 Q 90 460 110 430 Q 130 410 150 430 Q 170 460 160 520 Z" fill="#050302" />
+    
+    <!-- Overseer's Head (Hidden in shadow) -->
+    <ellipse cx="130" cy="410" rx="18" ry="22" fill="#020104" />
+    
+    <!-- Hat (Slave driver's silhouette) -->
+    <ellipse cx="130" cy="395" rx="25" ry="8" fill="#020104" />
+    <path d="M 110 395 L 130 370 L 150 395 Z" fill="#020104" />
+
+    <!-- The Raised Whip -->
+    <path d="M 150 440 Q 200 380 250 350" stroke="#1a0f05" stroke-width="4" fill="none" stroke-linecap="round" />
+    <!-- Whip tip -->
+    <path d="M 250 350 Q 270 330 280 340" stroke="#1a0f05" stroke-width="2" fill="none" stroke-linecap="round" />
+    
+    <!-- Whip's cruel light -->
+    <circle cx="270" cy="340" r="15" fill="#ff3300" opacity="0.15" filter="url(#intenseGlow)" />
+  </g>
+
+  <!-- 7. The Broken Chains (Scattered on the Ground) -->
+  <g>
+    <!-- Broken chain links scattered -->
+    <g stroke="url(#chainGrad)" stroke-width="4" fill="none" opacity="0.7">
+      <!-- Left side broken chains -->
+      <path d="M 180 550 Q 190 540 200 550" />
+      <path d="M 210 555 Q 220 545 230 555" />
+      <path d="M 240 550 Q 250 540 260 548" />
+      
+      <!-- Right side broken chains -->
+      <path d="M 500 555 Q 510 545 520 555" />
+      <path d="M 530 550 Q 540 540 550 550" />
+      <path d="M 560 555 Q 570 545 580 555" />
+      <path d="M 590 548 Q 600 538 610 548" />
+    </g>
+    
+    <!-- The Shattered Central Chain (At Okafor's feet) -->
+    <g filter="url(#intenseGlow)">
+      <!-- Broken link on the left -->
+      <path d="M 340 560 Q 350 550 360 560 Q 370 570 380 560" stroke="#c0c0c0" stroke-width="6" fill="none" />
+      <!-- Broken link on the right -->
+      <path d="M 420 560 Q 430 550 440 560 Q 450 570 460 560" stroke="#c0c0c0" stroke-width="6" fill="none" />
+      <!-- The gap where the chain broke -->
+      <circle cx="400" cy="560" r="10" fill="#ffd700" opacity="0.4" />
+      <circle cx="400" cy="560" r="5" fill="#ffffff" opacity="0.6" />
+    </g>
+  </g>
+
+  <!-- 8. The Old Woman (Behind Okafor, Saved) -->
+  <g>
+    <!-- Old Woman's Body (Weakened but standing) -->
+    <path d="M 290 540 Q 285 480 300 460 Q 315 445 330 460 Q 345 480 340 540 Z" fill="#2a1a0a" />
+    
+    <!-- Old Woman's Head -->
+    <ellipse cx="315" cy="440" rx="14" ry="18" fill="#5a3a22" />
+    
+    <!-- Gray Hair (Wisdom and age) -->
+    <path d="M 303 435 Q 300 415 315 410 Q 330 415 327 435 Q 330 420 315 415 Q 300 420 303 435 Z" fill="#c0c0c0" opacity="0.7" />
+    
+    <!-- Old Woman's Hand on Okafor's Shoulder (Gesture of gratitude) -->
+    <path d="M 330 480 Q 350 470 365 460" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+    <circle cx="365" cy="460" r="5" fill="#5a3a22" />
+
+    <!-- Scars / marks of suffering on her arms -->
+    <path d="M 295 500 L 305 505" stroke="#8b1a1a" stroke-width="1.5" fill="none" opacity="0.5" />
+    <path d="M 290 510 L 300 515" stroke="#8b1a1a" stroke-width="1.5" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- 9. Okafor (The Triumphant Center) -->
+  <g>
+    <!-- Spirit Flame Aura (Unbreakable Spirit) -->
+    <circle cx="400" cy="380" r="180" fill="url(#spiritFlame)" filter="url(#intenseGlow)" />
+
+    <!-- Okafor's Body (Standing Tall, Arms Raised) -->
+    <!-- Legs (Grounded, strong) -->
+    <path d="M 370 560 Q 365 500 380 460 L 420 460 Q 435 500 430 560 Q 400 570 370 560 Z" fill="url(#okaforCloth)" />
+    
+    <!-- Torso (Bare, scarred, powerful) -->
+    <path d="M 370 460 Q 360 400 380 360 Q 400 340 420 360 Q 440 400 430 460 Q 400 470 370 460 Z" fill="url(#okaforSkin)" />
+
+    <!-- Scars of the whip (Testimony of his suffering) -->
+    <g stroke="#8b1a1a" stroke-width="2" fill="none" opacity="0.6">
+      <path d="M 385 380 Q 395 390 390 405" />
+      <path d="M 410 375 Q 405 390 415 400" />
+      <path d="M 395 420 Q 405 425 400 440" />
+      <path d="M 420 410 Q 415 425 425 435" />
+    </g>
+
+    <!-- Arms (Raised in Triumph) -->
+    <!-- Left Arm -->
+    <path d="M 375 380 Q 350 330 330 280" stroke="url(#okaforSkin)" stroke-width="16" fill="none" stroke-linecap="round" />
+    <!-- Left Hand (Open, reaching to the ancestors) -->
+    <path d="M 330 280 L 320 265 M 330 280 L 325 260 M 330 280 L 335 262" stroke="url(#okaforSkin)" stroke-width="5" fill="none" stroke-linecap="round" />
+    
+    <!-- Right Arm -->
+    <path d="M 425 380 Q 450 330 470 280" stroke="url(#okaforSkin)" stroke-width="16" fill="none" stroke-linecap="round" />
+    <!-- Right Hand (Open, reaching to the ancestors) -->
+    <path d="M 470 280 L 480 265 M 470 280 L 475 260 M 470 280 L 465 262" stroke="url(#okaforSkin)" stroke-width="5" fill="none" stroke-linecap="round" />
+
+    <!-- Broken Chains on Wrists (Falling away) -->
+    <g>
+      <!-- Left wrist chains -->
+      <path d="M 340 300 Q 350 295 355 305 Q 350 315 340 310" stroke="url(#chainGrad)" stroke-width="4" fill="none" />
+      <!-- Broken link -->
+      <path d="M 330 315 Q 325 320 330 325" stroke="url(#chainGrad)" stroke-width="3" fill="none" opacity="0.7" />
+      
+      <!-- Right wrist chains -->
+      <path d="M 460 300 Q 450 295 445 305 Q 450 315 460 310" stroke="url(#chainGrad)" stroke-width="4" fill="none" />
+      <!-- Broken link -->
+      <path d="M 470 315 Q 475 320 470 325" stroke="url(#chainGrad)" stroke-width="3" fill="none" opacity="0.7" />
+    </g>
+
+    <!-- Okafor's Head (Lifted, Proud, Free) -->
+    <ellipse cx="400" cy="325" rx="22" ry="28" fill="url(#okaforSkin)" />
+
+    <!-- Okafor's Hair (Natural, unbroken) -->
+    <path d="M 378 320 Q 375 285 400 280 Q 425 285 422 320 Q 425 300 400 295 Q 375 300 378 320 Z" fill="#0a0502" />
+
+    <!-- Okafor's Face (Eyes closed in spiritual communion) -->
+    <!-- Eyes (Calm, seeing beyond the physical) -->
+    <path d="M 388 320 Q 393 316 398 320" stroke="#0a0502" stroke-width="2" fill="none" />
+    <path d="M 402 320 Q 407 316 412 320" stroke="#0a0502" stroke-width="2" fill="none" />
+    
+    <!-- Nose -->
+    <path d="M 400 322 L 398 332 L 402 332" stroke="#3a2010" stroke-width="1.5" fill="none" />
+    
+    <!-- Mouth (Serene, at peace) -->
+    <path d="M 393 342 Q 400 345 407 342" stroke="#3a2010" stroke-width="1.5" fill="none" />
+
+    <!-- Ancestral Markings / Nzu (White chalk) on his face -->
+    <g stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.6">
+      <!-- Vertical marks -->
+      <line x1="388" y1="310" x2="388" y2="320" />
+      <line x1="412" y1="310" x2="412" y2="320" />
+      <!-- Horizontal mark on forehead -->
+      <line x1="392" y1="305" x2="408" y2="305" />
+    </g>
+
+    <!-- The Sacred Songs (Rising from his mouth as golden flames and notes) -->
+    <g filter="url(#intenseGlow)">
+      <!-- Flames of the spirit -->
+      <path d="M 395 350 Q 390 330 400 310 Q 410 330 405 350 Z" fill="#ff6b00" opacity="0.6" />
+      <path d="M 398 345 Q 395 330 400 320 Q 405 330 402 345 Z" fill="#ffd700" opacity="0.8" />
+      
+      <!-- Musical notes rising -->
+      <text x="380" y="280" font-family="Georgia, serif" font-size="20" fill="#ffd700" opacity="0.9">♪</text>
+      <text x="360" y="250" font-family="Georgia, serif" font-size="16" fill="#ffd700" opacity="0.8">♫</text>
+      <text x="420" y="270" font-family="Georgia, serif" font-size="18" fill="#ffd700" opacity="0.9">♬</text>
+      <text x="440" y="240" font-family="Georgia, serif" font-size="14" fill="#ffd700" opacity="0.7">♪</text>
+      <text x="370" y="210" font-family="Georgia, serif" font-size="22" fill="#ffd700" opacity="0.6">♫</text>
+      <text x="430" y="200" font-family="Georgia, serif" font-size="20" fill="#ffd700" opacity="0.5">♪</text>
+    </g>
+  </g>
+
+  <!-- 10. The Other Slaves (Background, Rising with Okafor) -->
+  <g fill="#2a1a0a" opacity="0.6">
+    <!-- Slave 1 -->
+    <path d="M 480 540 Q 475 490 490 470 Q 505 455 520 470 Q 535 490 530 540 Z" />
+    <ellipse cx="505" cy="455" rx="14" ry="18" />
+    
+    <!-- Slave 2 -->
+    <path d="M 560 545 Q 555 500 570 480 Q 585 465 600 480 Q 615 500 610 545 Z" />
+    <ellipse cx="585" cy="465" rx="13" ry="17" />
+    
+    <!-- Slave 3 -->
+    <path d="M 640 540 Q 635 495 650 475 Q 665 460 680 475 Q 695 495 690 540 Z" />
+    <ellipse cx="665" cy="460" rx="12" ry="16" />
+    
+    <!-- Slave 4 (Child) -->
+    <path d="M 700 550 Q 697 520 707 505 Q 717 495 727 505 Q 737 520 734 550 Z" />
+    <ellipse cx="717" cy="495" rx="10" ry="13" />
+  </g>
+
+  <!-- 11. Foreground Framing -->
+  <g fill="#020104">
+    <!-- Left foreground roots/grass -->
+    <path d="M 0 600 L 0 540 Q 50 560 100 600 Z" />
+    <path d="M 50 580 Q 60 550 70 530 Q 80 550 80 580 Z" opacity="0.6" />
+    
+    <!-- Right foreground roots/grass -->
+    <path d="M 800 600 L 800 520 Q 750 540 700 600 Z" />
+    <path d="M 730 570 Q 740 540 750 520 Q 760 540 760 570 Z" opacity="0.6" />
+  </g>
+
+  <!-- 12. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE SLAVE
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "The spirit cannot be enslaved. Remember who you are, and you will never be truly bound."
+  </text>
+
+</svg>
 <p>There was once a man named Okafor who was captured in war. He was taken from his village. He was chained. He was sold. He became a slave.</p>
 <p>He was taken to a distant land. He was given a new name. He was forced to work in the fields. He was beaten. He was starved. He was treated like an animal.</p>
 <p>But Okafor did not forget. He did not forget his village. He did not forget his family. He did not forget the songs of his ancestors. He sang them at night, when the overseers were asleep. He whispered them to the other slaves. He kept the flame alive.</p>
@@ -5509,6 +7128,429 @@
 <p><strong>The Lesson:</strong> The spirit cannot be enslaved. Even in chains, a man can be free. Remember who you are, and you will never be truly bound.</p>
 
 <h1 id="story28">28. Lament for the Great Dead</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Sky -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020208" />
+      <stop offset="30%" stop-color="#0a0a18" />
+      <stop offset="60%" stop-color="#1a1008" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+
+    <!-- Spirit World Light (Above) -->
+    <radialGradient id="spiritLight" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.5" />
+      <stop offset="30%" stop-color="#ffb347" stop-opacity="0.2" />
+      <stop offset="60%" stop-color="#8a2be2" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Firelight Glow (Below) -->
+    <radialGradient id="firelightGlow" cx="50%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.7" />
+      <stop offset="30%" stop-color="#ff7b00" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#cc3300" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Lament Song Aura -->
+    <radialGradient id="lamentAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#ff8c00" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Okonkwo's Spirit Gradient -->
+    <linearGradient id="spiritBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#ffd700" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ff8c00" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Ancestor Gradient -->
+    <linearGradient id="ancestorBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#8a2be2" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Chief's Cloth Gradient -->
+    <linearGradient id="chiefCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a1a1a" />
+      <stop offset="50%" stop-color="#4a0a0a" />
+      <stop offset="100%" stop-color="#1a0505" />
+    </linearGradient>
+
+    <!-- Eldest Man's Cloth -->
+    <linearGradient id="elderCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f0f0" />
+      <stop offset="50%" stop-color="#d0d0d0" />
+      <stop offset="100%" stop-color="#a0a0a0" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#nightSky)" />
+
+  <!-- 2. Spirit World Light -->
+  <rect width="800" height="600" fill="url(#spiritLight)" />
+
+  <!-- 3. Stars -->
+  <g fill="#ffffff" opacity="0.4" filter="url(#softGlow)">
+    <circle cx="80" cy="50" r="1.5" />
+    <circle cx="200" cy="30" r="1" />
+    <circle cx="350" cy="60" r="2" />
+    <circle cx="500" cy="40" r="1.5" />
+    <circle cx="650" cy="70" r="1" />
+    <circle cx="750" cy="30" r="1.5" />
+    <circle cx="150" cy="100" r="1" />
+    <circle cx="450" cy="90" r="1.5" />
+    <circle cx="700" cy="110" r="1" />
+  </g>
+
+  <!-- The Moon -->
+  <circle cx="680" cy="80" r="30" fill="#fff8dc" opacity="0.5" filter="url(#softGlow)" />
+  <circle cx="672" cy="72" r="28" fill="url(#nightSky)" opacity="0.6" />
+
+  <!-- 4. The Gate of the Spirit World (Above) -->
+  <g filter="url(#intenseGlow)">
+    <!-- The Gate (Luminous archway) -->
+    <path d="M 300 130 Q 400 40 500 130" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.6" />
+    <path d="M 310 130 Q 400 55 490 130" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4" />
+    
+    <!-- Light pouring through the gate -->
+    <ellipse cx="400" cy="130" rx="80" ry="30" fill="#ffd700" opacity="0.25" />
+    <ellipse cx="400" cy="120" rx="50" ry="20" fill="#ffffff" opacity="0.3" />
+  </g>
+
+  <!-- 5. The Ancestors (Waiting at the Gate) -->
+  <g filter="url(#etherealBlur)" opacity="0.6">
+    <!-- Ancestor 1 (Left) -->
+    <ellipse cx="330" cy="140" rx="20" ry="28" fill="url(#ancestorBody)" />
+    <ellipse cx="330" cy="118" rx="10" ry="13" fill="#ffd700" opacity="0.5" />
+    <ellipse cx="325" cy="116" rx="3" ry="4" fill="#ffffff" opacity="0.9" />
+    <ellipse cx="335" cy="116" rx="3" ry="4" fill="#ffffff" opacity="0.9" />
+    <!-- Welcoming arms -->
+    <path d="M 310 150 Q 290 160 280 175" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round" />
+    <path d="M 350 150 Q 370 160 380 175" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round" />
+
+    <!-- Ancestor 2 (Center - The Eldest) -->
+    <ellipse cx="400" cy="130" rx="25" ry="35" fill="url(#ancestorBody)" />
+    <ellipse cx="400" cy="102" rx="13" ry="17" fill="#ffd700" opacity="0.6" />
+    <ellipse cx="393" cy="100" rx="4" ry="5" fill="#ffffff" opacity="0.9" />
+    <ellipse cx="407" cy="100" rx="4" ry="5" fill="#ffffff" opacity="0.9" />
+    <!-- Crown of the eldest -->
+    <path d="M 383 92 Q 400 72 417 92" stroke="#ffd700" stroke-width="2.5" fill="none" opacity="0.7" />
+    <!-- Staff -->
+    <path d="M 435 110 L 435 170" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.5" />
+    <!-- Arms open wide in welcome -->
+    <path d="M 375 145 Q 350 160 335 180" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round" />
+    <path d="M 425 145 Q 450 160 465 180" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round" />
+
+    <!-- Ancestor 3 (Right) -->
+    <ellipse cx="470" cy="140" rx="20" ry="28" fill="url(#ancestorBody)" />
+    <ellipse cx="470" cy="118" rx="10" ry="13" fill="#ffd700" opacity="0.5" />
+    <ellipse cx="465" cy="116" rx="3" ry="4" fill="#ffffff" opacity="0.9" />
+    <ellipse cx="475" cy="116" rx="3" ry="4" fill="#ffffff" opacity="0.9" />
+    <!-- Welcoming arms -->
+    <path d="M 450 150 Q 430 160 420 175" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round" />
+    <path d="M 490 150 Q 510 160 520 175" stroke="#ffd700" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round" />
+  </g>
+
+  <!-- 6. The Lament (The Bridge of Song) -->
+  <g filter="url(#intenseGlow)">
+    <!-- The central luminous thread of song rising from the village to the spirit gate -->
+    <path d="M 400 480 Q 380 400 400 320 Q 420 240 400 150" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.5" stroke-dasharray="8 6" />
+    <path d="M 400 480 Q 420 400 400 320 Q 380 240 400 150" stroke="#ff8c00" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="4 8" />
+
+    <!-- Musical notes rising along the thread -->
+    <text x="390" y="430" font-family="Georgia, serif" font-size="22" fill="#ffd700" opacity="0.8">♪</text>
+    <text x="410" y="390" font-family="Georgia, serif" font-size="18" fill="#ffd700" opacity="0.7">♫</text>
+    <text x="385" y="350" font-family="Georgia, serif" font-size="24" fill="#ffd700" opacity="0.9">♬</text>
+    <text x="415" y="310" font-family="Georgia, serif" font-size="16" fill="#ffd700" opacity="0.6">♪</text>
+    <text x="395" y="270" font-family="Georgia, serif" font-size="20" fill="#ffd700" opacity="0.8">♫</text>
+    <text x="410" y="230" font-family="Georgia, serif" font-size="18" fill="#ffd700" opacity="0.7">♪</text>
+    <text x="390" y="190" font-family="Georgia, serif" font-size="22" fill="#ffd700" opacity="0.9">♬</text>
+
+    <!-- Ethereal wisps of song -->
+    <path d="M 360 460 Q 340 420 360 380" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round" />
+    <path d="M 440 460 Q 460 420 440 380" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round" />
+  </g>
+
+  <!-- 7. The Spirit of Okonkwo (Ascending) -->
+  <g filter="url(#etherealBlur)" opacity="0.7">
+    <!-- Okonkwo's Spirit Body (Translucent, Radiant) -->
+    <path d="M 380 280 Q 370 230 390 200 Q 400 185 410 200 Q 430 230 420 280 Q 400 295 380 280 Z" fill="url(#spiritBody)" />
+    
+    <!-- Spirit Head -->
+    <ellipse cx="400" cy="175" rx="18" ry="23" fill="#ffffff" opacity="0.8" />
+    
+    <!-- Spirit Eyes (At peace) -->
+    <path d="M 392 172 Q 396 169 400 172" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.8" />
+    <path d="M 400 172 Q 404 169 408 172" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.8" />
+    
+    <!-- Spirit Crown / Chief's Cap (Translucent) -->
+    <path d="M 385 165 Q 390 145 400 140 Q 410 145 415 165 Q 410 155 400 152 Q 390 155 385 165 Z" fill="#ffd700" opacity="0.5" />
+    
+    <!-- Spirit Arms (Reaching up to the ancestors) -->
+    <path d="M 385 220 Q 370 190 360 165" stroke="#ffd700" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round" />
+    <path d="M 415 220 Q 430 190 440 165" stroke="#ffd700" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round" />
+    
+    <!-- Spirit Legs (Dissolving into light) -->
+    <path d="M 390 280 Q 385 310 380 340" stroke="#ffd700" stroke-width="8" fill="none" opacity="0.4" stroke-linecap="round" />
+    <path d="M 410 280 Q 415 310 420 340" stroke="#ffd700" stroke-width="8" fill="none" opacity="0.4" stroke-linecap="round" />
+    
+    <!-- Radiant aura around the spirit -->
+    <circle cx="400" cy="220" r="60" fill="#ffd700" opacity="0.15" />
+    <circle cx="400" cy="220" r="30" fill="#ffffff" opacity="0.15" />
+  </g>
+
+  <!-- 8. Firelight Glow (Below) -->
+  <rect width="800" height="600" fill="url(#firelightGlow)" />
+
+  <!-- 9. The Village Square (Ground) -->
+  <path d="M 0 500 Q 200 470 400 480 Q 600 490 800 470 L 800 600 L 0 600 Z" fill="#0a0502" />
+  <path d="M 0 540 Q 200 510 400 520 Q 600 530 800 510 L 800 600 L 0 600 Z" fill="#050302" />
+
+  <!-- 10. The Central Fire -->
+  <g filter="url(#intenseGlow)">
+    <!-- Fire base -->
+    <ellipse cx="400" cy="540" rx="40" ry="12" fill="#1a0f05" />
+    
+    <!-- Flames -->
+    <path d="M 380 540 Q 385 500 395 470 Q 390 510 400 540 Z" fill="#ff7b00" opacity="0.8" />
+    <path d="M 400 540 Q 405 490 415 460 Q 410 500 420 540 Z" fill="#ff7b00" opacity="0.8" />
+    <path d="M 390 540 Q 395 510 400 490 Q 405 510 410 540 Z" fill="#ffd700" opacity="0.9" />
+    <path d="M 395 540 Q 398 520 400 510 Q 402 520 405 540 Z" fill="#ffffff" opacity="0.9" />
+    
+    <!-- Sparks rising -->
+    <circle cx="380" cy="460" r="2" fill="#ffb347" opacity="0.8" />
+    <circle cx="420" cy="450" r="1.5" fill="#ffb347" opacity="0.7" />
+    <circle cx="395" cy="430" r="2.5" fill="#ffb347" opacity="0.9" />
+    <circle cx="410" cy="420" r="1.5" fill="#ffb347" opacity="0.6" />
+    <circle cx="385" cy="410" r="2" fill="#ffb347" opacity="0.7" />
+  </g>
+
+  <!-- 11. The Body of Chief Okonkwo (In State, Center) -->
+  <g>
+    <!-- The Bier / Platform -->
+    <path d="M 340 540 L 350 510 L 450 510 L 460 540 Z" fill="#2a1508" stroke="#1a0f05" stroke-width="2" />
+    
+    <!-- Okonkwo's Body (Draped in fine cloth) -->
+    <path d="M 355 520 Q 350 500 370 490 Q 400 480 430 490 Q 450 500 445 520 Q 400 530 355 520 Z" fill="url(#chiefCloth)" />
+    
+    <!-- Fine cloth folds -->
+    <path d="M 365 500 Q 400 495 435 500" stroke="#cc3300" stroke-width="1.5" fill="none" opacity="0.4" />
+    <path d="M 360 510 Q 400 505 440 510" stroke="#cc3300" stroke-width="1.5" fill="none" opacity="0.4" />
+    
+    <!-- Okonkwo's Head (Eyes closed in eternal rest) -->
+    <ellipse cx="400" cy="478" rx="18" ry="22" fill="#5a3a22" />
+    
+    <!-- Chief's Red Cap (Sign of his title) -->
+    <path d="M 385 470 Q 390 450 400 445 Q 410 450 415 470 Q 410 460 400 457 Q 390 460 385 470 Z" fill="#cc3300" />
+    
+    <!-- White Feather (Sign of his greatness) -->
+    <path d="M 400 445 Q 405 420 415 410 Q 410 430 405 445 Z" fill="#ffffff" opacity="0.8" />
+    <path d="M 400 445 Q 395 425 385 415 Q 392 435 398 445 Z" fill="#f0f0f0" opacity="0.8" />
+    
+    <!-- Facial markings (Nzu - white chalk) -->
+    <g stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.5">
+      <line x1="392" y1="468" x2="392" y2="478" />
+      <line x1="408" y1="468" x2="408" y2="478" />
+    </g>
+    
+    <!-- Coral Beads (Necklace) -->
+    <g fill="#cc3300">
+      <circle cx="388" cy="490" r="3" />
+      <circle cx="394" cy="493" r="3" />
+      <circle cx="400" cy="495" r="3" />
+      <circle cx="406" cy="493" r="3" />
+      <circle cx="412" cy="490" r="3" />
+    </g>
+  </g>
+
+  <!-- 12. The Offerings (Surrounding the body) -->
+  <g>
+    <!-- Palm Wine Calabash -->
+    <path d="M 330 530 Q 320 545 330 555 Q 345 560 355 550 Q 360 540 350 530 Z" fill="#3a2010" stroke="#1a0f05" stroke-width="2" />
+    <ellipse cx="342" cy="532" rx="15" ry="6" fill="#1a0f05" />
+    <ellipse cx="342" cy="540" rx="10" ry="4" fill="#cc3300" opacity="0.6" />
+    
+    <!-- Kola Nuts -->
+    <circle cx="470" cy="535" r="6" fill="#8b4513" />
+    <circle cx="482" cy="540" r="6" fill="#8b4513" />
+    <circle cx="460" cy="542" r="5" fill="#8b4513" />
+    
+    <!-- Yams -->
+    <ellipse cx="490" cy="520" rx="15" ry="25" transform="rotate(20 490 520)" fill="#6b4423" stroke="#3a2010" stroke-width="2" />
+    <ellipse cx="510" cy="530" rx="12" ry="20" transform="rotate(-15 510 530)" fill="#5c3a1a" stroke="#3a2010" stroke-width="2" />
+    
+    <!-- Cowrie Shells -->
+    <g fill="#f5f5dc" opacity="0.7">
+      <ellipse cx="320" cy="545" rx="5" ry="3.5" transform="rotate(20 320 545)" />
+      <ellipse cx="310" cy="555" rx="5" ry="3.5" transform="rotate(-15 310 555)" />
+      <ellipse cx="500" cy="550" rx="5" ry="3.5" transform="rotate(10 500 550)" />
+      <ellipse cx="515" cy="555" rx="5" ry="3.5" transform="rotate(-20 515 555)" />
+    </g>
+    
+    <!-- Folded Cloth -->
+    <path d="M 300 520 Q 310 510 325 515 Q 335 520 330 530 Q 315 535 300 530 Z" fill="#8a1a1a" opacity="0.8" />
+    <path d="M 305 525 Q 315 518 325 522" stroke="#cc3300" stroke-width="1" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- 13. The Mourners (Villagers Gathered in Song) -->
+  <g>
+    <!-- Mourner 1 (Far Left) -->
+    <g fill="#0a0502">
+      <path d="M 80 560 Q 75 520 90 500 Q 105 485 115 500 Q 130 520 125 560 Z" />
+      <ellipse cx="100" cy="485" rx="12" ry="15" />
+      <!-- Open mouth (singing) -->
+      <ellipse cx="100" cy="492" rx="4" ry="5" fill="#000000" />
+      <!-- Raised hands -->
+      <path d="M 85 510 Q 70 490 60 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+      <path d="M 115 510 Q 130 490 140 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Mourner 2 (Left) -->
+    <g fill="#0a0502">
+      <path d="M 150 565 Q 145 525 160 505 Q 175 490 185 505 Q 200 525 195 565 Z" />
+      <ellipse cx="170" cy="490" rx="11" ry="14" />
+      <!-- Open mouth -->
+      <ellipse cx="170" cy="497" rx="3.5" ry="4.5" fill="#000000" />
+      <!-- Raised hands -->
+      <path d="M 155 515 Q 140 495 130 475" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+      <path d="M 185 515 Q 200 495 210 475" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Mourner 3 (Center Left) -->
+    <g fill="#0a0502">
+      <path d="M 220 560 Q 215 520 230 500 Q 245 485 255 500 Q 270 520 265 560 Z" />
+      <ellipse cx="240" cy="485" rx="12" ry="15" />
+      <!-- Open mouth -->
+      <ellipse cx="240" cy="492" rx="4" ry="5" fill="#000000" />
+      <!-- Raised hands -->
+      <path d="M 225 510 Q 210 490 200 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+      <path d="M 255 510 Q 270 490 280 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Mourner 4 (Center Right) -->
+    <g fill="#0a0502">
+      <path d="M 540 560 Q 535 520 550 500 Q 565 485 575 500 Q 590 520 585 560 Z" />
+      <ellipse cx="560" cy="485" rx="12" ry="15" />
+      <!-- Open mouth -->
+      <ellipse cx="560" cy="492" rx="4" ry="5" fill="#000000" />
+      <!-- Raised hands -->
+      <path d="M 545 510 Q 530 490 520 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+      <path d="M 575 510 Q 590 490 600 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Mourner 5 (Right) -->
+    <g fill="#0a0502">
+      <path d="M 620 565 Q 615 525 630 505 Q 645 490 655 505 Q 670 525 665 565 Z" />
+      <ellipse cx="640" cy="490" rx="11" ry="14" />
+      <!-- Open mouth -->
+      <ellipse cx="640" cy="497" rx="3.5" ry="4.5" fill="#000000" />
+      <!-- Raised hands -->
+      <path d="M 625 515 Q 610 495 600 475" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+      <path d="M 655 515 Q 670 495 680 475" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Mourner 6 (Far Right) -->
+    <g fill="#0a0502">
+      <path d="M 700 560 Q 695 520 710 500 Q 725 485 735 500 Q 750 520 745 560 Z" />
+      <ellipse cx="720" cy="485" rx="12" ry="15" />
+      <!-- Open mouth -->
+      <ellipse cx="720" cy="492" rx="4" ry="5" fill="#000000" />
+      <!-- Raised hands -->
+      <path d="M 705 510 Q 690 490 680 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+      <path d="M 735 510 Q 750 490 760 470" stroke="#0a0502" stroke-width="5" fill="none" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- 14. The Eldest Man (Leading the Lament - Center Front) -->
+  <g>
+    <!-- Eldest Man's Aura -->
+    <circle cx="400" cy="470" r="80" fill="#ffd700" opacity="0.15" filter="url(#intenseGlow)" />
+
+    <!-- Eldest Man's Body (Draped in white, standing tall) -->
+    <path d="M 370 570 Q 365 520 380 490 Q 395 470 410 490 Q 425 520 420 570 Z" fill="url(#elderCloth)" />
+    
+    <!-- Red Sash (Sign of his status as elder) -->
+    <path d="M 380 490 Q 400 505 420 490 Q 425 520 420 545 Q 400 530 380 545 Q 375 520 380 490 Z" fill="#cc3300" opacity="0.6" />
+
+    <!-- Eldest Man's Head -->
+    <ellipse cx="400" cy="460" rx="18" ry="23" fill="#5a3a22" />
+
+    <!-- White Hair (Wisdom and age) -->
+    <path d="M 383 455 Q 380 430 400 425 Q 420 430 417 455 Q 420 440 400 435 Q 380 440 383 455 Z" fill="#c0c0c0" opacity="0.8" />
+
+    <!-- Eldest Man's Face (Eyes closed in song, mouth open) -->
+    <!-- Eyes (Closed) -->
+    <path d="M 391 455 Q 395 452 399 455" stroke="#0a0502" stroke-width="1.5" fill="none" />
+    <path d="M 401 455 Q 405 452 409 455" stroke="#0a0502" stroke-width="1.5" fill="none" />
+    
+    <!-- Open Mouth (Singing the lament) -->
+    <ellipse cx="400" cy="470" rx="5" ry="7" fill="#000000" />
+
+    <!-- Eldest Man's Arms (Raised high, leading the song) -->
+    <path d="M 380 500 Q 350 460 330 420" stroke="url(#elderCloth)" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 420 500 Q 450 460 470 420" stroke="url(#elderCloth)" stroke-width="10" fill="none" stroke-linecap="round" />
+
+    <!-- Hands (Open to the spirit world) -->
+    <path d="M 330 420 L 320 410 M 330 420 L 325 405 M 330 420 L 335 408" stroke="#5a3a22" stroke-width="4" fill="none" stroke-linecap="round" />
+    <path d="M 470 420 L 480 410 M 470 420 L 475 405 M 470 420 L 465 408" stroke="#5a3a22" stroke-width="4" fill="none" stroke-linecap="round" />
+
+    <!-- The Song Rising from his mouth (Golden musical notes and flames) -->
+    <g filter="url(#intenseGlow)">
+      <!-- Flames of the song -->
+      <path d="M 395 460 Q 390 440 400 420 Q 410 440 405 460 Z" fill="#ff6b00" opacity="0.5" />
+      <path d="M 398 455 Q 395 440 400 430 Q 405 440 402 455 Z" fill="#ffd700" opacity="0.7" />
+
+      <!-- Musical notes rising from the elder's mouth -->
+      <text x="380" y="400" font-family="Georgia, serif" font-size="20" fill="#ffd700" opacity="0.9">♪</text>
+      <text x="410" y="380" font-family="Georgia, serif" font-size="16" fill="#ffd700" opacity="0.8">♫</text>
+      <text x="390" y="350" font-family="Georgia, serif" font-size="22" fill="#ffd700" opacity="0.9">♬</text>
+    </g>
+  </g>
+
+  <!-- 15. The Lament Aura (Enveloping the Scene) -->
+  <rect width="800" height="600" fill="url(#lamentAura)" opacity="0.3" />
+
+  <!-- 16. Foreground Framing -->
+  <g fill="#020104">
+    <!-- Left foreground -->
+    <path d="M 0 600 L 0 560 Q 30 570 50 600 Z" />
+    <!-- Right foreground -->
+    <path d="M 800 600 L 800 560 Q 770 570 750 600 Z" />
+  </g>
+
+  <!-- 17. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    LAMENT FOR THE GREAT DEAD
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "The lament is the bridge between the living and the dead. When we sing for the departed, we send them home."
+  </text>
+
+</svg>
 <p>When a great man dies, the people mourn. They do not mourn like other people. They do not cry and wail and tear their clothes. They sing. They sing a lament. They sing a song that tells the story of the dead man's life.</p>
 <p>The lament is not just a song. It is a ritual. It is a way of sending the spirit to the ancestors. It is a way of honoring the dead. It is a way of ensuring that the dead man's name is remembered.</p>
 <p>The elders say that when a great man dies, the ancestors gather at the gate of the spirit world. They wait for him. They listen for the lament. And when they hear it, they open the gate. They welcome him. They say: "You have lived well. You have done great things. You are one of us now."</p>
