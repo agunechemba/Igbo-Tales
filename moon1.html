@@ -3031,6 +3031,272 @@
 <p><strong>The Lesson:</strong> Kindness to strangers is repaid in ways we cannot see. The spirit world rewards those who show compassion.</p>
 
 <h1 id="story15">15. Obaraedo and the Lost Souls</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Forest Background -->
+    <linearGradient id="nightForest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="40%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Sacred Fire Glow -->
+    <radialGradient id="fireGlow" cx="30%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#ff7b00" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#cc3300" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Spirit Aura (Cold Ethereal Light) -->
+    <radialGradient id="spiritAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.5" />
+      <stop offset="40%" stop-color="#8a2be2" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Obaraedo's Caul Glow -->
+    <radialGradient id="caulGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#ffd700" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Obaraedo's Skin Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c88a50" />
+      <stop offset="50%" stop-color="#8b5a33" />
+      <stop offset="100%" stop-color="#3a2010" />
+    </linearGradient>
+
+    <!-- Cloth Wrapper Gradient -->
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b1a1a" />
+      <stop offset="50%" stop-color="#5a0a0a" />
+      <stop offset="100%" stop-color="#1a0505" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#nightForest)" />
+
+  <!-- Stars / Ancestral Eyes in the Sky -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#softGlow)">
+    <circle cx="100" cy="60" r="1.5" />
+    <circle cx="250" cy="40" r="1" />
+    <circle cx="450" cy="80" r="2" />
+    <circle cx="600" cy="50" r="1.5" />
+    <circle cx="750" cy="100" r="1" />
+    <circle cx="380" cy="30" r="1.5" />
+  </g>
+
+  <!-- 2. Ancient Forest Trees (Framing the sacred space) -->
+  <g fill="#0a0505">
+    <!-- Left Trees -->
+    <path d="M -20 600 L 30 100 L 80 600 Z" />
+    <path d="M 80 600 L 110 200 L 140 600 Z" opacity="0.7" />
+    <!-- Right Trees -->
+    <path d="M 720 600 L 770 80 L 820 600 Z" />
+    <path d="M 660 600 L 690 250 L 720 600 Z" opacity="0.7" />
+    
+    <!-- Twisted Branches overhead -->
+    <path d="M 30 150 Q 150 120 250 180" stroke="#0a0505" stroke-width="15" fill="none" stroke-linecap="round" />
+    <path d="M 770 120 Q 650 100 550 160" stroke="#0a0505" stroke-width="12" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. The Sacred Fire (Center Left) -->
+  <rect width="800" height="600" fill="url(#fireGlow)" />
+
+  <!-- Fire Pit -->
+  <g filter="url(#intenseGlow)">
+    <!-- Stones around fire -->
+    <ellipse cx="200" cy="520" rx="60" ry="20" fill="#1a0f0a" />
+    <circle cx="160" cy="515" r="8" fill="#2a1a0a" />
+    <circle cx="180" cy="525" r="7" fill="#2a1a0a" />
+    <circle cx="220" cy="525" r="7" fill="#2a1a0a" />
+    <circle cx="240" cy="515" r="8" fill="#2a1a0a" />
+
+    <!-- Flames -->
+    <path d="M 180 510 Q 190 460 200 430 Q 195 470 210 510 Z" fill="#ff7b00" />
+    <path d="M 200 510 Q 210 450 215 420 Q 225 470 220 510 Z" fill="#ff7b00" />
+    <path d="M 195 500 Q 205 470 210 450 Q 215 480 215 500 Z" fill="#ffd700" />
+    <path d="M 200 500 Q 205 480 208 470 Q 212 485 210 500 Z" fill="#ffffff" opacity="0.9" />
+
+    <!-- Smoke wisps rising -->
+    <path d="M 200 430 Q 180 380 200 330" stroke="#8a2be2" stroke-width="4" fill="none" opacity="0.2" filter="url(#intenseGlow)" />
+    <path d="M 215 440 Q 230 380 210 320" stroke="#8a2be2" stroke-width="3" fill="none" opacity="0.15" filter="url(#intenseGlow)" />
+  </g>
+
+  <!-- 4. The Lost Souls (Ethereal Spirits surrounding Obaraedo) -->
+  <g>
+    <!-- Spirit 1 (Directly behind Obaraedo, faintly visible) -->
+    <g opacity="0.4" filter="url(#etherealBlur)">
+      <ellipse cx="400" cy="280" rx="40" ry="60" fill="url(#spiritAura)" />
+      <ellipse cx="400" cy="240" rx="18" ry="22" fill="#00ffff" opacity="0.5" />
+      <!-- Sorrowful eyes -->
+      <ellipse cx="395" cy="238" rx="3" ry="4" fill="#000000" opacity="0.6" />
+      <ellipse cx="407" cy="238" rx="3" ry="4" fill="#000000" opacity="0.6" />
+      <!-- Reaching arms -->
+      <path d="M 370 280 Q 360 320 370 350" stroke="#00ffff" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round" />
+      <path d="M 430 280 Q 440 320 430 350" stroke="#00ffff" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round" />
+    </g>
+
+    <!-- Spirit 2 (Right Side, reaching towards Obaraedo) -->
+    <g opacity="0.5" filter="url(#etherealBlur)">
+      <ellipse cx="620" cy="350" rx="35" ry="55" fill="url(#spiritAura)" />
+      <ellipse cx="620" cy="310" rx="15" ry="20" fill="#8a2be2" opacity="0.6" />
+      <!-- Hollow eyes -->
+      <ellipse cx="615" cy="308" rx="3" ry="4" fill="#000000" opacity="0.7" />
+      <ellipse cx="625" cy="308" rx="3" ry="4" fill="#000000" opacity="0.7" />
+      <!-- Reaching arm towards Obaraedo -->
+      <path d="M 590 340 Q 550 340 520 360" stroke="#00ffff" stroke-width="5" fill="none" opacity="0.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Spirit 3 (Far Right, fading away) -->
+    <g opacity="0.25" filter="url(#etherealBlur)">
+      <ellipse cx="720" cy="420" rx="30" ry="45" fill="url(#spiritAura)" />
+      <ellipse cx="720" cy="385" rx="12" ry="16" fill="#00ffff" opacity="0.5" />
+    </g>
+
+    <!-- Spirit 4 (Small child spirit, Left of Obaraedo) -->
+    <g opacity="0.45" filter="url(#etherealBlur)">
+      <ellipse cx="300" cy="420" rx="20" ry="30" fill="url(#spiritAura)" />
+      <ellipse cx="300" cy="400" rx="10" ry="12" fill="#00ffff" opacity="0.6" />
+      <!-- Small reaching hands -->
+      <path d="M 285 420 Q 275 440 280 460" stroke="#00ffff" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- 5. Obaraedo (The Mother of the Lost) -->
+  <g>
+    <!-- Obaraedo's Sacred Aura -->
+    <circle cx="420" cy="420" r="130" fill="#ffd700" opacity="0.08" filter="url(#softGlow)" />
+
+    <!-- Obaraedo's Body (Kneeling, wrapped in cloth) -->
+    <path d="M 350 520 Q 340 450 370 400 Q 400 370 440 380 Q 480 400 490 450 Q 500 520 470 540 Q 420 550 350 520 Z" fill="url(#clothGrad)" />
+    
+    <!-- Cloth folds and patterns (Adire style) -->
+    <path d="M 370 420 Q 400 450 430 420" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.4" />
+    <path d="M 360 460 Q 400 490 450 460" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.4" />
+    <path d="M 360 500 Q 400 530 460 500" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.4" />
+
+    <!-- Obaraedo's Head -->
+    <ellipse cx="420" cy="350" rx="22" ry="28" fill="url(#skinGrad)" />
+
+    <!-- Obaraedo's Hair (Braided, adorned with cowrie shells) -->
+    <path d="M 398 350 Q 390 310 420 300 Q 450 310 442 350 Q 450 320 420 310 Q 390 320 398 350 Z" fill="#0a0502" />
+    
+    <!-- Cowrie shells in hair -->
+    <g fill="#f5f5dc">
+      <ellipse cx="400" cy="320" rx="4" ry="2.5" transform="rotate(-20 400 320)" />
+      <ellipse cx="415" cy="308" rx="4" ry="2.5" />
+      <ellipse cx="435" cy="318" rx="4" ry="2.5" transform="rotate(20 435 318)" />
+    </g>
+
+    <!-- The Caul (Veil over her face - the sign of her gift) -->
+    <path d="M 398 340 Q 420 350 442 340 Q 440 370 420 380 Q 400 370 398 340 Z" fill="url(#caulGlow)" opacity="0.4" filter="url(#intenseGlow)" />
+    <!-- Caul outline -->
+    <path d="M 398 340 Q 420 350 442 340" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.6" />
+
+    <!-- Obaraedo's Eyes (Seeing the unseen) -->
+    <g filter="url(#intenseGlow)">
+      <ellipse cx="412" cy="348" rx="3" ry="2" fill="#ffffff" opacity="0.9" />
+      <ellipse cx="430" cy="348" rx="3" ry="2" fill="#ffffff" opacity="0.9" />
+      <circle cx="412" cy="348" r="1" fill="#00ffff" />
+      <circle cx="430" cy="348" r="1" fill="#00ffff" />
+    </g>
+
+    <!-- Obaraedo's Arms (Reaching out to the spirits in blessing) -->
+    <!-- Left Arm -->
+    <path d="M 370 430 Q 320 440 280 430" stroke="url(#skinGrad)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <!-- Left Hand (Open palm, offering peace) -->
+    <path d="M 280 430 L 265 425 M 280 430 L 265 432 M 280 430 L 268 440" stroke="url(#skinGrad)" stroke-width="4" fill="none" stroke-linecap="round" />
+    
+    <!-- Right Arm -->
+    <path d="M 470 430 Q 520 440 560 420" stroke="url(#skinGrad)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <!-- Right Hand (Holding a white chalk / offering) -->
+    <path d="M 560 420 L 575 415" stroke="url(#skinGrad)" stroke-width="5" fill="none" stroke-linecap="round" />
+    <!-- The White Chalk (Nzu) in her hand -->
+    <ellipse cx="580" cy="412" rx="8" ry="5" fill="#ffffff" filter="url(#softGlow)" />
+
+    <!-- Obaraedo's Legs (Kneeling) -->
+    <path d="M 370 520 Q 360 550 380 570" stroke="url(#clothGrad)" stroke-width="25" fill="none" stroke-linecap="round" />
+    <path d="M 470 520 Q 480 550 460 570" stroke="url(#clothGrad)" stroke-width="25" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 6. The Sacred Offerings (In front of Obaraedo) -->
+  <g>
+    <!-- White chalk lines on the ground -->
+    <g stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7" filter="url(#softGlow)">
+      <line x1="380" y1="540" x2="460" y2="540" />
+      <line x1="400" y1="530" x2="440" y2="530" />
+      <line x1="420" y1="520" x2="420" y2="550" />
+    </g>
+
+    <!-- Calabash with offerings -->
+    <path d="M 390 560 Q 380 540 400 530 Q 420 520 440 530 Q 460 540 450 560 Z" fill="#3a2010" stroke="#1a0f05" stroke-width="2" />
+    
+    <!-- Kola nuts inside -->
+    <circle cx="405" cy="540" r="5" fill="#8b4513" />
+    <circle cx="420" cy="535" r="5" fill="#8b4513" />
+    <circle cx="435" cy="542" r="5" fill="#8b4513" />
+
+    <!-- Palm oil (Reddish glow) -->
+    <ellipse cx="420" cy="555" rx="15" ry="5" fill="#cc3300" opacity="0.6" filter="url(#softGlow)" />
+
+    <!-- Candle / Small flame (Additional light source) -->
+    <path d="M 480 560 L 480 540" stroke="#f5f5dc" stroke-width="4" fill="none" />
+    <path d="M 480 540 Q 475 530 480 520 Q 485 530 480 540 Z" fill="#ffd700" filter="url(#intenseGlow)" />
+    <path d="M 480 535 Q 478 528 480 525 Q 482 528 480 535 Z" fill="#ffffff" />
+  </g>
+
+  <!-- 7. The Ancestral Guide (Watching from above) -->
+  <g opacity="0.3" filter="url(#intenseGlow)">
+    <!-- Ancestor figure floating in the upper right -->
+    <ellipse cx="650" cy="150" rx="25" ry="35" fill="#ffd700" />
+    <ellipse cx="650" cy="120" rx="12" ry="15" fill="#ffd700" />
+    <!-- Ancestral staff -->
+    <path d="M 680 100 L 680 200" stroke="#ffd700" stroke-width="3" fill="none" />
+    <!-- Crown of the ancestor -->
+    <path d="M 638 110 Q 650 95 662 110" stroke="#ffd700" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- 8. Foreground Fog / Mist -->
+  <g fill="#00ffff" opacity="0.05" filter="url(#intenseGlow)">
+    <ellipse cx="200" cy="580" rx="200" ry="30" />
+    <ellipse cx="500" cy="590" rx="250" ry="40" />
+    <ellipse cx="700" cy="570" rx="150" ry="25" />
+  </g>
+
+  <!-- 9. Foreground Ground -->
+  <path d="M 0 600 L 0 550 Q 200 520 400 540 Q 600 560 800 520 L 800 600 Z" fill="#050302" opacity="0.7" />
+
+  <!-- 10. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    OBARAEDO AND THE LOST SOULS
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "The dead need the living. Honor the dead, for they are not gone—they are lost."
+  </text>
+
+</svg>
 <p>Obaraedo was a woman who could see the dead. She was born with a caul over her face, and the elders said this was a sign. "She can see the spirits," they said. "She can speak to the ancestors."</p>
 <p>Obaraedo did not want this gift. She wanted to be normal. She wanted to live a normal life. But the spirits would not leave her alone. They came to her at night. They whispered in her ear. They asked her for help.</p>
 <p>There were lost souls—spirits who had died far from home, who had no one to bury them, who had no one to remember them. They wandered between the worlds, unable to find rest. They came to Obaraedo because she could see them. They begged her to help them.</p>
@@ -3039,6 +3305,419 @@
 <p><strong>The Lesson:</strong> The dead need the living. Those who can see the spirits have a sacred duty. Honor the dead, for they are not gone—they are lost.</p>
 
 <h1 id="story16">16. The Hornbill and the Chameleon</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Warm Daylight Sky -->
+    <linearGradient id="daySky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="50%" stop-color="#B0E0E6" />
+      <stop offset="100%" stop-color="#F0E68C" />
+    </linearGradient>
+
+    <!-- Sun Glow -->
+    <radialGradient id="sunGlow" cx="80%" cy="10%" r="50%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#ffd700" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Tree Trunk Gradient -->
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a1a0a" />
+      <stop offset="50%" stop-color="#5a3a22" />
+      <stop offset="100%" stop-color="#2a1a0a" />
+    </linearGradient>
+
+    <!-- Canopy Leaf Gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4aad4a" />
+      <stop offset="50%" stop-color="#2a7a2a" />
+      <stop offset="100%" stop-color="#0a3a0a" />
+    </linearGradient>
+
+    <!-- Hornbill Feathers Gradient -->
+    <linearGradient id="hornbillFeathers" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="40%" stop-color="#2a2a2a" />
+      <stop offset="100%" stop-color="#4a4a4a" />
+    </linearGradient>
+
+    <!-- Hornbill Beak Gradient -->
+    <linearGradient id="beakGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="50%" stop-color="#ff8c00" />
+      <stop offset="100%" stop-color="#b8860b" />
+    </linearGradient>
+
+    <!-- Chameleon Body Gradient (Camouflaged green) -->
+    <linearGradient id="chameleonBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7acd7a" />
+      <stop offset="50%" stop-color="#4a9a4a" />
+      <stop offset="100%" stop-color="#2a6a2a" />
+    </linearGradient>
+
+    <!-- Glowing Effects -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#daySky)" />
+  
+  <!-- Sun -->
+  <circle cx="680" cy="80" r="50" fill="#fff8dc" filter="url(#softGlow)" opacity="0.8" />
+  <rect width="800" height="600" fill="url(#sunGlow)" />
+
+  <!-- Distant Hills/Clouds -->
+  <g fill="#ffffff" opacity="0.5">
+    <ellipse cx="150" cy="100" rx="80" ry="25" />
+    <ellipse cx="250" cy="90" rx="60" ry="20" />
+    <ellipse cx="550" cy="120" rx="90" ry="30" />
+  </g>
+
+  <!-- 2. The Great Tree (Center and Background) -->
+  <!-- Main Trunk -->
+  <path d="M 350 600 Q 360 450 380 300 Q 400 200 420 100 L 480 120 Q 440 250 450 400 Q 460 500 470 600 Z" fill="url(#trunkGrad)" />
+  
+  <!-- Roots -->
+  <path d="M 340 600 Q 300 580 280 600 Z" fill="#2a1a0a" />
+  <path d="M 470 600 Q 520 580 540 600 Z" fill="#2a1a0a" />
+
+  <!-- Bark Texture -->
+  <path d="M 380 580 Q 390 450 400 300" stroke="#1a0f0a" stroke-width="4" fill="none" opacity="0.5" />
+  <path d="M 420 580 Q 430 450 440 300" stroke="#1a0f0a" stroke-width="4" fill="none" opacity="0.5" />
+
+  <!-- Major Branches -->
+  <g stroke="#3b2314" stroke-width="18" fill="none" stroke-linecap="round">
+    <!-- Left Branch (Hornbill's side) -->
+    <path d="M 380 300 Q 250 250 120 220" />
+    <path d="M 250 250 Q 180 180 100 150" stroke-width="12" />
+    <path d="M 200 220 Q 150 280 80 320" stroke-width="10" />
+    
+    <!-- Right Branch (Chameleon's side) -->
+    <path d="M 440 300 Q 580 260 700 230" />
+    <path d="M 580 260 Q 650 190 730 160" stroke-width="12" />
+    <path d="M 620 250 Q 680 300 750 330" stroke-width="10" />
+    
+    <!-- Top Branch -->
+    <path d="M 420 200 Q 350 120 300 80" stroke-width="12" />
+    <path d="M 440 180 Q 500 100 550 70" stroke-width="12" />
+  </g>
+
+  <!-- 3. The Canopy (Foliage) -->
+  <!-- Back layer of leaves -->
+  <g fill="#1a5a1a" opacity="0.7">
+    <circle cx="100" cy="140" r="70" />
+    <circle cx="200" cy="100" r="80" />
+    <circle cx="320" cy="70" r="90" />
+    <circle cx="500" cy="50" r="80" />
+    <circle cx="650" cy="100" r="70" />
+    <circle cx="750" cy="160" r="60" />
+  </g>
+
+  <!-- Mid layer of leaves -->
+  <g fill="url(#leafGrad)">
+    <circle cx="120" cy="180" r="60" />
+    <circle cx="250" cy="150" r="70" />
+    <circle cx="400" cy="100" r="80" />
+    <circle cx="580" cy="130" r="70" />
+    <circle cx="700" cy="200" r="60" />
+    <circle cx="80" cy="280" r="50" />
+    <circle cx="750" cy="280" r="50" />
+  </g>
+
+  <!-- Front layer of leaves (lighter) -->
+  <g fill="#5abd5a" opacity="0.6">
+    <circle cx="150" cy="200" r="40" />
+    <circle cx="300" cy="120" r="50" />
+    <circle cx="480" cy="90" r="45" />
+    <circle cx="620" cy="160" r="45" />
+    <circle cx="720" cy="240" r="35" />
+  </g>
+
+  <!-- 4. The Hornbill (Left Side - In Flight, Chasing) -->
+  <g>
+    <!-- Motion lines (showing speed) -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round">
+      <path d="M 180 220 L 130 220" />
+      <path d="M 190 240 L 120 240" />
+      <path d="M 185 260 L 140 260" />
+    </g>
+
+    <!-- Hornbill Body -->
+    <ellipse cx="250" cy="240" rx="35" ry="20" transform="rotate(-15 250 240)" fill="url(#hornbillFeathers)" />
+    
+    <!-- Wing (Extended in flight) -->
+    <path d="M 230 230 Q 200 180 160 160 Q 200 190 220 230 Z" fill="#1a1a1a" />
+    <path d="M 240 225 Q 220 170 190 140 Q 230 180 245 220 Z" fill="#2a2a2a" />
+    
+    <!-- Wing feathers details (white tips) -->
+    <path d="M 160 160 L 165 170 M 175 165 L 180 175 M 190 175 L 195 185" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7" />
+
+    <!-- Tail (Long, trailing) -->
+    <path d="M 280 245 Q 320 260 350 270 Q 320 275 285 255 Z" fill="#1a1a1a" />
+    <path d="M 285 250 Q 325 270 355 280" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6" />
+
+    <!-- Head -->
+    <circle cx="220" cy="225" r="15" fill="#1a1a1a" />
+    
+    <!-- Eye -->
+    <circle cx="215" cy="222" r="4" fill="#ffffff" />
+    <circle cx="214" cy="222" r="2" fill="#000000" />
+
+    <!-- The Great Beak (Casque - the distinctive horn) -->
+    <path d="M 210 220 Q 170 210 150 215 Q 160 225 180 228 Q 195 230 210 228 Z" fill="url(#beakGrad)" />
+    <!-- Casque (the horn on top of beak) -->
+    <path d="M 205 218 Q 180 200 165 195 Q 175 205 190 215 Q 200 218 205 218 Z" fill="#ff8c00" />
+    
+    <!-- Beak highlight -->
+    <path d="M 200 218 Q 180 215 165 217" stroke="#fff8dc" stroke-width="1.5" fill="none" opacity="0.7" />
+
+    <!-- Legs (Tucked in flight) -->
+    <path d="M 260 255 L 255 270 L 260 275" stroke="#3a2010" stroke-width="3" fill="none" stroke-linecap="round" />
+
+    <!-- The Insect the Hornbill is Catching -->
+    <g filter="url(#softGlow)">
+      <ellipse cx="140" cy="215" rx="6" ry="4" fill="#4a2a0a" />
+      <path d="M 135 212 Q 130 208 128 210" stroke="#4a2a0a" stroke-width="1.5" fill="none" />
+      <path d="M 145 212 Q 150 208 152 210" stroke="#4a2a0a" stroke-width="1.5" fill="none" />
+      <!-- Wings -->
+      <ellipse cx="138" cy="212" rx="4" ry="2" fill="#8a6a4a" opacity="0.7" transform="rotate(-30 138 212)" />
+      <ellipse cx="142" cy="212" rx="4" ry="2" fill="#8a6a4a" opacity="0.7" transform="rotate(30 142 212)" />
+    </g>
+  </g>
+
+  <!-- 5. The Chameleon (Right Side - Patient, Camouflaged) -->
+  <g>
+    <!-- The branch he sits on -->
+    <path d="M 550 380 Q 620 370 700 390" stroke="#3b2314" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- Chameleon Body (Blending with leaves) -->
+    <!-- Curled Tail -->
+    <path d="M 530 380 Q 510 380 505 395 Q 500 410 515 415 Q 530 415 530 400 Q 530 390 520 388" 
+          stroke="url(#chameleonBody)" stroke-width="14" fill="none" stroke-linecap="round" />
+
+    <!-- Main Body -->
+    <ellipse cx="580" cy="375" rx="45" ry="22" transform="rotate(5 580 375)" fill="url(#chameleonBody)" />
+    
+    <!-- Body texture (scales/bumps) -->
+    <path d="M 560 365 Q 580 360 600 365" stroke="#2a5a2a" stroke-width="1.5" fill="none" opacity="0.6" />
+    <path d="M 555 375 Q 580 370 605 375" stroke="#2a5a2a" stroke-width="1.5" fill="none" opacity="0.6" />
+    <path d="M 560 385 Q 580 380 600 385" stroke="#2a5a2a" stroke-width="1.5" fill="none" opacity="0.6" />
+
+    <!-- Ridge/Crest along the back -->
+    <path d="M 545 365 Q 560 355 580 358 Q 600 355 615 365" stroke="#3a7a3a" stroke-width="3" fill="none" />
+
+    <!-- Head (Angular, distinctive) -->
+    <path d="M 620 370 Q 640 360 650 370 Q 655 380 645 390 Q 630 395 620 385 Z" fill="url(#chameleonBody)" />
+    
+    <!-- The Casque (head crest) -->
+    <path d="M 625 365 Q 640 350 648 360 Q 645 365 635 368 Z" fill="#4a9a4a" />
+
+    <!-- Eye (Large, independently rotating, wise) -->
+    <circle cx="635" cy="375" r="8" fill="#2a6a2a" />
+    <circle cx="635" cy="375" r="5" fill="#7acd7a" />
+    <circle cx="636" cy="374" r="2" fill="#000000" />
+    <!-- Eye highlight -->
+    <circle cx="634" cy="373" r="1" fill="#ffffff" />
+
+    <!-- Mouth (Slight, patient smile) -->
+    <path d="M 645 385 Q 650 388 648 385" stroke="#1a3a1a" stroke-width="1.5" fill="none" />
+
+    <!-- Front Legs (Gripping branch) -->
+    <path d="M 610 385 Q 615 395 625 395" stroke="#4a9a4a" stroke-width="6" fill="none" stroke-linecap="round" />
+    <!-- Claws/Feet -->
+    <path d="M 625 395 L 630 390 M 625 395 L 632 395 M 625 395 L 628 400" stroke="#2a5a2a" stroke-width="2" fill="none" stroke-linecap="round" />
+
+    <!-- Back Legs -->
+    <path d="M 545 385 Q 555 395 565 395" stroke="#4a9a4a" stroke-width="6" fill="none" stroke-linecap="round" />
+    <path d="M 565 395 L 570 390 M 565 395 L 572 395 M 565 395 L 568 400" stroke="#2a5a2a" stroke-width="2" fill="none" stroke-linecap="round" />
+
+    <!-- The Long Tongue (Shooting out to catch an insect) -->
+    <g filter="url(#intenseGlow)">
+      <path d="M 650 380 Q 680 370 710 350 Q 720 345 725 348" stroke="#ff6b9d" stroke-width="4" fill="none" stroke-linecap="round" />
+      <!-- Tongue tip (Sticky pad) -->
+      <ellipse cx="725" cy="348" rx="6" ry="5" fill="#ff4a7a" />
+    </g>
+
+    <!-- The Insect Being Caught -->
+    <g filter="url(#softGlow)">
+      <ellipse cx="730" cy="345" rx="5" ry="4" fill="#4a2a0a" />
+      <path d="M 726 342 Q 722 338 720 340" stroke="#4a2a0a" stroke-width="1.5" fill="none" />
+      <path d="M 734 342 Q 738 338 740 340" stroke="#4a2a0a" stroke-width="1.5" fill="none" />
+      <!-- Trapped wings -->
+      <ellipse cx="728" cy="342" rx="4" ry="2" fill="#8a6a4a" opacity="0.8" transform="rotate(-30 728 342)" />
+      <ellipse cx="732" cy="342" rx="4" ry="2" fill="#8a6a4a" opacity="0.8" transform="rotate(30 732 342)" />
+    </g>
+
+    <!-- Camouflage effect (subtle leaf pattern over chameleon) -->
+    <g fill="#2a7a2a" opacity="0.3">
+      <circle cx="570" cy="370" r="8" />
+      <circle cx="590" cy="380" r="6" />
+      <circle cx="605" cy="368" r="7" />
+    </g>
+  </g>
+
+  <!-- 6. The Scoreboard (Visual representation of the catches) -->
+  <g>
+    <!-- Hornbill's Nest (Left side, hanging from branch) -->
+    <g>
+      <!-- Nest -->
+      <path d="M 180 380 Q 170 420 190 440 Q 210 450 220 440 Q 240 420 230 380 Q 210 370 180 380 Z" fill="#5a3a22" stroke="#3a2010" stroke-width="3" />
+      <!-- Nest texture -->
+      <path d="M 185 400 Q 200 395 220 400" stroke="#3a2010" stroke-width="2" fill="none" />
+      <path d="M 180 420 Q 200 415 225 420" stroke="#3a2010" stroke-width="2" fill="none" />
+      
+      <!-- 20 insects inside (small dots) -->
+      <g fill="#4a2a0a">
+        <circle cx="190" cy="395" r="2" />
+        <circle cx="198" cy="392" r="2" />
+        <circle cx="206" cy="394" r="2" />
+        <circle cx="214" cy="398" r="2" />
+        <circle cx="188" cy="405" r="2" />
+        <circle cx="196" cy="402" r="2" />
+        <circle cx="204" cy="404" r="2" />
+        <circle cx="212" cy="408" r="2" />
+        <circle cx="220" cy="404" r="2" />
+        <circle cx="192" cy="415" r="2" />
+        <circle cx="200" cy="412" r="2" />
+        <circle cx="208" cy="414" r="2" />
+        <circle cx="216" cy="418" r="2" />
+        <circle cx="186" cy="425" r="2" />
+        <circle cx="194" cy="422" r="2" />
+        <circle cx="202" cy="424" r="2" />
+        <circle cx="210" cy="428" r="2" />
+        <circle cx="218" cy="425" r="2" />
+        <circle cx="190" cy="435" r="2" />
+        <circle cx="200" cy="435" r="2" />
+      </g>
+      
+      <!-- Label -->
+      <text x="205" y="465" font-family="Georgia, serif" font-size="12" fill="#3a2010" text-anchor="middle" font-weight="bold">20</text>
+    </g>
+
+    <!-- Chameleon's Hollow (Right side, in the tree trunk) -->
+    <g>
+      <!-- Hollow in tree -->
+      <ellipse cx="480" cy="450" rx="35" ry="25" fill="#1a0f0a" />
+      <ellipse cx="480" cy="450" rx="30" ry="20" fill="#0a0505" />
+      
+      <!-- 50 insects inside (small glowing dots) -->
+      <g fill="#4a2a0a" filter="url(#softGlow)">
+        <circle cx="460" cy="440" r="1.5" />
+        <circle cx="465" cy="438" r="1.5" />
+        <circle cx="470" cy="440" r="1.5" />
+        <circle cx="475" cy="437" r="1.5" />
+        <circle cx="480" cy="439" r="1.5" />
+        <circle cx="485" cy="438" r="1.5" />
+        <circle cx="490" cy="440" r="1.5" />
+        <circle cx="495" cy="442" r="1.5" />
+        <circle cx="500" cy="440" r="1.5" />
+        
+        <circle cx="458" cy="446" r="1.5" />
+        <circle cx="463" cy="444" r="1.5" />
+        <circle cx="468" cy="446" r="1.5" />
+        <circle cx="473" cy="443" r="1.5" />
+        <circle cx="478" cy="445" r="1.5" />
+        <circle cx="483" cy="444" r="1.5" />
+        <circle cx="488" cy="446" r="1.5" />
+        <circle cx="493" cy="448" r="1.5" />
+        <circle cx="498" cy="446" r="1.5" />
+        <circle cx="503" cy="448" r="1.5" />
+        
+        <circle cx="460" cy="452" r="1.5" />
+        <circle cx="465" cy="450" r="1.5" />
+        <circle cx="470" cy="452" r="1.5" />
+        <circle cx="475" cy="449" r="1.5" />
+        <circle cx="480" cy="451" r="1.5" />
+        <circle cx="485" cy="450" r="1.5" />
+        <circle cx="490" cy="452" r="1.5" />
+        <circle cx="495" cy="454" r="1.5" />
+        <circle cx="500" cy="452" r="1.5" />
+        
+        <circle cx="458" cy="458" r="1.5" />
+        <circle cx="463" cy="456" r="1.5" />
+        <circle cx="468" cy="458" r="1.5" />
+        <circle cx="473" cy="455" r="1.5" />
+        <circle cx="478" cy="457" r="1.5" />
+        <circle cx="483" cy="456" r="1.5" />
+        <circle cx="488" cy="458" r="1.5" />
+        <circle cx="493" cy="460" r="1.5" />
+        <circle cx="498" cy="458" r="1.5" />
+        
+        <circle cx="465" cy="462" r="1.5" />
+        <circle cx="472" cy="463" r="1.5" />
+        <circle cx="479" cy="461" r="1.5" />
+        <circle cx="486" cy="463" r="1.5" />
+        <circle cx="493" cy="464" r="1.5" />
+        
+        <circle cx="470" cy="468" r="1.5" />
+        <circle cx="478" cy="467" r="1.5" />
+        <circle cx="486" cy="468" r="1.5" />
+        
+        <circle cx="474" cy="472" r="1.5" />
+        <circle cx="482" cy="473" r="1.5" />
+      </g>
+      
+      <!-- Label -->
+      <text x="480" y="495" font-family="Georgia, serif" font-size="12" fill="#3a2010" text-anchor="middle" font-weight="bold">50</text>
+    </g>
+  </g>
+
+  <!-- 7. Additional Flying Insects (Scattered around the tree) -->
+  <g fill="#4a2a0a" opacity="0.6">
+    <circle cx="350" cy="300" r="3" />
+    <circle cx="450" cy="280" r="3" />
+    <circle cx="500" cy="320" r="3" />
+    <circle cx="320" cy="400" r="3" />
+    <circle cx="600" cy="280" r="3" />
+    <circle cx="680" cy="400" r="3" />
+    <circle cx="150" cy="350" r="3" />
+    <circle cx="250" cy="450" r="3" />
+    <circle cx="400" cy="200" r="3" />
+    <circle cx="550" cy="200" r="3" />
+  </g>
+
+  <!-- 8. Foreground Ground and Grass -->
+  <path d="M 0 600 L 0 550 Q 200 530 400 540 Q 600 550 800 530 L 800 600 Z" fill="#2a5a2a" />
+  
+  <!-- Grass blades -->
+  <g fill="#3a7a3a">
+    <path d="M 50 550 Q 55 520 60 550 Z" />
+    <path d="M 100 545 Q 105 510 110 545 Z" />
+    <path d="M 700 545 Q 705 515 710 545 Z" />
+    <path d="M 750 550 Q 755 520 760 550 Z" />
+  </g>
+
+  <!-- Small Flowers -->
+  <g>
+    <circle cx="150" cy="560" r="4" fill="#ff6b9d" />
+    <circle cx="150" cy="560" r="2" fill="#ffd700" />
+    <circle cx="650" cy="555" r="4" fill="#ff6b9d" />
+    <circle cx="650" cy="555" r="2" fill="#ffd700" />
+    <circle cx="350" cy="570" r="4" fill="#ffd700" />
+    <circle cx="350" cy="570" r="2" fill="#ff6b9d" />
+  </g>
+
+  <!-- 9. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.7" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE HORNBILL AND THE CHAMELEON
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Wisdom and patience are greater than strength and speed. Use what you have, and you will succeed."
+  </text>
+
+</svg>
 <p>The Hornbill and the Chameleon were friends. They lived in the same tree. They ate from the same fruits. They shared the same shade.</p>
 <p>But the Hornbill was proud. He was beautiful. His feathers were bright. His beak was strong. The Chameleon was not beautiful. He was small. He was slow. His skin changed color, but he could not keep a color of his own.</p>
 <p>One day, the Hornbill said: "Let us have a contest. Let us see who can catch the most insects in a day. The winner will be honored. The loser will serve the winner for a year."</p>
@@ -3051,6 +3730,321 @@
 <p><strong>The Lesson:</strong> Wisdom and patience are greater than strength and speed. Use what you have, and you will succeed.</p>
 
 <h1 id="story17">17. The Legend of Eze Nri</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Sky / Spiritual Realm Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0510" />
+      <stop offset="30%" stop-color="#1a1030" />
+      <stop offset="60%" stop-color="#2a1a20" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Divine Light from Above -->
+    <radialGradient id="divineLight" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.4" />
+      <stop offset="30%" stop-color="#ffb347" stop-opacity="0.15" />
+      <stop offset="70%" stop-color="#ff8c00" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Sacred Forest Glow -->
+    <radialGradient id="forestGlow" cx="50%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#3a7d44" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#1e4d2b" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Eze Nri's White Cloth Gradient -->
+    <linearGradient id="whiteCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f0f0f0" />
+      <stop offset="100%" stop-color="#d4d4d4" />
+    </linearGradient>
+
+    <!-- Eze Nri's Red Sash Gradient -->
+    <linearGradient id="redSash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cc3300" />
+      <stop offset="50%" stop-color="#8b1a1a" />
+      <stop offset="100%" stop-color="#4a0a0a" />
+    </linearGradient>
+
+    <!-- Ofo Staff Gradient (Wood) -->
+    <linearGradient id="ofoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3a2010" />
+      <stop offset="50%" stop-color="#6b4423" />
+      <stop offset="100%" stop-color="#3a2010" />
+    </linearGradient>
+
+    <!-- Otonzi Staff Gradient (Brass/Ivory) -->
+    <linearGradient id="otonziGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b8860b" />
+      <stop offset="50%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#b8860b" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#skyGrad)" />
+
+  <!-- 2. Divine Light from Above -->
+  <rect width="800" height="600" fill="url(#divineLight)" />
+
+  <!-- 3. The Ancestral Realm (Clouds and Spirits above) -->
+  <g filter="url(#etherealBlur)">
+    <!-- Divine Clouds -->
+    <g fill="#ffd700" opacity="0.08">
+      <ellipse cx="400" cy="80" rx="300" ry="80" />
+      <ellipse cx="250" cy="120" rx="200" ry="60" />
+      <ellipse cx="550" cy="100" rx="220" ry="70" />
+    </g>
+
+    <!-- Ancestral Faces (Faint, watching) -->
+    <g fill="#ffd700" opacity="0.15">
+      <!-- Ancestor 1 -->
+      <ellipse cx="200" cy="100" rx="25" ry="32" />
+      <ellipse cx="200" cy="85" rx="10" ry="12" />
+      <!-- Ancestor 2 -->
+      <ellipse cx="350" cy="60" rx="30" ry="38" />
+      <ellipse cx="350" cy="42" rx="12" ry="14" />
+      <!-- Ancestor 3 -->
+      <ellipse cx="500" cy="70" rx="28" ry="35" />
+      <ellipse cx="500" cy="52" rx="11" ry="13" />
+      <!-- Ancestor 4 -->
+      <ellipse cx="650" cy="110" rx="22" ry="28" />
+      <ellipse cx="650" cy="96" rx="9" ry="11" />
+    </g>
+
+    <!-- Chukwu (The Great Spirit) - Central, Most Radiant -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="400" cy="50" r="40" fill="#ffd700" opacity="0.2" />
+      <circle cx="400" cy="50" r="20" fill="#ffffff" opacity="0.3" />
+      <circle cx="400" cy="50" r="8" fill="#ffffff" opacity="0.6" />
+    </g>
+  </g>
+
+  <!-- 4. The Sacred Forest (Background) -->
+  <g fill="#0a1c14">
+    <!-- Left Forest -->
+    <path d="M 0 400 L 30 150 L 60 400 Z" />
+    <path d="M 50 400 L 80 200 L 110 400 Z" />
+    <path d="M 100 400 L 120 250 L 140 400 Z" opacity="0.7" />
+    
+    <!-- Right Forest -->
+    <path d="M 800 400 L 770 150 L 740 400 Z" />
+    <path d="M 750 400 L 720 200 L 690 400 Z" />
+    <path d="M 700 400 L 680 250 L 660 400 Z" opacity="0.7" />
+  </g>
+
+  <!-- Forest Canopy (Overhanging branches) -->
+  <g fill="#0d2418" opacity="0.8">
+    <circle cx="100" cy="200" r="80" />
+    <circle cx="200" cy="150" r="60" />
+    <circle cx="700" cy="200" r="80" />
+    <circle cx="600" cy="150" r="60" />
+  </g>
+
+  <!-- 5. Distant British Ships (The Coming Storm - Subtle) -->
+  <g fill="#0a0505" opacity="0.25" filter="url(#softGlow)">
+    <!-- Ship 1 -->
+    <path d="M 620 380 Q 650 370 680 380 Q 670 390 630 390 Z" />
+    <path d="M 650 375 L 650 350 L 660 360" stroke="#0a0505" stroke-width="2" fill="none" />
+    <!-- Ship 2 -->
+    <path d="M 700 390 Q 730 380 760 390 Q 750 400 710 400 Z" />
+    <path d="M 730 385 L 730 360 L 740 370" stroke="#0a0505" stroke-width="2" fill="none" />
+    <!-- Smoke -->
+    <circle cx="650" cy="340" r="10" opacity="0.3" />
+    <circle cx="660" cy="330" r="8" opacity="0.2" />
+    <circle cx="730" cy="350" r="12" opacity="0.3" />
+    <circle cx="740" cy="338" r="9" opacity="0.2" />
+  </g>
+
+  <!-- 6. The River / Ground -->
+  <path d="M 0 500 Q 200 470 400 480 Q 600 490 800 470 L 800 600 L 0 600 Z" fill="#1a120a" />
+  <path d="M 0 520 Q 200 500 400 510 Q 600 520 800 500 L 800 600 L 0 600 Z" fill="#0a0805" />
+
+  <!-- 7. The Igbo People (Kneeling in Reverence) -->
+  <g fill="#0a0505">
+    <!-- Person 1 -->
+    <path d="M 150 520 Q 140 490 155 470 Q 170 455 180 470 Q 190 490 185 520 Z" />
+    <circle cx="165" cy="455" r="12" />
+    
+    <!-- Person 2 -->
+    <path d="M 220 530 Q 210 500 225 480 Q 240 465 250 480 Q 260 500 255 530 Z" />
+    <circle cx="235" cy="465" r="10" />
+
+    <!-- Person 3 (Child) -->
+    <path d="M 280 540 Q 275 520 285 510 Q 295 500 300 510 Q 305 520 305 540 Z" />
+    <circle cx="290" cy="502" r="8" />
+
+    <!-- Person 4 (Right side) -->
+    <path d="M 600 525 Q 590 495 605 475 Q 620 460 630 475 Q 640 495 635 525 Z" />
+    <circle cx="615" cy="460" r="11" />
+
+    <!-- Person 5 -->
+    <path d="M 680 530 Q 670 500 685 480 Q 700 465 710 480 Q 720 500 715 530 Z" />
+    <circle cx="695" cy="468" r="10" />
+
+    <!-- Person 6 -->
+    <path d="M 740 535 Q 735 510 745 495 Q 755 480 765 495 Q 775 510 770 535 Z" />
+    <circle cx="755" cy="485" r="9" />
+  </g>
+
+  <!-- 8. Eze Nri (The Priest-King - Central Figure) -->
+  <g>
+    <!-- Eze Nri's Divine Aura -->
+    <circle cx="400" cy="380" r="160" fill="#ffd700" opacity="0.1" filter="url(#softGlow)" />
+    <rect width="800" height="600" fill="url(#forestGlow)" />
+
+    <!-- Eze Nri's Body (Tall, dignified, draped in white) -->
+    <path d="M 350 520 Q 340 440 360 380 Q 380 340 400 340 Q 420 340 440 380 Q 460 440 450 520 Q 430 540 400 540 Q 370 540 350 520 Z" fill="url(#whiteCloth)" />
+
+    <!-- Cloth folds -->
+    <path d="M 370 400 Q 390 430 410 400" stroke="#c0c0c0" stroke-width="2" fill="none" />
+    <path d="M 365 440 Q 390 470 420 440" stroke="#c0c0c0" stroke-width="2" fill="none" />
+    <path d="M 360 480 Q 390 510 430 480" stroke="#c0c0c0" stroke-width="2" fill="none" />
+
+    <!-- Red Sash (Symbol of priestly authority) -->
+    <path d="M 370 360 Q 400 380 430 360 Q 440 400 430 440 Q 400 420 370 440 Q 360 400 370 360 Z" fill="url(#redSash)" opacity="0.8" />
+    
+    <!-- Sash patterns (Adire / Uli motifs) -->
+    <path d="M 380 380 Q 400 395 420 380" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.6" />
+    <path d="M 378 400 Q 400 415 422 400" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.6" />
+    <path d="M 376 420 Q 400 435 424 420" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.6" />
+
+    <!-- Eze Nri's Head -->
+    <ellipse cx="400" cy="320" rx="24" ry="30" fill="#6b4423" />
+
+    <!-- Eze Nri's Facial Features (Serene, Wise) -->
+    <!-- Eyes (Closed in meditation/prayer) -->
+    <path d="M 388 318 Q 393 315 398 318" stroke="#0a0502" stroke-width="1.5" fill="none" />
+    <path d="M 402 318 Q 407 315 412 318" stroke="#0a0502" stroke-width="1.5" fill="none" />
+    
+    <!-- Nose -->
+    <path d="M 400 320 L 398 330 L 402 330" stroke="#3a2010" stroke-width="1.5" fill="none" />
+    
+    <!-- Mouth (Calm, speaking truth) -->
+    <path d="M 393 340 Q 400 343 407 340" stroke="#3a2010" stroke-width="1.5" fill="none" />
+
+    <!-- Eze Nri's Crown / Headdress (Red and White, traditional) -->
+    <path d="M 375 310 Q 380 280 400 270 Q 420 280 425 310 Q 420 295 400 288 Q 380 295 375 310 Z" fill="#cc3300" />
+    
+    <!-- White feather (Symbol of purity) -->
+    <path d="M 400 270 Q 405 230 415 210 Q 410 240 405 270 Z" fill="#ffffff" />
+    <path d="M 400 270 Q 395 235 385 220 Q 392 245 398 270 Z" fill="#f0f0f0" />
+    
+    <!-- Red beads / Coral necklace -->
+    <path d="M 380 350 Q 400 360 420 350" stroke="#cc3300" stroke-width="4" fill="none" />
+    <circle cx="385" cy="353" r="3" fill="#ffd700" />
+    <circle cx="400" cy="357" r="3" fill="#ffd700" />
+    <circle cx="415" cy="353" r="3" fill="#ffd700" />
+
+    <!-- The Ofo (Staff of Truth and Justice) - Right Hand -->
+    <g>
+      <!-- Arm -->
+      <path d="M 440 400 Q 470 430 490 460" stroke="#6b4423" stroke-width="12" fill="none" stroke-linecap="round" />
+      <!-- Hand -->
+      <circle cx="490" cy="460" r="8" fill="#6b4423" />
+      
+      <!-- The Ofo Staff (Wooden, with carved top) -->
+      <path d="M 490 460 L 500 540" stroke="url(#ofoGrad)" stroke-width="8" fill="none" stroke-linecap="round" />
+      
+      <!-- Ofo carved top (Symbolic ancestral figure) -->
+      <path d="M 490 460 Q 485 445 490 435 Q 495 425 500 435 Q 505 445 500 460 Z" fill="#6b4423" />
+      <circle cx="495" cy="430" r="5" fill="#3a2010" />
+      
+      <!-- Ofo sacred white chalk marks -->
+      <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.8">
+        <line x1="492" y1="470" x2="498" y2="470" />
+        <line x1="492" y1="480" x2="498" y2="480" />
+        <line x1="492" y1="490" x2="498" y2="490" />
+      </g>
+    </g>
+
+    <!-- The Otonzi (Staff of Peace and Blessing) - Left Hand -->
+    <g>
+      <!-- Arm -->
+      <path d="M 360 400 Q 330 430 310 460" stroke="#6b4423" stroke-width="12" fill="none" stroke-linecap="round" />
+      <!-- Hand -->
+      <circle cx="310" cy="460" r="8" fill="#6b4423" />
+      
+      <!-- The Otonzi Staff (Brass/Ivory, curved top) -->
+      <path d="M 310 460 L 300 540" stroke="url(#otonziGrad)" stroke-width="6" fill="none" stroke-linecap="round" />
+      
+      <!-- Otonzi curved top (Symbol of peace and authority) -->
+      <path d="M 310 460 Q 305 440 310 425 Q 320 415 325 425 Q 330 440 320 455" stroke="#ffd700" stroke-width="6" fill="none" stroke-linecap="round" />
+      
+      <!-- Otonzi decorations -->
+      <circle cx="315" cy="420" r="4" fill="#ffd700" />
+      <circle cx="310" cy="435" r="3" fill="#ffd700" />
+      
+      <!-- Glowing aura around the Otonzi (Spiritual power) -->
+      <circle cx="310" cy="440" r="20" fill="#ffd700" opacity="0.15" filter="url(#intenseGlow)" />
+    </g>
+
+    <!-- Eze Nri's Bare Feet (Grounded, humble) -->
+    <path d="M 370 540 Q 365 555 375 560 Q 385 560 385 550" fill="#6b4423" />
+    <path d="M 410 540 Q 405 555 415 560 Q 425 560 425 550" fill="#6b4423" />
+  </g>
+
+  <!-- 9. Sacred Symbols around Eze Nri -->
+  <g filter="url(#intenseGlow)">
+    <!-- Uli / Nsibidi symbols floating (Ancient Igbo script) -->
+    <g stroke="#ffd700" stroke-width="2" fill="none" opacity="0.4">
+      <!-- Symbol 1 (Left) -->
+      <circle cx="280" cy="320" r="10" />
+      <line x1="275" y1="320" x2="285" y2="320" />
+      <line x1="280" y1="315" x2="280" y2="325" />
+      
+      <!-- Symbol 2 (Right) -->
+      <circle cx="520" cy="340" r="10" />
+      <line x1="515" y1="340" x2="525" y2="340" />
+      <line x1="520" y1="335" x2="520" y2="345" />
+      
+      <!-- Symbol 3 (Upper Left) -->
+      <path d="M 300 250 L 320 270 L 300 290" />
+      
+      <!-- Symbol 4 (Upper Right) -->
+      <path d="M 500 260 L 480 280 L 500 300" />
+    </g>
+
+    <!-- White Chalk (Nzu) marks on the ground -->
+    <g stroke="#ffffff" stroke-width="3" fill="none" opacity="0.5">
+      <line x1="350" y1="550" x2="450" y2="550" />
+      <line x1="370" y1="560" x2="430" y2="560" />
+      <line x1="390" y1="540" x2="410" y2="540" />
+    </g>
+  </g>
+
+  <!-- 10. Foreground Framing -->
+  <path d="M 0 600 L 0 580 Q 200 560 400 570 Q 600 580 800 560 L 800 600 Z" fill="#050302" />
+
+  <!-- 11. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE LEGEND OF EZE NRI
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "True power is not in the sword. It is in the spirit. The priest-king rules by the truth, and his kingdom lasts forever."
+  </text>
+
+</svg>
 <p>I remember the stories my grandfather told me. He was old. He had seen the white man come. He had seen the kingdom fall. But he remembered the old days. He remembered the time before the British came.</p>
 <p>He said: "The first Eze Nri was chosen by Chukwu himself. He was not a warrior. He was not a chief. He was a priest. He was a man of peace. His name was Nri.</p>
 <p>"Nri did not conquer with armies. He conquered with purity. He carried the ofo in his right hand and the otonzi in his left. He traveled from village to village. He cleansed abominations. He settled disputes. He made peace between warring villages.</p>
@@ -3061,6 +4055,286 @@
 <p><strong>The Lesson:</strong> True power is not in the sword. It is in the spirit. The priest-king rules by the truth, and his kingdom lasts forever.</p>
 
 <h1 id="story18">18. The Ogbanje Child</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Cosmic / Spirit World Sky -->
+    <linearGradient id="spiritSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="40%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Divine Light of the Spirit World -->
+    <radialGradient id="spiritLight" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#4a6bff" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#1a1c4e" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Warm Hearth / Earthly Glow -->
+    <radialGradient id="earthGlow" cx="70%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.4" />
+      <stop offset="40%" stop-color="#8b5a33" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Obiageli's Radiant Aura -->
+    <radialGradient id="babyAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#ffd700" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#ff8c00" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Mother's Cloth Gradient -->
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a2a1a" />
+      <stop offset="50%" stop-color="#2a1a0a" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+
+    <!-- Dibia's Cloth Gradient -->
+    <linearGradient id="dibiaCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0e0e0" />
+      <stop offset="100%" stop-color="#a0a0a0" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="600" fill="url(#spiritSky)" />
+
+  <!-- 2. The Spirit World (Above) -->
+  <rect width="800" height="600" fill="url(#spiritLight)" />
+
+  <!-- Stars / Ancestral Eyes -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#softGlow)">
+    <circle cx="80" cy="60" r="1.5" />
+    <circle cx="200" cy="40" r="1" />
+    <circle cx="350" cy="80" r="2" />
+    <circle cx="500" cy="50" r="1.5" />
+    <circle cx="680" cy="100" r="1" />
+    <circle cx="750" cy="50" r="1.5" />
+  </g>
+
+  <!-- The Seven Lost Children (Ascending lights) -->
+  <g filter="url(#intenseGlow)" opacity="0.6">
+    <!-- Child 1 -->
+    <circle cx="250" cy="120" r="8" fill="#00ffff" />
+    <path d="M 250 128 Q 255 150 250 170" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" />
+    <!-- Child 2 -->
+    <circle cx="300" cy="80" r="6" fill="#00ffff" />
+    <path d="M 300 86 Q 305 105 300 120" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" />
+    <!-- Child 3 -->
+    <circle cx="350" cy="140" r="7" fill="#00ffff" />
+    <path d="M 350 147 Q 355 165 350 180" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" />
+    <!-- Child 4 -->
+    <circle cx="420" cy="100" r="9" fill="#00ffff" />
+    <path d="M 420 109 Q 425 130 420 150" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" />
+    <!-- Child 5 -->
+    <circle cx="480" cy="130" r="7" fill="#00ffff" />
+    <path d="M 480 137 Q 485 155 480 170" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" />
+    <!-- Child 6 -->
+    <circle cx="530" cy="70" r="6" fill="#00ffff" />
+    <path d="M 530 76 Q 535 95 530 110" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" />
+    <!-- Child 7 -->
+    <circle cx="580" cy="110" r="8" fill="#00ffff" />
+    <path d="M 580 118 Q 585 140 580 160" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- The Ancestral Guide (Welcoming the children back) -->
+  <g opacity="0.4" filter="url(#intenseGlow)">
+    <ellipse cx="400" cy="50" rx="30" ry="40" fill="#ffd700" />
+    <ellipse cx="400" cy="20" rx="15" ry="18" fill="#ffd700" />
+    <!-- Crown -->
+    <path d="M 385 10 Q 400 -5 415 10" stroke="#ffd700" stroke-width="3" fill="none" />
+    <!-- Arms open wide -->
+    <path d="M 370 60 Q 320 80 280 100" stroke="#ffd700" stroke-width="4" fill="none" stroke-linecap="round" />
+    <path d="M 430 60 Q 480 80 520 100" stroke="#ffd700" stroke-width="4" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. The Human World (Below) -->
+  <!-- Distant Forest Silhouettes -->
+  <g fill="#0a0505">
+    <path d="M 0 400 L 40 200 L 80 400 Z" />
+    <path d="M 100 420 L 130 250 L 160 420 Z" />
+    <path d="M 700 420 L 730 200 L 760 420 Z" />
+    <path d="M 760 400 L 790 250 L 820 400 Z" />
+  </g>
+
+  <!-- Ground / Compound -->
+  <path d="M 0 480 Q 200 450 400 460 Q 600 470 800 450 L 800 600 L 0 600 Z" fill="#1a120a" />
+  <path d="M 0 520 Q 200 490 400 500 Q 600 510 800 490 L 800 600 L 0 600 Z" fill="#0a0805" />
+
+  <!-- Warm Earthly Glow -->
+  <rect width="800" height="600" fill="url(#earthGlow)" />
+
+  <!-- 4. The Mother (The Aunt) - Digging for the Iyi-uwa (Left Side) -->
+  <g>
+    <!-- Mother's Body (Kneeling, digging) -->
+    <path d="M 120 520 Q 110 460 130 430 Q 150 400 170 430 Q 190 460 180 520 Z" fill="url(#clothGrad)" />
+    
+    <!-- Mother's Head -->
+    <ellipse cx="150" cy="410" rx="18" ry="22" transform="rotate(-15 150 410)" fill="#5a3a22" />
+    
+    <!-- Hair / Headwrap -->
+    <path d="M 135 405 Q 130 380 150 375 Q 170 380 165 405 Q 170 390 150 385 Q 130 390 135 405 Z" fill="#cc3300" opacity="0.8" />
+
+    <!-- Arms digging into the earth -->
+    <path d="M 130 440 Q 110 460 100 480" stroke="#5a3a22" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 170 440 Q 190 460 200 480" stroke="#5a3a22" stroke-width="10" fill="none" stroke-linecap="round" />
+
+    <!-- The Iyi-uwa (The secret object, faintly glowing in the dirt) -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="100" cy="500" r="6" fill="#ffd700" opacity="0.8" />
+      <circle cx="100" cy="500" r="3" fill="#ffffff" />
+      <!-- Dirt particles -->
+      <circle cx="95" cy="505" r="2" fill="#3a2010" />
+      <circle cx="105" cy="495" r="2" fill="#3a2010" />
+    </g>
+  </g>
+
+  <!-- 5. The Dibia (The Healer) - Center Left -->
+  <g>
+    <!-- Dibia's Body (Tall, draped in white) -->
+    <path d="M 250 520 Q 240 440 260 400 Q 280 380 300 400 Q 320 440 310 520 Z" fill="url(#dibiaCloth)" />
+    
+    <!-- Red Sash -->
+    <path d="M 260 400 Q 280 420 300 400 Q 310 440 300 480 Q 280 460 260 480 Q 250 440 260 400 Z" fill="#cc3300" opacity="0.7" />
+
+    <!-- Dibia's Head -->
+    <ellipse cx="280" cy="370" rx="20" ry="25" fill="#5a3a22" />
+
+    <!-- Dibia's Headdress (Traditional, with feathers) -->
+    <path d="M 260 360 Q 270 330 280 320 Q 290 330 300 360 Q 290 350 280 345 Q 270 350 260 360 Z" fill="#cc3300" />
+    <path d="M 280 320 Q 285 280 295 260 Q 290 290 285 320 Z" fill="#ffffff" />
+    <path d="M 280 320 Q 275 285 265 270 Q 272 295 278 320 Z" fill="#f0f0f0" />
+
+    <!-- Dibia's Eyes (Wise, knowing) -->
+    <circle cx="273" cy="368" r="2" fill="#ffffff" />
+    <circle cx="287" cy="368" r="2" fill="#ffffff" />
+
+    <!-- Dibia's Staff (Ofo) -->
+    <path d="M 300 420 L 310 520" stroke="#3a2010" stroke-width="6" fill="none" stroke-linecap="round" />
+    <!-- Ofo carved top -->
+    <path d="M 300 420 Q 295 400 300 390 Q 305 380 310 390 Q 315 400 310 420 Z" fill="#3a2010" />
+    
+    <!-- Dibia's Hand (Holding the staff, pointing to the sky) -->
+    <path d="M 290 420 Q 300 410 310 400" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 6. The Mother and Child (The Triumph) - Right Side -->
+  <g>
+    <!-- Divine Aura of Love and Protection -->
+    <circle cx="580" cy="440" r="150" fill="url(#babyAura)" filter="url(#intenseGlow)" />
+
+    <!-- The Mother (Kneeling, holding the baby) -->
+    <path d="M 520 520 Q 510 450 530 420 Q 550 390 580 400 Q 610 410 620 450 Q 630 520 610 540 Q 580 550 520 520 Z" fill="url(#clothGrad)" />
+    
+    <!-- Mother's Arms (Cradling the child) -->
+    <path d="M 530 430 Q 550 410 580 420" stroke="#5a3a22" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M 610 440 Q 590 420 570 430" stroke="#5a3a22" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- Mother's Head (Bowed in love and relief) -->
+    <ellipse cx="570" cy="390" rx="20" ry="24" transform="rotate(10 570 390)" fill="#5a3a22" />
+    
+    <!-- Mother's Hair / Headwrap -->
+    <path d="M 550 385 Q 545 360 570 355 Q 595 360 590 385 Q 595 370 570 365 Q 545 370 550 385 Z" fill="#cc3300" opacity="0.8" />
+
+    <!-- Mother's Eyes (Weeping with joy) -->
+    <g filter="url(#softGlow)">
+      <path d="M 560 390 Q 565 388 568 390" stroke="#ffffff" stroke-width="1.5" fill="none" />
+      <path d="M 575 390 Q 580 388 583 390" stroke="#ffffff" stroke-width="1.5" fill="none" />
+      <!-- Tears of joy -->
+      <circle cx="562" cy="395" r="2" fill="#00ffff" opacity="0.8" />
+      <circle cx="581" cy="395" r="2" fill="#00ffff" opacity="0.8" />
+    </g>
+
+    <!-- The Baby, Obiageli (The Chosen One) -->
+    <g>
+      <!-- Baby's Body (Wrapped in white cloth) -->
+      <path d="M 560 430 Q 550 450 560 470 Q 580 480 600 470 Q 610 450 600 430 Q 580 420 560 430 Z" fill="#ffffff" />
+      
+      <!-- Baby's Head -->
+      <circle cx="580" cy="420" r="14" fill="#5a3a22" />
+      
+      <!-- Baby's Hair (Small tuft) -->
+      <path d="M 570 410 Q 580 400 590 410 Q 585 405 580 405 Q 575 405 570 410 Z" fill="#0a0502" />
+
+      <!-- Baby's Eyes (Open, looking at the mother) -->
+      <circle cx="575" cy="418" r="3" fill="#ffffff" />
+      <circle cx="585" cy="418" r="3" fill="#ffffff" />
+      <circle cx="575" cy="418" r="1.5" fill="#000000" />
+      <circle cx="585" cy="418" r="1.5" fill="#000000" />
+
+      <!-- Baby's Smile -->
+      <path d="M 576 426 Q 580 428 584 426" stroke="#0a0502" stroke-width="1" fill="none" />
+
+      <!-- The Radiant Light of Obiageli (The Chosen Child) -->
+      <g filter="url(#intenseGlow)">
+        <circle cx="580" cy="440" r="40" fill="#ffd700" opacity="0.4" />
+        <circle cx="580" cy="440" r="20" fill="#ffffff" opacity="0.6" />
+      </g>
+    </g>
+
+    <!-- The Broken Pact (A shattered golden chain floating above the baby) -->
+    <g filter="url(#intenseGlow)">
+      <!-- Chain links breaking -->
+      <path d="M 520 380 Q 540 370 560 380" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.6" />
+      <path d="M 600 380 Q 620 370 640 380" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.6" />
+      <!-- Broken link in the middle -->
+      <path d="M 565 380 L 570 385" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.8" />
+      <path d="M 590 385 L 595 380" stroke="#ffd700" stroke-width="4" fill="none" opacity="0.8" />
+      <!-- Shattered fragments -->
+      <polygon points="575,375 580,370 585,375 580,380" fill="#ffd700" opacity="0.5" />
+      <polygon points="570,385 575,380 580,385 575,390" fill="#ffd700" opacity="0.3" />
+    </g>
+  </g>
+
+  <!-- 7. Foreground Framing & Symbols -->
+  <g>
+    <!-- White Chalk (Nzu) markings on the ground (Protection) -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4">
+      <path d="M 500 550 Q 550 540 600 550" />
+      <path d="M 520 560 Q 560 555 600 560" />
+      <!-- Uli / Nsibidi symbols -->
+      <circle cx="530" cy="555" r="5" />
+      <line x1="525" y1="555" x2="535" y2="555" />
+      <circle cx="580" cy="555" r="5" />
+      <line x1="575" y1="555" x2="585" y2="555" />
+    </g>
+
+    <!-- Sacred Tree (Framing the scene) -->
+    <path d="M 0 600 L 20 400 L 40 600 Z" fill="#050302" />
+    <path d="M 760 600 L 780 350 L 800 600 Z" fill="#050302" />
+  </g>
+
+  <!-- 8. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE OGBANJE CHILD
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Love can break even the strongest bonds. The spirit world and the human world are not so far apart."
+  </text>
+
+</svg>
 <p>I remember the ogbanje. I remember the children who came and went. I remember the mothers who wept.</p>
 <p>My aunt had seven children. All seven died. Each one was beautiful. Each one was loved. Each one was taken. The elders said: "The ogbanje are spirit children. They make a pact before birth. They come to earth for a time, but they always return to the spirit world."</p>
 <p>My aunt went to the dibia. The dibia said: "You must find the Iyi-uwa. It is the secret object that binds the child to the spirit world. If you find it and destroy it, the child will stay."</p>
@@ -3072,6 +4346,311 @@
 <p><strong>The Lesson:</strong> Love can break even the strongest bonds. The spirit world and the human world are not so far apart, and love can bridge the gap between them.</p>
 
 <h1 id="story19">19. The Disobedient Daughter Who Married a Skull</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Night Forest Sky -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05030a" />
+      <stop offset="40%" stop-color="#0e0a1c" />
+      <stop offset="100%" stop-color="#0a1410" />
+    </linearGradient>
+
+    <!-- Cold Moonlight -->
+    <radialGradient id="moonlight" cx="30%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#d4e6ff" stop-opacity="0.4" />
+      <stop offset="40%" stop-color="#4a6bff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Skull's Eerie Glow -->
+    <radialGradient id="skullGlow" cx="55%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#8a2be2" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Bone Gradient -->
+    <linearGradient id="boneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5dc" />
+      <stop offset="50%" stop-color="#d4c8b0" />
+      <stop offset="100%" stop-color="#8a7a60" />
+    </linearGradient>
+
+    <!-- Handsome Mask Gradient (Mahogany) -->
+    <linearGradient id="maskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c88a50" />
+      <stop offset="50%" stop-color="#8b5a33" />
+      <stop offset="100%" stop-color="#3a2010" />
+    </linearGradient>
+
+    <!-- River Water -->
+    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00334e" />
+      <stop offset="50%" stop-color="#00223b" />
+      <stop offset="100%" stop-color="#000d1a" />
+    </linearGradient>
+
+    <!-- Afiong's Cloth -->
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cc6600" />
+      <stop offset="50%" stop-color="#8b4500" />
+      <stop offset="100%" stop-color="#3a1a00" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="etherealBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#nightSky)" />
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.3" filter="url(#softGlow)">
+    <circle cx="100" cy="60" r="1.5" />
+    <circle cx="250" cy="40" r="1" />
+    <circle cx="450" cy="80" r="2" />
+    <circle cx="600" cy="50" r="1.5" />
+    <circle cx="750" cy="100" r="1" />
+    <circle cx="680" cy="30" r="1.5" />
+  </g>
+
+  <!-- Moonlight -->
+  <rect width="800" height="600" fill="url(#moonlight)" />
+  
+  <!-- The Moon -->
+  <circle cx="180" cy="90" r="35" fill="#d4e6ff" opacity="0.3" filter="url(#softGlow)" />
+
+  <!-- 2. Distant Forest -->
+  <g fill="#0a0505" opacity="0.8">
+    <path d="M 0 350 L 40 180 L 80 350 Z" />
+    <path d="M 90 370 L 120 220 L 150 370 Z" />
+    <path d="M 680 370 L 710 200 L 740 370 Z" />
+    <path d="M 750 350 L 780 220 L 810 350 Z" />
+  </g>
+
+  <!-- 3. The Great House in the Bush (Left) -->
+  <g>
+    <!-- House Structure -->
+    <path d="M 80 420 L 120 300 L 240 300 L 280 420 Z" fill="#1a0f0a" />
+    
+    <!-- Thatched Roof -->
+    <path d="M 60 310 L 120 260 L 240 260 L 300 310 L 240 300 L 120 300 Z" fill="#3a2010" />
+    
+    <!-- Roof Texture -->
+    <g stroke="#2a1a0a" stroke-width="2" fill="none">
+      <line x1="90" y1="290" x2="100" y2="270" />
+      <line x1="130" y1="290" x2="140" y2="265" />
+      <line x1="170" y1="290" x2="180" y2="262" />
+      <line x1="210" y1="290" x2="220" y2="265" />
+      <line x1="250" y1="290" x2="260" y2="270" />
+    </g>
+
+    <!-- Doorway (Dark, ominous) -->
+    <path d="M 160 420 L 160 350 Q 180 340 200 350 L 200 420 Z" fill="#050302" />
+
+    <!-- Eerie light from the doorway -->
+    <path d="M 160 420 L 160 350 Q 180 340 200 350 L 200 420 Z" fill="#8a2be2" opacity="0.15" filter="url(#intenseGlow)" />
+
+    <!-- The Discarded Skin (The handsome mask on the ground) -->
+    <g filter="url(#softGlow)">
+      <!-- The mask/skin lying crumpled on the ground -->
+      <path d="M 290 420 Q 310 400 340 410 Q 360 420 350 440 Q 330 450 310 445 Q 290 440 290 420 Z" fill="url(#maskGrad)" opacity="0.8" />
+      
+      <!-- Faint facial features on the mask -->
+      <path d="M 310 415 Q 315 412 320 415" stroke="#3a2010" stroke-width="1.5" fill="none" opacity="0.6" />
+      <path d="M 330 415 Q 335 412 340 415" stroke="#3a2010" stroke-width="1.5" fill="none" opacity="0.6" />
+      <path d="M 320 430 Q 325 433 330 430" stroke="#3a2010" stroke-width="1.5" fill="none" opacity="0.6" />
+      
+      <!-- Hollow emptiness of the mask -->
+      <ellipse cx="320" cy="422" rx="15" ry="10" fill="#000000" opacity="0.4" />
+    </g>
+  </g>
+
+  <!-- 4. The Skull (The Terrifying Revelation - Center) -->
+  <g>
+    <!-- Skull's Eerie Aura -->
+    <circle cx="440" cy="280" r="180" fill="url(#skullGlow)" filter="url(#intenseGlow)" />
+
+    <!-- The Skull Body (Skeletal form, draped in fine cloth) -->
+    <path d="M 380 450 Q 370 350 400 300 Q 420 270 460 280 Q 500 300 500 380 Q 510 440 490 470 Q 440 480 380 450 Z" fill="#0a0505" opacity="0.9" />
+
+    <!-- Fine cloth draped on the bones -->
+    <path d="M 380 450 Q 400 400 430 380 Q 460 370 490 390 Q 510 420 490 470 Q 440 480 380 450 Z" fill="#4a2a0a" opacity="0.6" />
+
+    <!-- The Skull Head (Bone white, hollow) -->
+    <path d="M 400 250 Q 380 200 410 170 Q 440 150 470 170 Q 500 200 480 250 Q 470 280 440 290 Q 410 280 400 250 Z" fill="url(#boneGrad)" />
+
+    <!-- Skull Details -->
+    <!-- Eye sockets (Hollow, black) -->
+    <ellipse cx="420" cy="210" rx="18" ry="22" fill="#000000" />
+    <ellipse cx="460" cy="210" rx="18" ry="22" fill="#000000" />
+    
+    <!-- Glowing Eyes in the sockets -->
+    <g filter="url(#intenseGlow)">
+      <ellipse cx="420" cy="210" rx="8" ry="10" fill="#ff3300" opacity="0.8" />
+      <ellipse cx="460" cy="210" rx="8" ry="10" fill="#ff3300" opacity="0.8" />
+      <circle cx="420" cy="210" r="4" fill="#ffff00" />
+      <circle cx="460" cy="210" r="4" fill="#ffff00" />
+    </g>
+
+    <!-- Nose cavity -->
+    <path d="M 435 230 L 440 245 L 445 230 Z" fill="#000000" />
+
+    <!-- Jaw and teeth -->
+    <path d="M 410 260 Q 440 280 470 260" stroke="#8a7a60" stroke-width="2" fill="none" />
+    <path d="M 415 265 L 420 275 L 425 265 L 430 275 L 435 265 L 440 275 L 445 265 L 450 275 L 455 265 L 460 275 L 465 265" stroke="#d4c8b0" stroke-width="1.5" fill="none" />
+
+    <!-- Skull's Hand (Reaching towards the mask) -->
+    <g>
+      <!-- Arm bones -->
+      <path d="M 420 380 Q 400 400 380 420" stroke="#d4c8b0" stroke-width="8" fill="none" stroke-linecap="round" />
+      <path d="M 440 390 Q 420 420 400 430" stroke="#d4c8b0" stroke-width="8" fill="none" stroke-linecap="round" />
+      
+      <!-- Skeletal hand / claws -->
+      <path d="M 380 420 L 370 430 M 380 420 L 375 435 M 380 420 L 385 435" stroke="#d4c8b0" stroke-width="3" fill="none" stroke-linecap="round" />
+      
+      <!-- Faint light connecting the hand to the mask -->
+      <circle cx="360" cy="430" r="15" fill="#8a2be2" opacity="0.15" filter="url(#intenseGlow)" />
+    </g>
+
+    <!-- Spectral wisps around the skull -->
+    <g stroke="#8a2be2" stroke-width="2" fill="none" opacity="0.3" filter="url(#softGlow)">
+      <path d="M 380 280 Q 350 300 340 340" />
+      <path d="M 500 290 Q 530 320 540 360" />
+      <path d="M 420 320 Q 400 350 390 380" />
+    </g>
+  </g>
+
+  <!-- 5. Afiong (Fleeing in Terror - Right Side) -->
+  <g>
+    <!-- Afiong's Body (Running) -->
+    <path d="M 580 480 Q 570 420 590 380 Q 610 350 630 380 Q 650 420 640 480 Z" fill="url(#clothGrad)" />
+    
+    <!-- Afiong's Head -->
+    <ellipse cx="610" cy="350" rx="20" ry="25" fill="#8b5a33" />
+    
+    <!-- Afiong's Hair (Flowing wildly as she runs) -->
+    <path d="M 590 345 Q 580 320 610 310 Q 640 320 630 345 Q 640 330 615 320 Q 590 330 590 345 Z" fill="#0a0502" />
+
+    <!-- Afiong's Face (Terrified) -->
+    <!-- Eyes (Wide with fear) -->
+    <circle cx="602" cy="348" r="4" fill="#ffffff" />
+    <circle cx="618" cy="348" r="4" fill="#ffffff" />
+    <circle cx="602" cy="348" r="2" fill="#000000" />
+    <circle cx="618" cy="348" r="2" fill="#000000" />
+    
+    <!-- Mouth (Open in a scream) -->
+    <ellipse cx="610" cy="362" rx="6" ry="8" fill="#000000" />
+
+    <!-- Arms (Reaching forward, fleeing) -->
+    <path d="M 590 390 Q 560 380 540 370" stroke="#8b5a33" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 630 390 Q 660 400 680 410" stroke="#8b5a33" stroke-width="10" fill="none" stroke-linecap="round" />
+
+    <!-- Legs (Striding, running) -->
+    <path d="M 600 480 Q 590 520 580 540" stroke="#8b5a33" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M 620 480 Q 630 520 640 540" stroke="#8b5a33" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- Motion lines (Showing speed) -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4" stroke-linecap="round">
+      <path d="M 560 400 L 530 400" />
+      <path d="M 570 420 L 520 420" />
+      <path d="M 565 440 L 535 440" />
+    </g>
+
+    <!-- Tears of terror -->
+    <g filter="url(#softGlow)">
+      <circle cx="600" cy="355" r="2" fill="#00ffff" opacity="0.8" />
+      <circle cx="620" cy="355" r="2" fill="#00ffff" opacity="0.8" />
+    </g>
+  </g>
+
+  <!-- 6. The River (Bottom) -->
+  <path d="M 0 520 Q 200 500 400 510 Q 600 520 800 500 L 800 600 L 0 600 Z" fill="url(#riverGrad)" />
+
+  <!-- River Ripples -->
+  <g stroke="#00ffff" stroke-width="1.5" fill="none" opacity="0.2">
+    <ellipse cx="200" cy="550" rx="80" ry="10" />
+    <ellipse cx="500" cy="560" rx="100" ry="12" />
+    <ellipse cx="700" cy="540" rx="60" ry="8" />
+  </g>
+
+  <!-- 7. The Ferryman (In his Canoe) -->
+  <g>
+    <!-- The Canoe -->
+    <path d="M 550 570 Q 600 550 680 570 Q 660 590 580 590 Z" fill="#3a2010" />
+    <path d="M 550 570 Q 600 550 680 570" stroke="#1a0f05" stroke-width="3" fill="none" />
+
+    <!-- The Ferryman -->
+    <!-- Body -->
+    <path d="M 600 560 Q 595 530 610 515 Q 625 505 630 515 Q 640 530 635 560 Z" fill="#2a1a0a" />
+    
+    <!-- Head -->
+    <circle cx="615" cy="505" r="12" fill="#5a3a22" />
+    
+    <!-- Headwrap -->
+    <path d="M 603 500 Q 605 485 615 482 Q 625 485 627 500 Q 625 490 615 488 Q 605 490 603 500 Z" fill="#cc3300" opacity="0.8" />
+
+    <!-- Arms (Holding an oar/paddle) -->
+    <path d="M 605 520 Q 580 530 560 540" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+    <path d="M 625 525 Q 650 535 670 545" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+
+    <!-- The Paddle -->
+    <path d="M 560 540 L 540 580" stroke="#3a2010" stroke-width="5" fill="none" stroke-linecap="round" />
+    <path d="M 540 580 Q 530 590 545 590 Q 555 585 545 575 Z" fill="#3a2010" />
+
+    <!-- Ferryman's kind eye -->
+    <circle cx="612" cy="504" r="2" fill="#ffffff" />
+    <circle cx="618" cy="504" r="2" fill="#ffffff" />
+  </g>
+
+  <!-- 8. The Skull's Mother (Far Bank, Watching) -->
+  <g opacity="0.3" filter="url(#etherealBlur)">
+    <!-- Spectral figure on the far bank -->
+    <ellipse cx="160" cy="500" rx="20" ry="30" fill="#8a2be2" opacity="0.4" />
+    <ellipse cx="160" cy="475" rx="10" ry="13" fill="#8a2be2" opacity="0.5" />
+    <!-- Reaching arms -->
+    <path d="M 145 500 Q 130 510 120 520" stroke="#8a2be2" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round" />
+    <path d="M 175 500 Q 190 510 200 520" stroke="#8a2be2" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round" />
+  </g>
+
+  <!-- The Skull waiting on the far bank -->
+  <g opacity="0.4" filter="url(#etherealBlur)">
+    <path d="M 200 480 Q 190 450 210 430 Q 230 420 240 430 Q 260 450 250 480 Z" fill="#d4c8b0" opacity="0.3" />
+    <ellipse cx="225" cy="420" rx="12" ry="15" fill="#d4c8b0" opacity="0.4" />
+    <!-- Hollow eyes -->
+    <ellipse cx="220" cy="418" rx="3" ry="4" fill="#000000" opacity="0.5" />
+    <ellipse cx="230" cy="418" rx="3" ry="4" fill="#000000" opacity="0.5" />
+  </g>
+
+  <!-- 9. Foreground Framing Trees -->
+  <g fill="#050302">
+    <path d="M 0 600 L 20 350 L 60 600 Z" />
+    <path d="M 780 600 L 800 350 L 820 600 Z" />
+  </g>
+
+  <!-- 10. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE DISOBEDIENT DAUGHTER WHO MARRIED A SKULL
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Appearances deceive. True love requires knowledge, not just desire."
+  </text>
+
+</svg>
 <p>Effiong Edem was a native of Cobham Town. He had a very fine daughter, whose name was Afiong. All the young men in the country wanted to marry her on account of her beauty. They came with yams and goats. They came with cloth and palm wine. They came with promises of wealth and comfort.</p>
 <p>But Afiong refused them all. "These men are ugly," she said. "These men are old. These men are poor. I will only marry a man who is handsome and strong."</p>
 <p>Her parents pleaded with her. "Daughter, marriage is not about beauty. It is about character. It is about kindness. It is about a man who will care for you."</p>
@@ -3087,6 +4666,348 @@
 <p><strong>The Lesson:</strong> Appearances deceive. True love requires knowledge, not just desire. Honour your parents, for they see what your eyes cannot.</p>
 
 <h1 id="story20">20. The Cunning Hare</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Warm Savanna Sky -->
+    <linearGradient id="savannaSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a4a7a" />
+      <stop offset="40%" stop-color="#8a6a3a" />
+      <stop offset="70%" stop-color="#d4a060" />
+      <stop offset="100%" stop-color="#f0c880" />
+    </linearGradient>
+
+    <!-- Sun Glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#ffd700" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ground Gradient -->
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a3a1a" />
+      <stop offset="50%" stop-color="#3a2a10" />
+      <stop offset="100%" stop-color="#2a1a05" />
+    </linearGradient>
+
+    <!-- Elephant Skin Gradient -->
+    <linearGradient id="elephantSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a8a8a" />
+      <stop offset="50%" stop-color="#6a6a6a" />
+      <stop offset="100%" stop-color="#3a3a3a" />
+    </linearGradient>
+
+    <!-- Elephant Ear Gradient -->
+    <linearGradient id="elephantEar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a7a7a" />
+      <stop offset="100%" stop-color="#4a4a4a" />
+    </linearGradient>
+
+    <!-- Hare Fur Gradient -->
+    <linearGradient id="hareFur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4a060" />
+      <stop offset="50%" stop-color="#9a7040" />
+      <stop offset="100%" stop-color="#5a3a15" />
+    </linearGradient>
+
+    <!-- King's Robe Gradient -->
+    <linearGradient id="kingRobe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f0f0f0" />
+      <stop offset="100%" stop-color="#c0c0c0" />
+    </linearGradient>
+
+    <!-- King's Red Cap Gradient -->
+    <linearGradient id="kingCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dd2200" />
+      <stop offset="50%" stop-color="#aa1100" />
+      <stop offset="100%" stop-color="#660000" />
+    </linearGradient>
+
+    <!-- Fruit Gradient -->
+    <radialGradient id="fruitGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffdf00" />
+      <stop offset="60%" stop-color="#e6a817" />
+      <stop offset="100%" stop-color="#8c4a00" />
+    </radialGradient>
+
+    <!-- Throne Wood Gradient -->
+    <linearGradient id="throneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a3a22" />
+      <stop offset="50%" stop-color="#3a2010" />
+      <stop offset="100%" stop-color="#1a0f05" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#savannaSky)" />
+  
+  <!-- Sun -->
+  <circle cx="400" cy="180" r="80" fill="#fff8dc" opacity="0.8" filter="url(#softGlow)" />
+  <rect width="800" height="600" fill="url(#sunGlow)" />
+
+  <!-- Distant Hills -->
+  <path d="M 0 350 Q 150 300 300 340 Q 500 380 800 320 L 800 400 L 0 400 Z" fill="#3a2a1a" opacity="0.6" />
+
+  <!-- 2. The Ground -->
+  <path d="M 0 400 L 800 400 L 800 600 L 0 600 Z" fill="url(#groundGrad)" />
+
+  <!-- Grass Tufts -->
+  <g fill="#5a4a2a" opacity="0.6">
+    <path d="M 50 450 Q 55 430 60 450 Z" />
+    <path d="M 150 470 Q 155 450 160 470 Z" />
+    <path d="M 700 460 Q 705 440 710 460 Z" />
+    <path d="M 750 480 Q 755 460 760 480 Z" />
+  </g>
+
+  <!-- 3. The Fruit Tree (Background Left) -->
+  <g>
+    <!-- Trunk -->
+    <path d="M 100 400 Q 110 300 130 220 L 160 230 Q 140 320 150 400 Z" fill="#3a2010" />
+    
+    <!-- Branches -->
+    <path d="M 130 250 Q 80 200 50 180" stroke="#3a2010" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M 140 230 Q 180 180 220 160" stroke="#3a2010" stroke-width="10" fill="none" stroke-linecap="round" />
+    <path d="M 120 280 Q 60 260 30 280" stroke="#3a2010" stroke-width="8" fill="none" stroke-linecap="round" />
+
+    <!-- Canopy -->
+    <g fill="#2a5a1a">
+      <circle cx="80" cy="180" r="50" />
+      <circle cx="150" cy="150" r="60" />
+      <circle cx="220" cy="170" r="45" />
+      <circle cx="50" cy="240" r="40" />
+      <circle cx="180" cy="200" r="50" />
+    </g>
+    <g fill="#3a7a2a" opacity="0.6">
+      <circle cx="100" cy="190" r="30" />
+      <circle cx="160" cy="160" r="40" />
+      <circle cx="200" cy="190" r="25" />
+    </g>
+
+    <!-- Fruits on Tree -->
+    <g fill="url(#fruitGrad)">
+      <circle cx="70" cy="170" r="6" />
+      <circle cx="100" cy="150" r="7" />
+      <circle cx="140" cy="140" r="8" />
+      <circle cx="180" cy="160" r="6" />
+      <circle cx="210" cy="180" r="7" />
+      <circle cx="130" cy="180" r="6" />
+      <circle cx="160" cy="190" r="5" />
+      <circle cx="80" cy="210" r="7" />
+      <circle cx="190" cy="220" r="6" />
+    </g>
+  </g>
+
+  <!-- 4. The Throne and The King (Center) -->
+  <g>
+    <!-- Throne Base -->
+    <path d="M 320 500 L 340 350 L 460 350 L 480 500 Z" fill="url(#throneGrad)" />
+    <!-- Throne Back -->
+    <path d="M 340 350 L 360 220 L 440 220 L 460 350 Z" fill="url(#throneGrad)" />
+    
+    <!-- Throne Carvings -->
+    <g stroke="#8a6a3a" stroke-width="3" fill="none" opacity="0.6">
+      <path d="M 360 300 L 440 300" />
+      <path d="M 370 260 L 430 260" />
+      <circle cx="400" cy="280" r="15" />
+      <!-- Uli/Nsibidi symbols -->
+      <path d="M 380 330 Q 400 310 420 330" />
+      <path d="M 390 240 Q 400 230 410 240" />
+    </g>
+
+    <!-- King's Body -->
+    <path d="M 350 450 Q 340 380 370 340 Q 400 310 430 340 Q 460 380 450 450 Q 430 480 400 480 Q 370 480 350 450 Z" fill="url(#kingRobe)" />
+    
+    <!-- King's Red Sash -->
+    <path d="M 370 340 Q 400 360 430 340 Q 440 380 430 420 Q 400 400 370 420 Q 360 380 370 340 Z" fill="#aa1100" opacity="0.8" />
+
+    <!-- King's Head -->
+    <ellipse cx="400" cy="300" rx="25" ry="30" fill="#6b4423" />
+
+    <!-- King's Facial Features (Stern, Wise) -->
+    <path d="M 385 295 Q 392 290 398 295" stroke="#0a0502" stroke-width="2" fill="none" />
+    <path d="M 402 295 Q 408 290 415 295" stroke="#0a0502" stroke-width="2" fill="none" />
+    <path d="M 395 310 Q 400 312 405 310" stroke="#3a2010" stroke-width="2" fill="none" />
+    <!-- Stern Mouth -->
+    <path d="M 390 320 Q 400 318 410 320" stroke="#3a2010" stroke-width="2" fill="none" />
+
+    <!-- King's Red Cap (Traditional Igbo Chieftaincy) -->
+    <path d="M 375 285 Q 380 250 400 240 Q 420 250 425 285 Q 420 270 400 262 Q 380 270 375 285 Z" fill="url(#kingCap)" />
+    <!-- Cap Feather -->
+    <path d="M 400 240 Q 405 210 415 195 Q 410 220 405 240 Z" fill="#ffffff" />
+    <path d="M 400 240 Q 395 215 385 200 Q 392 225 398 240 Z" fill="#f0f0f0" />
+    <!-- Cap Beads -->
+    <circle cx="380" cy="280" r="4" fill="#ffd700" />
+    <circle cx="390" cy="272" r="4" fill="#ffd700" />
+    <circle cx="410" cy="272" r="4" fill="#ffd700" />
+    <circle cx="420" cy="280" r="4" fill="#ffd700" />
+
+    <!-- King's Right Arm (Pointing at the Hare) -->
+    <path d="M 360 380 Q 300 370 240 350" stroke="#6b4423" stroke-width="14" fill="none" stroke-linecap="round" />
+    
+    <!-- Pointing Hand -->
+    <path d="M 240 350 L 220 345" stroke="#6b4423" stroke-width="6" fill="none" stroke-linecap="round" />
+    
+    <!-- Accusation Glow -->
+    <circle cx="215" cy="345" r="10" fill="#ff3300" opacity="0.6" filter="url(#intenseGlow)" />
+
+    <!-- King's Left Arm (Holding Staff) -->
+    <path d="M 440 380 Q 480 400 500 420" stroke="#6b4423" stroke-width="14" fill="none" stroke-linecap="round" />
+    
+    <!-- The Staff (Ofo) -->
+    <path d="M 500 420 L 520 520" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round" />
+    <!-- Staff Top -->
+    <path d="M 500 420 Q 495 400 500 390 Q 505 380 510 390 Q 515 400 510 420 Z" fill="#5a3a22" />
+    <circle cx="505" cy="385" r="5" fill="#ffd700" />
+  </g>
+
+  <!-- 5. The Elephant (Right Side - The Noble, Wronged Party) -->
+  <g>
+    <!-- Elephant Body -->
+    <path d="M 580 500 Q 560 400 600 340 Q 640 300 700 320 Q 760 350 770 450 Q 780 520 760 540 Q 700 560 620 540 Q 590 520 580 500 Z" fill="url(#elephantSkin)" />
+
+    <!-- Elephant Legs -->
+    <path d="M 600 500 L 590 570 Q 600 580 620 570 L 620 500 Z" fill="#5a5a5a" />
+    <path d="M 680 520 L 670 580 Q 680 590 700 580 L 710 520 Z" fill="#5a5a5a" />
+    <path d="M 730 510 L 720 570 Q 730 580 750 570 L 760 510 Z" fill="#5a5a5a" />
+
+    <!-- Elephant Head -->
+    <ellipse cx="650" cy="320" rx="60" ry="70" fill="#6a6a6a" />
+
+    <!-- Elephant Ear (Large, flapping slightly) -->
+    <path d="M 610 280 Q 560 250 550 320 Q 560 380 620 370 Q 600 330 610 280 Z" fill="url(#elephantEar)" />
+    
+    <!-- Ear fold lines -->
+    <path d="M 590 300 Q 570 320 580 350" stroke="#4a4a4a" stroke-width="3" fill="none" opacity="0.5" />
+
+    <!-- Elephant Eye (Calm, wise) -->
+    <circle cx="680" cy="300" r="6" fill="#ffffff" />
+    <circle cx="682" cy="300" r="3" fill="#000000" />
+    <path d="M 675 295 Q 680 292 685 295" stroke="#3a3a3a" stroke-width="2" fill="none" />
+
+    <!-- Elephant Trunk (Curled down gracefully) -->
+    <path d="M 690 340 Q 720 380 710 440 Q 700 480 680 490" stroke="#6a6a6a" stroke-width="30" fill="none" stroke-linecap="round" />
+    <!-- Trunk ridges -->
+    <path d="M 700 360 L 710 360 M 705 380 L 715 380 M 708 400 L 718 400 M 708 420 L 718 420 M 705 440 L 715 440" stroke="#4a4a4a" stroke-width="2" fill="none" opacity="0.5" />
+
+    <!-- Elephant Tusks -->
+    <path d="M 670 350 Q 690 390 680 430 Q 675 400 660 360 Z" fill="#f5f5dc" />
+    <path d="M 690 350 Q 710 390 700 430 Q 695 400 680 360 Z" fill="#e0e0c0" />
+
+    <!-- The Elephant's Pile of Fruits (His share) -->
+    <g fill="url(#fruitGrad)">
+      <circle cx="620" cy="530" r="8" />
+      <circle cx="640" cy="540" r="9" />
+      <circle cx="660" cy="525" r="7" />
+      <circle cx="680" cy="545" r="8" />
+      <circle cx="700" cy="530" r="9" />
+      <circle cx="720" cy="545" r="7" />
+      <circle cx="650" cy="555" r="8" />
+      <circle cx="690" cy="560" r="7" />
+      <circle cx="730" cy="535" r="6" />
+    </g>
+  </g>
+
+  <!-- 6. The Hare (Left Side - The Cunning Trickster) -->
+  <g>
+    <!-- Hare's Body (Small, standing on hind legs) -->
+    <path d="M 200 520 Q 190 470 210 440 Q 230 410 250 440 Q 270 470 260 520 Z" fill="url(#hareFur)" />
+
+    <!-- Hare's Head -->
+    <ellipse cx="230" cy="420" rx="18" ry="22" fill="url(#hareFur)" />
+
+    <!-- Hare's Ears (Long, standing up) -->
+    <ellipse cx="215" cy="380" rx="8" ry="25" transform="rotate(-15 215 380)" fill="#c4a060" />
+    <ellipse cx="215" cy="380" rx="4" ry="20" transform="rotate(-15 215 380)" fill="#ffccaa" opacity="0.5" />
+    
+    <ellipse cx="245" cy="375" rx="8" ry="25" transform="rotate(10 245 375)" fill="#c4a060" />
+    <ellipse cx="245" cy="375" rx="4" ry="20" transform="rotate(10 245 375)" fill="#ffccaa" opacity="0.5" />
+
+    <!-- Hare's Face (Shifty, looking sideways) -->
+    <!-- Eyes -->
+    <circle cx="220" cy="415" r="4" fill="#ffffff" />
+    <circle cx="240" cy="415" r="4" fill="#ffffff" />
+    <circle cx="218" cy="415" r="2" fill="#000000" />
+    <circle cx="242" cy="415" r="2" fill="#000000" />
+    
+    <!-- Nose -->
+    <ellipse cx="230" cy="428" rx="4" ry="3" fill="#5a3a15" />
+    
+    <!-- Whiskers -->
+    <path d="M 215 430 L 200 425 M 215 433 L 200 435 M 245 430 L 260 425 M 245 433 L 260 435" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.6" />
+
+    <!-- Hare's Arms (Clasped together, feigning innocence) -->
+    <path d="M 205 460 Q 220 450 240 460" stroke="url(#hareFur)" stroke-width="8" fill="none" stroke-linecap="round" />
+
+    <!-- Hare's Legs (Standing) -->
+    <path d="M 215 520 L 210 560" stroke="url(#hareFur)" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M 240 520 L 245 560" stroke="url(#hareFur)" stroke-width="12" fill="none" stroke-linecap="round" />
+
+    <!-- The Stump the Hare stands on -->
+    <path d="M 180 560 Q 200 530 280 540 Q 290 570 280 580 Q 200 590 180 560 Z" fill="#3a2010" />
+    <ellipse cx="230" cy="550" rx="45" ry="12" fill="#2a1a0a" />
+
+    <!-- The Hare's Stolen Fruit Pile (Small, hidden behind him) -->
+    <g fill="url(#fruitGrad)" opacity="0.8">
+      <circle cx="170" cy="550" r="6" />
+      <circle cx="185" cy="560" r="5" />
+      <circle cx="160" cy="565" r="7" />
+    </g>
+  </g>
+
+  <!-- 7. The Witnesses (Other Animals in the background) -->
+  <g fill="#2a1a05" opacity="0.7">
+    <!-- Antelope -->
+    <path d="M 500 420 Q 490 390 505 380 Q 515 375 520 380 Q 530 390 520 420 Z" />
+    <ellipse cx="510" cy="375" rx="8" ry="12" />
+    <path d="M 505 365 Q 500 345 510 340" stroke="#2a1a05" stroke-width="3" fill="none" />
+    <path d="M 515 365 Q 520 345 510 340" stroke="#2a1a05" stroke-width="3" fill="none" />
+
+    <!-- Monkey -->
+    <path d="M 540 430 Q 530 400 540 390 Q 550 385 555 390 Q 565 400 555 430 Z" />
+    <circle cx="545" cy="385" r="8" />
+    <circle cx="540" cy="380" r="4" fill="#2a1a05" />
+    <circle cx="550" cy="380" r="4" fill="#2a1a05" />
+
+    <!-- Tortoise -->
+    <ellipse cx="480" cy="450" rx="15" ry="10" fill="#2a1a05" />
+    <path d="M 465 450 Q 460 440 465 435" stroke="#2a1a05" stroke-width="4" fill="none" stroke-linecap="round" />
+    <ellipse cx="490" cy="455" rx="4" ry="2" fill="#2a1a05" />
+    <ellipse cx="495" cy="455" rx="4" ry="2" fill="#2a1a05" />
+
+    <!-- Birds in the sky -->
+    <path d="M 300 200 Q 310 190 320 200 Q 310 195 300 200 Z" fill="#2a1a05" />
+    <path d="M 320 200 Q 330 190 340 200 Q 330 195 320 200 Z" fill="#2a1a05" />
+    
+    <path d="M 600 150 Q 610 140 620 150 Q 610 145 600 150 Z" fill="#2a1a05" />
+    <path d="M 620 150 Q 630 140 640 150 Q 630 145 620 150 Z" fill="#2a1a05" />
+  </g>
+
+  <!-- 8. Foreground Framing -->
+  <path d="M 0 600 L 0 580 Q 200 560 400 570 Q 600 580 800 560 L 800 600 Z" fill="#1a0f05" />
+
+  <!-- 9. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.85" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE CUNNING HARE
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Cunning may work for a time, but it always leads to punishment. Honesty is the best path."
+  </text>
+
+</svg>
 <p>The Hare was the smallest of the animals, but he was also the cleverest. He was always hungry, and he was always looking for a way to fill his belly without working.</p>
 <p>One day, the Hare went to the Elephant. He said: "Great Elephant, I have found a tree full of ripe fruits. But I cannot reach them. You are tall. You can reach them. Let us share them."</p>
 <p>The Elephant agreed. They went to the tree. The Elephant reached up and plucked the fruits. He put them in a pile on the ground. Then he turned to the Hare and said: "Now we will divide them. Half for me, half for you."</p>
@@ -3331,6 +5252,195 @@
 <p><strong>The Lesson:</strong> Love makes a family. A child is not defined by where they come from, but by the love that raises them.</p>
 
 <h1 id="story22">22. The Little Bird</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Stormy Sky Gradient -->
+    <linearGradient id="stormSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b10" />
+      <stop offset="40%" stop-color="#121824" />
+      <stop offset="100%" stop-color="#1a120a" />
+    </linearGradient>
+
+    <!-- Lightning Flash Gradient -->
+    <radialGradient id="lightningFlash" cx="30%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#cceeff" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Little Bird's Warm Aura -->
+    <radialGradient id="birdAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#ff8c00" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Tree Trunk Gradient -->
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a0f0a" />
+      <stop offset="50%" stop-color="#3b2314" />
+      <stop offset="100%" stop-color="#1a0f0a" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="800" height="600" fill="url(#stormSky)" />
+
+  <!-- 2. Storm Clouds -->
+  <g fill="#0e101a" opacity="0.8">
+    <path d="M 0 100 Q 150 50 300 120 Q 450 80 600 130 Q 750 60 800 120 L 800 0 L 0 0 Z" />
+    <path d="M 0 200 Q 200 150 400 220 Q 600 180 800 240 L 800 150 Q 600 100 400 150 Q 200 100 0 150 Z" opacity="0.6" />
+    <path d="M 0 300 Q 250 250 500 320 Q 700 280 800 330 L 800 250 Q 600 200 400 250 Q 200 200 0 250 Z" opacity="0.4" />
+  </g>
+
+  <!-- 3. Lightning Flash & Bolts -->
+  <rect width="800" height="600" fill="url(#lightningFlash)" />
+  
+  <g filter="url(#intenseGlow)">
+    <!-- Main Lightning Bolt -->
+    <path d="M 150 0 L 120 150 L 160 160 L 100 300 L 140 310 L 80 450" 
+          stroke="#ffffff" stroke-width="4" fill="none" stroke-linejoin="round" />
+    <!-- Secondary Fork -->
+    <path d="M 120 150 L 80 200 L 90 220" stroke="#ffffff" stroke-width="2" fill="none" />
+    <path d="M 160 160 L 200 230" stroke="#ffffff" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- 4. The Great Tree (Battered but Unbroken) -->
+  <g>
+    <!-- Roots gripping the earth -->
+    <path d="M 250 600 Q 300 550 350 500 Q 400 480 450 500 Q 500 550 550 600 Z" fill="#1a0f0a" />
+    
+    <!-- Trunk (Bending in the wind) -->
+    <path d="M 300 550 Q 350 400 380 250 Q 400 150 420 100 L 460 120 Q 420 250 450 400 Q 470 500 500 600 Z" fill="url(#trunkGrad)" />
+    
+    <!-- Branches -->
+    <g stroke="#2b1b17" stroke-width="12" fill="none" stroke-linecap="round">
+      <path d="M 380 250 Q 300 200 250 150" />
+      <path d="M 400 200 Q 500 150 550 100" />
+      <path d="M 420 150 Q 480 80 520 50" />
+      <path d="M 390 300 Q 320 280 280 250" />
+    </g>
+
+    <!-- Torn Leaves blowing in the wind -->
+    <g fill="#1e4d2b" opacity="0.7">
+      <path d="M 250 180 Q 240 170 250 160 Q 260 170 250 180 Z" />
+      <path d="M 280 220 Q 270 210 280 200 Q 290 210 280 220 Z" />
+      <path d="M 520 130 Q 530 120 520 110 Q 510 120 520 130 Z" />
+      <path d="M 480 180 Q 470 170 480 160 Q 490 170 480 180 Z" />
+      <path d="M 350 120 Q 340 110 350 100 Q 360 110 350 120 Z" />
+    </g>
+  </g>
+
+  <!-- 5. The Other Birds (Fleeing in fear) -->
+  <g fill="#0a0505" opacity="0.6">
+    <!-- Bird 1 -->
+    <path d="M 600 200 Q 610 185 620 195 Q 610 190 600 200 Z" />
+    <path d="M 620 195 Q 630 180 640 190 Q 630 185 620 195 Z" />
+    <!-- Bird 2 -->
+    <path d="M 680 150 Q 690 135 700 145 Q 690 140 680 150 Z" />
+    <path d="M 700 145 Q 710 130 720 140 Q 710 135 700 145 Z" />
+    <!-- Bird 3 -->
+    <path d="M 550 280 Q 560 265 570 275 Q 560 270 550 280 Z" />
+    <path d="M 570 275 Q 580 260 590 270 Q 580 265 570 275 Z" />
+  </g>
+
+  <!-- 6. The Little Bird (The Faithful One) -->
+  <g>
+    <!-- Warm Aura of Faithfulness -->
+    <circle cx="380" cy="250" r="120" fill="url(#birdAura)" filter="url(#softGlow)" />
+
+    <!-- The Little Bird's Body -->
+    <ellipse cx="380" cy="250" rx="18" ry="14" fill="#8b5a33" />
+    
+    <!-- Belly -->
+    <ellipse cx="380" cy="255" rx="12" ry="8" fill="#d4a373" />
+
+    <!-- Head -->
+    <circle cx="395" cy="235" r="10" fill="#8b5a33" />
+    
+    <!-- Eye (Bright and determined) -->
+    <circle cx="400" cy="233" r="2.5" fill="#ffffff" />
+    <circle cx="401" cy="233" r="1.5" fill="#000000" />
+
+    <!-- Beak (Open in song) -->
+    <path d="M 403 235 L 412 233 L 405 238 Z" fill="#ffb347" />
+    <path d="M 403 238 L 412 236 L 405 242 Z" fill="#ffb347" />
+
+    <!-- Wings (Spread slightly for balance) -->
+    <path d="M 365 245 Q 350 235 340 240 Q 355 250 365 250 Z" fill="#5a3a22" />
+    <path d="M 395 250 Q 410 240 420 245 Q 405 255 395 255 Z" fill="#5a3a22" />
+
+    <!-- Tail (Fluffed against the wind) -->
+    <path d="M 362 255 Q 340 260 335 270 Q 350 265 362 260 Z" fill="#5a3a22" />
+
+    <!-- Legs / Claws gripping the branch tightly -->
+    <path d="M 375 262 L 370 270 M 375 262 L 378 270" stroke="#3a2010" stroke-width="2" fill="none" />
+    <path d="M 385 262 L 380 270 M 385 262 L 388 270" stroke="#3a2010" stroke-width="2" fill="none" />
+
+    <!-- The Song (Glowing Musical Notes) -->
+    <g filter="url(#intenseGlow)">
+      <text x="420" y="220" font-family="Arial, sans-serif" font-size="28" fill="#ffd700" font-weight="bold">♪</text>
+      <text x="440" y="200" font-family="Arial, sans-serif" font-size="24" fill="#ffd700" font-weight="bold">♫</text>
+      <text x="460" y="230" font-family="Arial, sans-serif" font-size="20" fill="#ffd700" font-weight="bold">♪</text>
+      <text x="410" y="190" font-family="Arial, sans-serif" font-size="18" fill="#ffd700" font-weight="bold">♬</text>
+      <text x="480" y="195" font-family="Arial, sans-serif" font-size="22" fill="#ffd700" font-weight="bold">♪</text>
+      <text x="440" y="250" font-family="Arial, sans-serif" font-size="16" fill="#ffd700" font-weight="bold">♫</text>
+    </g>
+
+    <!-- Branch the bird is perched on -->
+    <path d="M 320 270 Q 380 260 440 280" stroke="#2b1b17" stroke-width="8" fill="none" stroke-linecap="round" />
+    <!-- Leaves on the branch -->
+    <path d="M 350 265 Q 340 255 350 245 Q 360 255 350 265 Z" fill="#1e4d2b" />
+    <path d="M 420 275 Q 430 265 420 255 Q 410 265 420 275 Z" fill="#1e4d2b" />
+  </g>
+
+  <!-- 7. The Storm (Rain & Wind) -->
+  <g stroke="#cceeff" stroke-width="2" opacity="0.3" stroke-linecap="round">
+    <!-- Rain streaks -->
+    <line x1="100" y1="50" x2="80" y2="150" />
+    <line x1="200" y1="100" x2="180" y2="200" />
+    <line x1="300" y1="30" x2="280" y2="130" />
+    <line x1="500" y1="80" x2="480" y2="180" />
+    <line x1="600" y1="120" x2="580" y2="220" />
+    <line x1="700" y1="40" x2="680" y2="140" />
+    <line x1="150" y1="250" x2="130" y2="350" />
+    <line x1="650" y1="280" x2="630" y2="380" />
+    <line x1="750" y1="200" x2="730" y2="300" />
+    <line x1="50" y1="300" x2="30" y2="400" />
+    <line x1="550" y1="350" x2="530" y2="450" />
+    <line x1="250" y1="400" x2="230" y2="500" />
+    <line x1="680" y1="450" x2="660" y2="550" />
+    <line x1="120" y1="450" x2="100" y2="550" />
+    <line x1="450" y1="380" x2="430" y2="480" />
+  </g>
+
+  <!-- 8. Foreground Ground / Framing -->
+  <path d="M 0 600 L 0 550 Q 200 520 400 540 Q 600 560 800 520 L 800 600 Z" fill="#050302" />
+
+  <!-- 9. Title & Lesson Overlay -->
+  <rect x="0" y="550" width="800" height="50" fill="#000000" opacity="0.8" />
+  
+  <text x="400" y="570" font-family="Georgia, serif" font-size="16" fill="#ffd700" text-anchor="middle" opacity="0.9" letter-spacing="3">
+    THE LITTLE BIRD
+  </text>
+  
+  <text x="400" y="590" font-family="Georgia, serif" font-size="12" fill="#e0cfa5" text-anchor="middle" opacity="0.8" letter-spacing="1">
+    "Faithfulness is greater than beauty or strength. Stay true to those who have given you shelter."
+  </text>
+
+</svg>
+
 <p>There was once a little bird who lived in a great tree. She was small and brown, and she had a small voice. But she was happy. She sang every morning. She sang every evening. She sang for the sun. She sang for the rain. She sang for the joy of being alive.</p>
 <p>The other birds laughed at her. They said: "Your voice is too small. Your song is too simple. You are not beautiful. Why do you sing?"</p>
 <p>The little bird said: "I sing because I am happy. I sing because I am alive. I sing because the sun is warm and the rain is sweet and the tree is my home."</p>
