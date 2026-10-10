@@ -815,3 +815,108 @@ body > svg {
         border-radius: 12px;
     }
 }
+
+
+
+
+
+
+
+
+/* ============================================================
+   FIXED Current-Moon"
+/* ============================================================*/
+
+#current-moon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0.85rem 1.5rem;
+    background-color: var(--bg-card);
+    color: var(--text-heading);
+    font-family: 'Calibri', 'Arial', 'Microsoft YaHei', 'Hei', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-align: center;
+    border-left: none;
+    border-bottom: 3px solid var(--accent);
+    box-shadow: var(--shadow-card);
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Push page content down so the fixed heading doesn't cover it */
+body {
+    padding-top: 6rem;
+}
+
+/* Index page has its own padding shorthand — offset it too */
+body.index-page {
+    padding-top: 5.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    #current-moon {
+        font-size: 1.1rem;
+        padding: 0.65rem 1rem;
+    }
+
+    body {
+        padding-top: 4.5rem;
+    }
+
+    body.index-page {
+        padding-top: 4.5rem;
+    }
+}
+
+/* Print — make it static so it doesn't overlap */
+@media print {
+    #current-moon {          /* was #current-moon*/
+        position: static;
+        width: auto;
+        box-shadow: none;
+        border-bottom: 2px solid #b45309;
+        background: #fff;
+        color: #000;
+        padding: 0 0 0.5rem 0;
+        font-size: 16pt;
+    }
+    body,
+    body.index-page { padding-top: 0; }
+}
+
+
+
+
+
+
+
+
+/* ============================================================
+   ANCHOR OFFSET — keeps story headings clear of the fixed header
+   ============================================================ */
+
+:root {
+    --current-moon-height: 4.75rem;
+}
+
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id] {
+    scroll-margin-top: calc(var(--current-moon-height) + 1rem);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --current-moon-height: 3.6rem;
+    }
+}
