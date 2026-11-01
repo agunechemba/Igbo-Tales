@@ -1,4 +1,4 @@
-# Igbo Tales: Echoes from your Ancestors
+# Igbo Tales: Echoes from our Ancestors
 
 Traditional Igbo tales, history, oracles, and wisdom — retold for a new generation.  
 Curated by **[Agunechemba Ekene](https://agunechemba.name.ng)**
@@ -17,7 +17,7 @@ Curated by **[Agunechemba Ekene](https://agunechemba.name.ng)**
 | 6 | History and Heroism | 28 |
 | 7 | Oracles, Chi, and Ikenga | 28 |
 | 8 | The Python King: Eke | 28 |
-| 9 | Echoes from your Ancestors | 28 |
+| 9 | Echoes from our Ancestors | 28 |
 | 10 | The Land of the Rising Sun | 28 |
 | 11 | Market Days and Ceremonies | 28 |
 | 12 | Women Who Ruled | 28 |
